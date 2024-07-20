@@ -32,7 +32,7 @@ export function YearStats({
         <div className="flex flex-col items-center">
           <PageTitle className="pt-6 desktop:pt-8">{`${year} Stats`}</PageTitle>
           <p className="text-subtle">
-            {[...distinctStatYears].reverse()[1] === year
+            {[...distinctStatYears].reverse()[0] === year
               ? "A year in progress..."
               : "A Year in Review"}
           </p>
