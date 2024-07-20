@@ -1,0 +1,36 @@
+---
+import { allCollections } from "src/api/collections";
+import { Collection } from "src/components/Collection/Collection";
+import { getProps } from "src/components/Collection/getProps";
+import Layout from "src/layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const { collections } = await allCollections();
+
+  return collections.map((collection) => {
+    return {
+      params: {
+        slug: collection.slug,
+      },
+      props: {
+        slug: collection.slug,
+      },
+    };
+  });
+}
+
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+
+const props = await getProps(slug);
+---
+
+<Layout
+  title={props.value.name}
+  description={`A sortable and filterable list of reviews of movies in the ${props.value.name} collection.`}
+>
+  <Collection client:load {...props} />
+</Layout>

@@ -1,0 +1,11 @@
+---
+import { getProps } from "src/components/Watchlist/getProps";
+import { Watchlist } from "src/components/Watchlist/Watchlist";
+import Layout from "src/layouts/Layout.astro";
+
+const props = await getProps();
+---
+
+<Layout title="Watchlist" description="My movie review bucketlist.">
+  <Watchlist client:load {...props} />
+</Layout>

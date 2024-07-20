@@ -1,0 +1,36 @@
+---
+import { allStatYears } from "src/api/yearStats";
+import { getProps } from "src/components/YearStats/getProps";
+import { YearStats } from "src/components/YearStats/YearStats";
+import Layout from "src/layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const statYears = await allStatYears();
+
+  return statYears.map((year) => {
+    return {
+      params: {
+        year: year,
+      },
+      props: {
+        year: year,
+      },
+    };
+  });
+}
+
+interface Props {
+  year: string;
+}
+
+const { year } = Astro.props;
+
+const props = await getProps(year);
+---
+
+<Layout
+  title="All-Time Stats"
+  description="My most-watched titles, performers, directors, writers and other stats."
+>
+  <YearStats {...props} />
+</Layout>

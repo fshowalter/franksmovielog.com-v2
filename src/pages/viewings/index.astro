@@ -1,0 +1,14 @@
+---
+import { getProps } from "src/components/Viewings/getProps";
+import { Viewings } from "src/components/Viewings/Viewings";
+import Layout from "src/layouts/Layout.astro";
+
+const props = await getProps();
+---
+
+<Layout
+  title="Viewing Log"
+  description="A sortable and filterable list of every movie I've watched since 2012."
+>
+  <Viewings client:load {...props} />
+</Layout>

@@ -1,0 +1,14 @@
+---
+import { getProps } from "src/components/Overrated/getProps";
+import { Overrated } from "src/components/Overrated/Overrated";
+import Layout from "src/layouts/Layout.astro";
+
+const props = await getProps();
+---
+
+<Layout
+  title="Overrated Disappointments"
+  description="One and two star movies with an above-average IMDb rating and vote count."
+>
+  <Overrated client:load {...props} />
+</Layout>

@@ -1,0 +1,14 @@
+---
+import { Collections } from "src/components/Collections/Collections";
+import { getProps } from "src/components/Collections/getProps";
+import Layout from "src/layouts/Layout.astro";
+
+const props = await getProps();
+---
+
+<Layout
+  title="Collections"
+  description="A sortable and filterable list of movie collections."
+>
+  <Collections client:load {...props} />
+</Layout>
