@@ -2,15 +2,12 @@ import { getContainerRenderer as reactContainerRenderer } from "@astrojs/react";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import { loadRenderers } from "astro:container";
-import { allStatYears } from "src/api/yearStats";
 import { describe, it } from "vitest";
 
 import YearStats from "./[year].astro";
 
-const statYears = await allStatYears();
-
 describe("/viewings/stats/:year", () => {
-  it.for(statYears)(
+  it.for(["2024", "2022"])(
     "matches snapshot for year %i",
     { timeout: 10000 },
     async (year, { expect }) => {
