@@ -1,6 +1,6 @@
 {
-  "viewingCount": 1609,
-  "titleCount": 1313,
+  "viewingCount": 1613,
+  "titleCount": 1317,
   "reviewCount": 711,
   "watchlistTitlesReviewedCount": 390,
   "gradeDistribution": [
@@ -73,7 +73,7 @@
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 289
+      "count": 291
     },
     {
       "name": "Netflix",
@@ -89,7 +89,7 @@
     },
     {
       "name": "iTunes",
-      "count": 96
+      "count": 97
     },
     {
       "name": "DVD",
@@ -97,7 +97,7 @@
     },
     {
       "name": "4k UHD Blu-ray",
-      "count": 65
+      "count": 66
     },
     {
       "name": "Amazon",
@@ -135,7 +135,7 @@
     },
     {
       "name": "1970s",
-      "count": 179
+      "count": 183
     },
     {
       "name": "1980s",

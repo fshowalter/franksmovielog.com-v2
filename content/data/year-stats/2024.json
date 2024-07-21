@@ -1,20 +1,20 @@
 {
   "year": "2024",
-  "newTitleCount": 38,
-  "viewingCount": 55,
-  "titleCount": 54,
+  "newTitleCount": 42,
+  "viewingCount": 59,
+  "titleCount": 58,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 25
+      "count": 27
     },
     {
       "name": "4k UHD Blu-ray",
-      "count": 11
+      "count": 12
     },
     {
       "name": "iTunes",
-      "count": 5
+      "count": 6
     },
     {
       "name": "DVD",
@@ -44,7 +44,7 @@
     },
     {
       "name": "1970s",
-      "count": 10
+      "count": 14
     },
     {
       "name": "1980s",
@@ -289,6 +289,49 @@
   ],
   "mostWatchedPerformers": [
     {
+      "name": "Clint Eastwood",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1600,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "A Fistful of Dollars",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1964"
+        },
+        {
+          "sequence": 1601,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "For a Few Dollars More",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1965"
+        },
+        {
+          "sequence": 1602,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "The Good, the Bad and the Ugly",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1966"
+        },
+        {
+          "sequence": 1611,
+          "date": "2024-07-02",
+          "slug": null,
+          "title": "Dirty Harry",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1971"
+        }
+      ]
+    },
+    {
       "name": "Faith Clift",
       "count": 3,
       "slug": null,
@@ -421,40 +464,6 @@
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "1988"
-        }
-      ]
-    },
-    {
-      "name": "Clint Eastwood",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1600,
-          "date": "2024-06-16",
-          "slug": null,
-          "title": "A Fistful of Dollars",
-          "medium": "4k UHD Blu-ray",
-          "venue": null,
-          "year": "1964"
-        },
-        {
-          "sequence": 1601,
-          "date": "2024-06-16",
-          "slug": null,
-          "title": "For a Few Dollars More",
-          "medium": "4k UHD Blu-ray",
-          "venue": null,
-          "year": "1965"
-        },
-        {
-          "sequence": 1602,
-          "date": "2024-06-16",
-          "slug": null,
-          "title": "The Good, the Bad and the Ugly",
-          "medium": "4k UHD Blu-ray",
-          "venue": null,
-          "year": "1966"
         }
       ]
     },
@@ -668,6 +677,31 @@
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "1985"
+        }
+      ]
+    },
+    {
+      "name": "Kuang Ni",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1585,
+          "date": "2024-04-24",
+          "slug": "human-lanterns-1982",
+          "title": "Human Lanterns",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1982"
+        },
+        {
+          "sequence": 1610,
+          "date": "2024-07-01",
+          "slug": null,
+          "title": "Abbot of Shaolin",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1979"
         }
       ]
     },
