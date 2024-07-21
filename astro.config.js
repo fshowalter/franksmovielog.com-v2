@@ -1,25 +1,28 @@
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
-
+import sitemap from "@astrojs/sitemap";
 function contentHmr() {
   return {
     name: "content-hmr",
     enforce: "post",
     // HMR
-    handleHotUpdate({ file, server }) {
+    handleHotUpdate({
+      file,
+      server
+    }) {
       console.log(file);
       if (file.includes("/content/")) {
         console.log("reloading content file...");
-
         server.ws.send({
           type: "full-reload",
-          path: "*",
+          path: "*"
         });
       }
-    },
+    }
   };
 }
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,16 +30,13 @@ export default defineConfig({
   trailingSlash: "always",
   vite: {
     optimizeDeps: {
-      exclude: ["fsevents"],
+      exclude: ["fsevents"]
     },
-    plugins: [contentHmr()],
+    plugins: [contentHmr()]
   },
-  integrations: [
-    react(),
-    tailwind({
-      // Example: Disable injecting a basic `base.css` import on every page.
-      // Useful if you need to define and/or import your own custom `base.css`.
-      applyBaseStyles: false,
-    }),
-  ],
+  integrations: [react(), tailwind({
+    // Example: Disable injecting a basic `base.css` import on every page.
+    // Useful if you need to define and/or import your own custom `base.css`.
+    applyBaseStyles: false
+  }), sitemap()]
 });
