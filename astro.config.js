@@ -1,4 +1,5 @@
 import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 
@@ -11,7 +12,6 @@ function contentHmr() {
       console.log(file);
       if (file.includes("/content/")) {
         console.log("reloading content file...");
-
         server.ws.send({
           type: "full-reload",
           path: "*",
@@ -38,5 +38,6 @@ export default defineConfig({
       // Useful if you need to define and/or import your own custom `base.css`.
       applyBaseStyles: false,
     }),
+    sitemap(),
   ],
 });
