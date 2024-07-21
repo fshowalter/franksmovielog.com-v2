@@ -44,6 +44,12 @@ export default tsEslint.config(
     rules: {
       "@typescript-eslint/array-type": "error",
       "@typescript-eslint/consistent-type-imports": "error",
+      "@typescript-eslint/no-empty-object-type": [
+        "error",
+        {
+          allowInterfaces: "with-single-extends",
+        },
+      ],
     },
   },
   {
