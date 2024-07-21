@@ -27114,5 +27114,71 @@
       "Thriller"
     ],
     "releaseSequence": "1975-03-07tt0073582"
+  },
+  {
+    "sequence": 1610,
+    "viewingYear": "2024",
+    "viewingDate": "2024-07-01",
+    "title": "Abbot of Shaolin",
+    "sortTitle": "Abbot of Shaolin (1979)",
+    "medium": "Blu-ray",
+    "venue": null,
+    "year": "1979",
+    "slug": null,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "releaseSequence": "1979-07-11tt0079892"
+  },
+  {
+    "sequence": 1611,
+    "viewingYear": "2024",
+    "viewingDate": "2024-07-02",
+    "title": "Dirty Harry",
+    "sortTitle": "Dirty Harry (1971)",
+    "medium": "Blu-ray",
+    "venue": null,
+    "year": "1971",
+    "slug": null,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "releaseSequence": "1971-12-21tt0066999"
+  },
+  {
+    "sequence": 1612,
+    "viewingYear": "2024",
+    "viewingDate": "2024-07-18",
+    "title": "Invasion of the Body Snatchers",
+    "sortTitle": "Invasion of the Body Snatchers (1978)",
+    "medium": "4k UHD Blu-ray",
+    "venue": null,
+    "year": "1978",
+    "slug": null,
+    "genres": [
+      "Horror",
+      "Sci-Fi"
+    ],
+    "releaseSequence": "1978-12-21tt0077745"
+  },
+  {
+    "sequence": 1613,
+    "viewingYear": "2024",
+    "viewingDate": "2024-07-18",
+    "title": "Klute",
+    "sortTitle": "Klute (1971)",
+    "medium": "iTunes",
+    "venue": null,
+    "year": "1971",
+    "slug": null,
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
+    "releaseSequence": "1971-06-23tt0067309"
   }
 ]
