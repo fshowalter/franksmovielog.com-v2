@@ -6,8 +6,8 @@ import { Still } from "src/components/Still";
 import { toSentence } from "src/utils";
 
 export const StillImageConfig = {
-  width: 512,
-  height: 288,
+  width: 480,
+  height: 270,
   sizes: "(min-width: 512px) 512px, 100vw",
 };
 
@@ -69,7 +69,7 @@ export function HomeListItem({
             />
           )}
         </a>
-        <div className="flex max-w-lg flex-col items-center pt-4 desktop:col-span-5 desktop:col-start-1 desktop:row-start-2 desktop:items-start desktop:place-self-start desktop:pt-0 max:col-start-2 max:row-start-1">
+        <div className="flex max-w-lg flex-col items-center pt-4 desktop:col-span-4 desktop:col-start-1 desktop:row-start-2 desktop:items-start desktop:place-self-start desktop:pt-0 max:col-start-2 max:row-start-1">
           <h2 className="text-2.5xl font-bold leading-8">
             <a
               href={`/reviews/${value.slug}/`}
