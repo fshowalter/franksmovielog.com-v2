@@ -76,6 +76,21 @@ I also opted to prune as many dependencies as possible in the name of simplicity
 
 - Npm instead of Yarn. I still prefer Yarn's DX (having to type 'run' for every NPM script is annoying) but Yarn's recent change to how it resolved peer deps made me wary of its long-term stability. I don't need workspaces (yet) so NPM will do.
 
+### Some metrics
+
+Total distinct packages (i.e. name + version):
+
+| v1   | v2  |
+| ---- | --- |
+| 1826 | 971 |
+
+Source lines of code:
+
+| Language   | v1      | v2     |
+| ---------- | ------- | ------ |
+| Typescript | 274,815 | 10,202 |
+| Javascript | 185     | 252    |
+
 ## Why not Next?
 
 I considered Next. Even ported the entire site over and had it all working. React Server Components are sweet. But Vercel (and Next) are focused on _apps_ not static sites. They don't have an asset pipeline and Vercel doesn't even cache anything in the `/public` folder. This makes sense as most _apps_ will offload this to a CDN. But for a static site, it's the priority.
