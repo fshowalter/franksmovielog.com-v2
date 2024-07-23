@@ -1,5 +1,3 @@
-/* eslint-env browser, node */
-
 import { Footer } from "./Footer";
 import { Mast } from "./Mast";
 
