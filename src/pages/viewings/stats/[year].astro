@@ -29,8 +29,8 @@ const props = await getProps(year);
 ---
 
 <Layout
-  title="All-Time Stats"
-  description="My most-watched titles, performers, directors, writers and other stats."
+  title={`${props.year} Stats`}
+  description={`My most-watched titles, performers, directors, writers and other stats for ${props.year}.`}
 >
   <YearStats {...props} />
 </Layout>
