@@ -47,13 +47,13 @@ export function HomeListItem({
   return (
     <li className="flex even:bg-subtle">
       <article className="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8">
-        <div className="col-span-2 mb-6 text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:mb-0 desktop:pb-6 desktop:text-left desktop:leading-8 max:col-span-1 max:self-start">
+        <div className="col-span-full mb-6 text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:mb-0 desktop:pb-6 desktop:text-left desktop:leading-8 max:col-span-1 max:self-start">
           {formatDate(value.date)}
         </div>
         <a
           rel="canonical"
           href={`/reviews/${value.slug}/`}
-          className="still-border block max-w-prose desktop:col-start-4 desktop:col-end-9 desktop:row-span-2 desktop:row-start-1 desktop:mt-10 desktop:self-start desktop:justify-self-end max:row-start-1 max:mt-0"
+          className="still-border block max-w-prose desktop:col-start-4 desktop:col-end-9 desktop:row-span-2 desktop:row-start-2 desktop:self-start desktop:justify-self-end max:row-start-1 max:mt-0"
         >
           {stillImageData && (
             <Still
