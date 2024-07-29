@@ -29,7 +29,7 @@ export function MostWatchedPeople({
   header,
 }: {
   header: string;
-  values: readonly ListItemValue[];
+  values: readonly MostWatchedPeopleListItemValue[];
 }): JSX.Element | null {
   if (values.length == 0) {
     return null;
@@ -83,7 +83,11 @@ export function MostWatchedPeople({
   );
 }
 
-function Name({ value }: { value: ListItemValue }): JSX.Element {
+function Name({
+  value,
+}: {
+  value: MostWatchedPeopleListItemValue;
+}): JSX.Element {
   if (value.slug) {
     return (
       <a className="text-accent" href={`/cast-and-crew/${value.slug}/`}>
