@@ -25,11 +25,11 @@ export async function getFluidWidthPosterImageProps(
     slug = "default";
   }
 
-  const poasterFilePath = Object.keys(images).find((path) => {
+  const posterFilePath = Object.keys(images).find((path) => {
     return path.endsWith(`${slug}.png`);
   })!;
 
-  const posterFile = await images[poasterFilePath]();
+  const posterFile = await images[posterFilePath]();
 
   const optimizedImage = await getImage({
     src: posterFile.default,
@@ -60,11 +60,11 @@ export async function getFixedWidthPosterImageProps(
     slug = "default";
   }
 
-  const poasterFilePath = Object.keys(images).find((path) => {
+  const posterFilePath = Object.keys(images).find((path) => {
     return path.endsWith(`${slug}.png`);
   })!;
 
-  const posterFile = await images[poasterFilePath]();
+  const posterFile = await images[posterFilePath]();
 
   const optimizedImage = await getImage({
     src: posterFile.default,
