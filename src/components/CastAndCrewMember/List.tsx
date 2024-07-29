@@ -1,5 +1,5 @@
 import type { CastAndCrewMember } from "src/api/castAndCrew";
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import { CreditedAs } from "src/components/CreditedAs";
 import { Grade } from "src/components/Grade";
 import { GroupedList } from "src/components/GroupedList";
@@ -26,20 +26,20 @@ export interface ListItemValue
     | "watchlistPerformerNames"
     | "watchlistWriterNames"
     | "collectionNames"
-  > {}
+  > {
+  posterImageProps: PosterImageProps;
+}
 
 export function List({
   groupedValues,
   dispatch,
   totalCount,
   visibleCount,
-  posters,
 }: {
   groupedValues: Map<string, ListItemValue[]>;
   dispatch: React.Dispatch<ActionType>;
   totalCount: number;
   visibleCount: number;
-  posters: Record<string, PosterImageData>;
 }) {
   return (
     <GroupedList
@@ -50,32 +50,20 @@ export function List({
       onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
     >
       {(value) => {
-        return (
-          <TitleListItem
-            value={value}
-            key={value.imdbId}
-            imageData={posters[value.slug || "default"]}
-          />
-        );
+        return <TitleListItem value={value} key={value.imdbId} />;
       }}
     </GroupedList>
   );
 }
 
-function TitleListItem({
-  value,
-  imageData,
-}: {
-  value: ListItemValue;
-  imageData: PosterImageData;
-}): JSX.Element {
+function TitleListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem className="items-center">
       <ListItemPoster
         slug={value.slug}
         title={value.title}
         year={value.year}
-        imageData={imageData}
+        imageProps={value.posterImageProps}
       />
       <div className="grow pr-gutter tablet:w-full desktop:pr-4">
         <div>

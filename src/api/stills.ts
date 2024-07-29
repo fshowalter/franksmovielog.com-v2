@@ -1,43 +1,47 @@
-import { basename, extname, join } from "node:path";
-
 import { getImage } from "astro:assets";
-import { normalizeSources } from "src/utils";
 
-export interface StillImageData {
+import { normalizeSources } from "./utils/normalizeSources";
+
+export interface StillImageProps {
   src: string;
   srcSet: string;
 }
 
-interface Props {
-  width: number;
-  height: number;
-}
-
-export const images = import.meta.glob<{ default: ImageMetadata }>(
+const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/stills/*.png",
 );
 
-export function getStillImagePath(slug: string) {
-  return `/${join("content", "assets", "stills")}/${slug}.png`;
+export async function getOpenGraphStillSrc(slug: string) {
+  const stillFilePath = Object.keys(images).find((path) => {
+    return path.endsWith(`${slug}.png`);
+  })!;
+
+  const stillFile = await images[stillFilePath]();
+
+  const image = await getImage({
+    src: stillFile.default,
+    width: 1200,
+    height: 675,
+    format: "jpeg",
+    quality: 80,
+  });
+
+  return normalizeSources(image.src);
 }
 
-const cache: Record<string, Record<string, StillImageData>> = {};
-
-export async function getStills({
-  width,
-  height,
-}: Props): Promise<Record<string, StillImageData>> {
-  const key = width;
-
-  if (key in cache) {
-    return cache[key];
-  }
-
-  const imageMap: Record<string, StillImageData> = {};
+export async function getStills(
+  slugs: string[],
+  { width, height }: { width: number; height: number },
+): Promise<Record<string, StillImageProps>> {
+  const imageMap: Record<string, StillImageProps> = {};
 
   await Promise.all(
-    Object.keys(images).map(async (image) => {
-      const stillFile = await images[image]();
+    slugs.map(async (slug) => {
+      const stillFilePath = Object.keys(images).find((path) => {
+        return path.endsWith(`${slug}.png`);
+      })!;
+
+      const stillFile = await images[stillFilePath]();
 
       const optimizedImage = await getImage({
         src: stillFile.default,
@@ -48,14 +52,43 @@ export async function getStills({
         quality: 80,
       });
 
-      imageMap[basename(image, extname(image))] = {
+      imageMap[slug] = {
         srcSet: normalizeSources(optimizedImage.srcSet.attribute),
         src: normalizeSources(optimizedImage.src),
       };
     }),
   );
 
-  cache[key] = imageMap;
-
   return imageMap;
+}
+
+export async function getStillImageProps(
+  slug: string,
+  {
+    width,
+    height,
+  }: {
+    width: number;
+    height: number;
+  },
+): Promise<StillImageProps> {
+  const stillFilePath = Object.keys(images).find((path) => {
+    return path.endsWith(`${slug}.png`);
+  })!;
+
+  const stillFile = await images[stillFilePath]();
+
+  const optimizedImage = await getImage({
+    src: stillFile.default,
+    width: width,
+    height: height,
+    format: "avif",
+    widths: [0.25, 0.5, 1, 2].map((w) => w * width),
+    quality: 80,
+  });
+
+  return {
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: normalizeSources(optimizedImage.src),
+  };
 }

@@ -1,12 +1,10 @@
 import rss from "@astrojs/rss";
-import { getImage } from "astro:assets";
 import {
   loadExcerptHtml,
   mostRecentReviews,
   type ReviewWithExcerpt,
 } from "src/api/reviews";
-import { getStillImagePath, images } from "src/api/stills";
-import { normalizeSources } from "src/utils";
+import { getOpenGraphStillSrc } from "src/api/stills";
 import { textStarsForGrade } from "src/utils/textStarsForGrade";
 
 function addMetaToExcerpt(excerpt: string, review: ReviewWithExcerpt) {
@@ -42,25 +40,14 @@ export async function GET() {
     // See "Generating items" section for examples using content collections and glob imports
     items: await Promise.all(
       rssItems.map(async (item) => {
-        const imagePath = getStillImagePath(item.slug);
-        const stillFile = await images[imagePath]();
-
-        const optimizedImage = await getImage({
-          src: stillFile.default,
-          width: 1200,
-          height: 675,
-          format: "jpeg",
-          quality: 80,
-        });
-
-        const still = normalizeSources(optimizedImage.src);
+        const stillSrc = await getOpenGraphStillSrc(item.slug);
 
         return {
           title: `${item.title} (${item.year})`,
           pubDate: item.date,
           link: `https://www.franksmovielog.com/reviews/${item.slug}/`,
           content: `<img src="${
-            still
+            stillSrc
           }" alt="A still from ${item.title}">${addMetaToExcerpt(
             item.excerpt,
             item,

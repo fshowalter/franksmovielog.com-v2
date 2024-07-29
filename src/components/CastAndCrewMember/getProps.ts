@@ -1,30 +1,32 @@
-import { getAvatars } from "src/api/avatars";
-import { allCastAndCrew } from "src/api/castAndCrew";
-import { getFixedWidthPosters } from "src/api/posters";
+import { getAvatarImageProps } from "src/api/avatars";
+import { castAndCrewMember } from "src/api/castAndCrew";
+import { getFixedWidthPosterImageProps } from "src/api/posters";
 import { ListItemPosterImageConfig } from "src/components/ListItemPoster";
 
 import type { Props } from "./CastAndCrewMember";
 import { AvatarImageConfig } from "./Header";
 
 export async function getProps(slug: string): Promise<Props> {
-  const { castAndCrew, distinctReleaseYears } = await allCastAndCrew();
-
-  const member = castAndCrew.find((member) => {
-    return slug == member.slug;
-  })!;
+  const { member, distinctReleaseYears } = await castAndCrewMember(slug);
 
   member.titles.sort((a, b) =>
     a.releaseSequence.localeCompare(b.releaseSequence),
   );
 
-  const posters = await getFixedWidthPosters(ListItemPosterImageConfig);
-  const avatars = await getAvatars(AvatarImageConfig);
-  const avatarImageData = avatars[member.slug];
-
   return {
     value: member,
-    posters,
-    avatarImageData,
+    titles: await Promise.all(
+      member.titles.map(async (title) => {
+        return {
+          ...title,
+          posterImageProps: await getFixedWidthPosterImageProps(
+            title.slug,
+            ListItemPosterImageConfig,
+          ),
+        };
+      }),
+    ),
+    avatarImageProps: await getAvatarImageProps(member.slug, AvatarImageConfig),
     distinctReleaseYears,
     initialSort: "release-date-asc",
   };

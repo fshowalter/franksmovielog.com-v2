@@ -1,27 +1,84 @@
-import { getFixedWidthPosters, getFluidWidthPosters } from "src/api/posters";
+import {
+  getFixedWidthPosterImageProps,
+  getFluidWidthPosterImageProps,
+} from "src/api/posters";
 import { allStatYears, statsForYear } from "src/api/yearStats";
-import { ListItemPosterImageConfig } from "src/components/ListItemPoster";
 import { MostWatchedMoviesPosterConfig } from "src/components/MostWatchedMovies";
 
-import type { Props } from "./YearStats";
+import { type Props } from "./YearStats";
 
 export async function getProps(year: string): Promise<Props> {
-  const distinctStatYears = await allStatYears();
-
   const stats = await statsForYear(year);
-
-  const mostWatchedPeoplePosters = await getFixedWidthPosters(
-    ListItemPosterImageConfig,
-  );
-  const mostWatchedMoviesPosters = await getFluidWidthPosters(
-    MostWatchedMoviesPosterConfig,
-  );
+  const distinctStatYears = await allStatYears();
 
   return {
     year,
     stats,
+    mostWatchedMovies: await Promise.all(
+      stats.mostWatchedTitles.map(async (title) => {
+        return {
+          ...title,
+          posterImageProps: await getFluidWidthPosterImageProps(
+            title.slug,
+            MostWatchedMoviesPosterConfig,
+          ),
+        };
+      }),
+    ),
+    mostWatchedDirectors: await Promise.all(
+      stats.mostWatchedDirectors.map(async (person) => {
+        return {
+          ...person,
+          viewings: await Promise.all(
+            person.viewings.map(async (viewing) => {
+              return {
+                ...viewing,
+                posterImageProps: await getFixedWidthPosterImageProps(
+                  viewing.slug,
+                  MostWatchedMoviesPosterConfig,
+                ),
+              };
+            }),
+          ),
+        };
+      }),
+    ),
+    mostWatchedPerformers: await Promise.all(
+      stats.mostWatchedPerformers.map(async (person) => {
+        return {
+          ...person,
+          viewings: await Promise.all(
+            person.viewings.map(async (viewing) => {
+              return {
+                ...viewing,
+                posterImageProps: await getFixedWidthPosterImageProps(
+                  viewing.slug,
+                  MostWatchedMoviesPosterConfig,
+                ),
+              };
+            }),
+          ),
+        };
+      }),
+    ),
+    mostWatchedWriters: await Promise.all(
+      stats.mostWatchedWriters.map(async (person) => {
+        return {
+          ...person,
+          viewings: await Promise.all(
+            person.viewings.map(async (viewing) => {
+              return {
+                ...viewing,
+                posterImageProps: await getFixedWidthPosterImageProps(
+                  viewing.slug,
+                  MostWatchedMoviesPosterConfig,
+                ),
+              };
+            }),
+          ),
+        };
+      }),
+    ),
     distinctStatYears,
-    mostWatchedMoviesPosters,
-    mostWatchedPeoplePosters,
   };
 }

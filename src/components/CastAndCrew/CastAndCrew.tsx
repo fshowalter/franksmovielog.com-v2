@@ -1,5 +1,4 @@
 import { useReducer } from "react";
-import type { AvatarImageData } from "src/api/avatars";
 import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 
 import type { Sort } from "./CastAndCrew.reducer";
@@ -11,14 +10,9 @@ import { List, type ListItemValue } from "./List";
 export interface Props {
   values: ListItemValue[];
   initialSort: Sort;
-  avatars: Record<string, AvatarImageData>;
 }
 
-export function CastAndCrew({
-  values,
-  initialSort,
-  avatars,
-}: Props): JSX.Element {
+export function CastAndCrew({ values, initialSort }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -34,7 +28,6 @@ export function CastAndCrew({
       filters={<Filters dispatch={dispatch} sortValue={state.sortValue} />}
       list={
         <List
-          avatars={avatars}
           values={state.filteredValues}
           totalCount={state.filteredValues.length}
           visibleCount={state.filteredValues.length}

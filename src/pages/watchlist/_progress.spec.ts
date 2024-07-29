@@ -2,6 +2,7 @@ import { getContainerRenderer as reactContainerRenderer } from "@astrojs/react";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import { loadRenderers } from "astro:container";
+import * as prettier from "prettier";
 import { describe, it } from "vitest";
 
 import page from "./progress.astro";
@@ -15,6 +16,8 @@ describe("/watchlist/progress", () => {
       {},
     );
 
-    void expect(result).toMatchFileSnapshot(`__snapshots__/progress.html`);
+    void expect(
+      await prettier.format(result, { parser: "html" }),
+    ).toMatchFileSnapshot(`__snapshots__/progress.html`);
   });
 });

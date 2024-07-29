@@ -1,5 +1,5 @@
 import type { Collection } from "src/api/collections";
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import { Grade } from "src/components/Grade";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
@@ -19,20 +19,20 @@ export interface ListItemValue
     | "slug"
     | "sortTitle"
     | "releaseSequence"
-  > {}
+  > {
+  posterImageProps: PosterImageProps;
+}
 
 export function List({
   groupedValues,
   dispatch,
   totalCount,
   visibleCount,
-  posters,
 }: {
   groupedValues: Map<string, ListItemValue[]>;
   dispatch: React.Dispatch<ActionType>;
   totalCount: number;
   visibleCount: number;
-  posters: Record<string, PosterImageData>;
 }) {
   return (
     <GroupedList
@@ -43,31 +43,19 @@ export function List({
       onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
     >
       {(value) => {
-        return (
-          <CollectionListItem
-            value={value}
-            key={value.imdbId}
-            imageData={posters[value.slug || "default"]}
-          />
-        );
+        return <CollectionListItem value={value} key={value.imdbId} />;
       }}
     </GroupedList>
   );
 }
 
-function CollectionListItem({
-  value,
-  imageData,
-}: {
-  value: ListItemValue;
-  imageData: PosterImageData;
-}): JSX.Element {
+function CollectionListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem className="items-center">
       <ListItemPoster
         slug={value.slug}
         title={value.title}
-        imageData={imageData}
+        imageProps={value.posterImageProps}
         year={value.year}
       />
       <div className="grow pr-gutter tablet:w-full desktop:pr-4">

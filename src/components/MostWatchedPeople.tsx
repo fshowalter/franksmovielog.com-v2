@@ -1,4 +1,4 @@
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 
 import { ListItem } from "./ListItem";
 import { ListItemMediumAndVenue } from "./ListItemMediumAndVenue";
@@ -14,9 +14,10 @@ interface ViewingSubListItemValue {
   title: string;
   year: string;
   slug: string | null;
+  posterImageProps: PosterImageProps;
 }
 
-export interface ListItemValue {
+export interface MostWatchedPeopleListItemValue {
   name: string;
   slug: string | null;
   count: number;
@@ -26,11 +27,9 @@ export interface ListItemValue {
 export function MostWatchedPeople({
   values,
   header,
-  posters,
 }: {
   header: string;
-  values: readonly ListItemValue[];
-  posters: Record<string, PosterImageData>;
+  values: readonly MostWatchedPeopleListItemValue[];
 }): JSX.Element | null {
   if (values.length == 0) {
     return null;
@@ -70,7 +69,6 @@ export function MostWatchedPeople({
                         <MostWatchedPersonViewingListItem
                           key={viewing.sequence}
                           value={viewing}
-                          imageData={posters[viewing.slug || "default"]}
                         />
                       );
                     })}
@@ -85,7 +83,11 @@ export function MostWatchedPeople({
   );
 }
 
-function Name({ value }: { value: ListItemValue }): JSX.Element {
+function Name({
+  value,
+}: {
+  value: MostWatchedPeopleListItemValue;
+}): JSX.Element {
   if (value.slug) {
     return (
       <a className="text-accent" href={`/cast-and-crew/${value.slug}/`}>
@@ -99,10 +101,8 @@ function Name({ value }: { value: ListItemValue }): JSX.Element {
 
 function MostWatchedPersonViewingListItem({
   value,
-  imageData,
 }: {
   value: ViewingSubListItemValue;
-  imageData: PosterImageData;
 }) {
   return (
     <ListItem className="items-center">
@@ -110,7 +110,7 @@ function MostWatchedPersonViewingListItem({
         slug={value.slug}
         title={value.title}
         year={value.year}
-        imageData={imageData}
+        imageProps={value.posterImageProps}
       />
       <div className="grow">
         <div>

@@ -1,11 +1,11 @@
-import type { StillImageData } from "src/api/stills";
+import type { StillImageProps } from "src/api/stills";
 
 import type { ListItemValue } from "./HomeListItem";
 import { HomeListItem } from "./HomeListItem";
 
 export interface Props {
   values: ListItemValue[];
-  stills: Record<string, StillImageData>;
+  stills: Record<string, StillImageProps>;
 }
 
 export function Home({ values, stills }: Props): JSX.Element {
@@ -18,7 +18,7 @@ export function Home({ values, stills }: Props): JSX.Element {
               key={value.sequence}
               value={value}
               eagerLoadImage={index === 0}
-              stillImageData={stills[value.slug]}
+              stillImageProps={stills[value.slug]}
             />
           );
         })}

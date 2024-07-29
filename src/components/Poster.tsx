@@ -1,10 +1,10 @@
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import { twMerge } from "tailwind-merge";
 
 interface PosterProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   title: string;
   year: string | number;
-  imageData: PosterImageData | undefined;
+  imageProps: PosterImageProps | undefined;
   sizes: string;
   width: number;
   height: number;
@@ -16,7 +16,7 @@ interface PosterProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 export function Poster({
   title,
   year,
-  imageData,
+  imageProps,
   loading = "lazy",
   decoding = "async",
   className,
@@ -24,7 +24,7 @@ export function Poster({
 }: PosterProps): JSX.Element {
   return (
     <img
-      {...imageData}
+      {...imageProps}
       alt={`A poster from ${title} (${year})`}
       {...rest}
       className={twMerge("aspect-[0.66666667]", className)}

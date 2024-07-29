@@ -13,7 +13,10 @@ export async function getProps(): Promise<Props> {
     }),
   );
 
-  const stills = await getStills(StillImageConfig);
+  const stills = await getStills(
+    titles.map((title) => title.slug),
+    StillImageConfig,
+  );
 
   return {
     values,

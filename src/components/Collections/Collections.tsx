@@ -1,5 +1,4 @@
 import { useReducer } from "react";
-import type { AvatarImageData } from "src/api/avatars";
 import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 
 import type { Sort } from "./Collections.reducer";
@@ -11,14 +10,9 @@ import { List, type ListItemValue } from "./List";
 export interface Props {
   values: readonly ListItemValue[];
   initialSort: Sort;
-  avatars: Record<string, AvatarImageData>;
 }
 
-export function Collections({
-  values,
-  initialSort,
-  avatars,
-}: Props): JSX.Element {
+export function Collections({ values, initialSort }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -37,7 +31,6 @@ export function Collections({
           values={state.filteredValues}
           totalCount={state.filteredValues.length}
           visibleCount={state.filteredValues.length}
-          avatars={avatars}
         />
       }
     />

@@ -1,4 +1,4 @@
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import { twMerge } from "tailwind-merge";
 
 import { ListItemTitle } from "./ListItemTitle";
@@ -12,20 +12,19 @@ export const MostWatchedMoviesPosterConfig = {
     "(min-width: 510px) 33vw, (min-width: 633px) 25vw, (min-width: 784px) 20vw, (min-width: 936px) 16vw, 48px",
 };
 
-interface ListItemValue {
+export interface MostWatchedMoviesListItemValue {
   imdbId: string;
   title: string;
   year: string;
   slug: string | null;
   count: number;
+  posterImageProps: PosterImageProps;
 }
 
 export function MostWatchedMovies({
   values,
-  posters,
 }: {
-  values: readonly ListItemValue[];
-  posters: Record<string, PosterImageData>;
+  values: readonly MostWatchedMoviesListItemValue[];
 }): JSX.Element | null {
   if (values.length === 0) {
     return null;
@@ -38,13 +37,7 @@ export function MostWatchedMovies({
         <div className="tablet:spacer-y-4" />
         <List>
           {values.map((value) => {
-            return (
-              <ListItem
-                value={value}
-                key={value.imdbId}
-                imageData={posters[value.slug || "default"]}
-              />
-            );
+            return <ListItem value={value} key={value.imdbId} />;
           })}
         </List>
         <div className="tablet:spacer-y-4" />
@@ -63,10 +56,8 @@ function List({ children }: { children: React.ReactNode }): JSX.Element {
 
 function ListItem({
   value,
-  imageData,
 }: {
-  value: ListItemValue;
-  imageData: PosterImageData;
+  value: MostWatchedMoviesListItemValue;
 }): JSX.Element {
   return (
     <li className="flex items-center gap-x-6 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:p-0 tablet:even:bg-unset">
@@ -74,7 +65,7 @@ function ListItem({
         title={value.title}
         year={value.year}
         slug={value.slug}
-        imageData={imageData}
+        imageProps={value.posterImageProps}
         className="shrink-0"
       />
       <div className="grow tablet:w-full">
@@ -101,13 +92,13 @@ function FluidListItemPoster({
   slug,
   year,
   className,
-  imageData,
+  imageProps,
 }: {
   title: string;
   slug: string | null;
   year: string;
   className?: string;
-  imageData: PosterImageData;
+  imageProps: PosterImageProps;
 }) {
   if (slug) {
     return (
@@ -119,7 +110,7 @@ function FluidListItemPoster({
         )}
       >
         <Poster
-          imageData={imageData}
+          imageProps={imageProps}
           title={title}
           year={year}
           width={MostWatchedMoviesPosterConfig.width}
@@ -140,7 +131,7 @@ function FluidListItemPoster({
       )}
     >
       <Poster
-        imageData={imageData}
+        imageProps={imageProps}
         title={title}
         year={year}
         width={MostWatchedMoviesPosterConfig.width}

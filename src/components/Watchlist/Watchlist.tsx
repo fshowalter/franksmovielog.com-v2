@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 
 import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
 import { Filters } from "./Filters";
@@ -15,7 +15,7 @@ export interface Props {
   distinctWriters: string[];
   distinctCollections: string[];
   distinctReleaseYears: string[];
-  defaultPosterImageData: PosterImageData;
+  defaultPosterImageProps: PosterImageProps;
 }
 
 export function Watchlist({
@@ -26,7 +26,7 @@ export function Watchlist({
   distinctWriters,
   distinctCollections,
   distinctReleaseYears,
-  defaultPosterImageData,
+  defaultPosterImageProps,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -57,7 +57,7 @@ export function Watchlist({
           visibleCount={state.showCount}
           totalCount={state.filteredValues.length}
           dispatch={dispatch}
-          defaultPosterImageData={defaultPosterImageData}
+          defaultPosterImageProps={defaultPosterImageProps}
         />
       }
     />

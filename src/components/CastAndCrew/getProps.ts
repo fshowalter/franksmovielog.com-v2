@@ -1,27 +1,32 @@
-import { getAvatars } from "src/api/avatars";
+import { getAvatarImageProps } from "src/api/avatars";
 import { allCastAndCrew } from "src/api/castAndCrew";
 import { ListItemAvatarImageConfig } from "src/components/ListItemAvatar";
 
 import type { Props } from "./CastAndCrew";
-import { type ListItemValue } from "./List";
+import type { ListItemValue } from "./List";
 
 export async function getProps(): Promise<Props> {
   const { castAndCrew } = await allCastAndCrew();
-  const avatars = await getAvatars(ListItemAvatarImageConfig);
 
   castAndCrew.sort((a, b) => a.name.localeCompare(b.name));
 
-  const values = castAndCrew.map((member) => {
-    const value: ListItemValue = {
-      name: member.name,
-      slug: member.slug,
-      reviewCount: member.reviewCount,
-      totalCount: member.totalCount,
-      creditedAs: member.creditedAs,
-    };
+  const values = await Promise.all(
+    castAndCrew.map(async (member) => {
+      const value: ListItemValue = {
+        name: member.name,
+        slug: member.slug,
+        reviewCount: member.reviewCount,
+        totalCount: member.totalCount,
+        creditedAs: member.creditedAs,
+        avatarImageProps: await getAvatarImageProps(
+          member.slug,
+          ListItemAvatarImageConfig,
+        ),
+      };
 
-    return value;
-  });
+      return value;
+    }),
+  );
 
-  return { values, avatars, initialSort: "name-asc" };
+  return { values, initialSort: "name-asc" };
 }

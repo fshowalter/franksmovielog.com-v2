@@ -1,5 +1,4 @@
 import { useReducer } from "react";
-import type { PosterImageData } from "src/api/posters";
 import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 
 import { Filters } from "./Filters";
@@ -14,7 +13,6 @@ export interface Props {
   distinctGenres: string[];
   distinctReleaseYears: string[];
   initialSort: Sort;
-  posters: Record<string, PosterImageData>;
 }
 
 export function Overrated({
@@ -22,7 +20,6 @@ export function Overrated({
   distinctGenres,
   distinctReleaseYears,
   initialSort,
-  posters,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -46,7 +43,6 @@ export function Overrated({
       }
       list={
         <List
-          posters={posters}
           dispatch={dispatch}
           groupedValues={state.groupedValues}
           visibleCount={state.showCount}

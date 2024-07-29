@@ -1,5 +1,4 @@
 import { useReducer } from "react";
-import type { PosterImageData } from "src/api/posters";
 import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 
 import { Filters } from "./Filters";
@@ -14,7 +13,6 @@ export interface Props {
   distinctGenres: readonly string[];
   distinctReleaseYears: readonly string[];
   initialSort: Sort;
-  posters: Record<string, PosterImageData>;
 }
 
 export function Underseen({
@@ -22,7 +20,6 @@ export function Underseen({
   distinctGenres,
   distinctReleaseYears,
   initialSort,
-  posters,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -47,7 +44,6 @@ export function Underseen({
       list={
         <List
           dispatch={dispatch}
-          posters={posters}
           groupedValues={state.groupedValues}
           visibleCount={state.showCount}
           totalCount={state.filteredValues.length}

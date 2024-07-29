@@ -1,12 +1,10 @@
-import { getImage } from "astro:assets";
-import { getAvatars } from "src/api/avatars";
-import { getFluidWidthPosters } from "src/api/posters";
+import { getAvatarImageProps } from "src/api/avatars";
+import { getFluidWidthPosterImageProps } from "src/api/posters";
 import { allReviews, loadContent } from "src/api/reviews";
-import { getStillImagePath, getStills, images } from "src/api/stills";
+import { getOpenGraphStillSrc, getStillImageProps } from "src/api/stills";
 import { StillListItemImageConfig } from "src/components/StillListItem";
-import { normalizeSources } from "src/utils";
 
-import { ChipAvatarImageConfig } from "./Chips";
+import { ChipAvatarImageConfig } from "./Chip";
 import { PosterImageConfig } from "./Credits";
 import { type Props, StillImageConfig } from "./Review";
 
@@ -17,36 +15,82 @@ export async function getProps(slug: string): Promise<Props> {
     return review.slug === slug;
   })!;
 
-  const value = await loadContent(review);
-
-  const imagePath = getStillImagePath(value.slug);
-  const stillFile = await images[imagePath]();
-
-  const optimizedImage = await getImage({
-    src: stillFile.default,
-    width: 1200,
-    height: 675,
-    format: "jpeg",
-    quality: 80,
-  });
-
-  const seoImageSrc = normalizeSources(optimizedImage.src);
-
-  const stills = await getStills(StillImageConfig);
-  const stillImageData = stills[value.slug];
-  const avatars = await getAvatars(ChipAvatarImageConfig);
-
-  const stillListStills = await getStills(StillListItemImageConfig);
-
-  const posters = await getFluidWidthPosters(PosterImageConfig);
-  const posterImageData = posters[value.slug];
-
   return {
-    value,
-    seoImageSrc,
-    stillImageData,
-    stillListStills,
-    posterImageData,
-    avatars,
+    value: await loadContent(review),
+    seoImageSrc: await getOpenGraphStillSrc(slug),
+    stillImageProps: await getStillImageProps(slug, StillImageConfig),
+    posterImageProps: await getFluidWidthPosterImageProps(
+      slug,
+      PosterImageConfig,
+    ),
+    castAndCrewChips: await Promise.all(
+      review.castAndCrew.map(async (value) => {
+        return {
+          ...value,
+          avatarImageProps: await getAvatarImageProps(
+            value.slug,
+            ChipAvatarImageConfig,
+          ),
+        };
+      }),
+    ),
+    collectionChips: await Promise.all(
+      review.collections.map(async (value) => {
+        return {
+          ...value,
+          avatarImageProps: await getAvatarImageProps(
+            value.slug,
+            ChipAvatarImageConfig,
+          ),
+        };
+      }),
+    ),
+    moreFromCastAndCrew: await Promise.all(
+      review.moreCastAndCrew.map(async (value) => {
+        return {
+          ...value,
+          titles: await Promise.all(
+            value.titles.map(async (title) => {
+              return {
+                ...title,
+                stillImageProps: await getStillImageProps(
+                  title.slug,
+                  StillListItemImageConfig,
+                ),
+              };
+            }),
+          ),
+        };
+      }),
+    ),
+    moreInCollections: await Promise.all(
+      review.moreCollections.map(async (value) => {
+        return {
+          ...value,
+          titles: await Promise.all(
+            value.titles.map(async (title) => {
+              return {
+                ...title,
+                stillImageProps: await getStillImageProps(
+                  title.slug,
+                  StillListItemImageConfig,
+                ),
+              };
+            }),
+          ),
+        };
+      }),
+    ),
+    moreReviews: await Promise.all(
+      review.moreReviews.map(async (value) => {
+        return {
+          ...value,
+          stillImageProps: await getStillImageProps(
+            value.slug,
+            StillListItemImageConfig,
+          ),
+        };
+      }),
+    ),
   };
 }

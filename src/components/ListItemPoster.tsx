@@ -1,4 +1,4 @@
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 
 export const ListItemPosterImageConfig = {
   width: 56,
@@ -9,12 +9,12 @@ export function ListItemPoster({
   slug,
   title,
   year,
-  imageData,
+  imageProps,
 }: {
   slug?: string | null;
   title: string;
   year: string;
-  imageData: PosterImageData;
+  imageProps: PosterImageProps;
 }) {
   if (slug) {
     return (
@@ -23,7 +23,7 @@ export function ListItemPoster({
         className="safari-border-radius-fix min-w-14 max-w-14 shrink-0 overflow-hidden rounded-lg shadow-all"
       >
         <img
-          {...imageData}
+          {...imageProps}
           alt={`A poster from ${title} (${year})`}
           width={ListItemPosterImageConfig.width}
           height={ListItemPosterImageConfig.height}
@@ -38,7 +38,7 @@ export function ListItemPoster({
   return (
     <div className="safari-border-radius-fix min-w-14 max-w-14 shrink-0 overflow-hidden rounded-lg shadow-all">
       <img
-        {...imageData}
+        {...imageProps}
         alt="An unreviewed title."
         width={ListItemPosterImageConfig.width}
         height={ListItemPosterImageConfig.height}

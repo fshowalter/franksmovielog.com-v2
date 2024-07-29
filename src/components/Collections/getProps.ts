@@ -1,4 +1,4 @@
-import { getAvatars } from "src/api/avatars";
+import { getAvatarImageProps } from "src/api/avatars";
 import { allCollections } from "src/api/collections";
 import { ListItemAvatarImageConfig } from "src/components/ListItemAvatar";
 
@@ -7,20 +7,25 @@ import { type ListItemValue } from "./List";
 
 export async function getProps(): Promise<Props> {
   const { collections } = await allCollections();
-  const avatars = await getAvatars(ListItemAvatarImageConfig);
 
   collections.sort((a, b) => a.name.localeCompare(b.name));
 
-  const listItemValues = collections.map((member) => {
-    const listItemValue: ListItemValue = {
-      name: member.name,
-      slug: member.slug,
-      reviewCount: member.reviewCount,
-      titleCount: member.titleCount,
-    };
+  const values = await Promise.all(
+    collections.map(async (collection) => {
+      const listItemValue: ListItemValue = {
+        name: collection.name,
+        slug: collection.slug,
+        reviewCount: collection.reviewCount,
+        titleCount: collection.titleCount,
+        avatarImageProps: await getAvatarImageProps(
+          collection.slug,
+          ListItemAvatarImageConfig,
+        ),
+      };
 
-    return listItemValue;
-  });
+      return listItemValue;
+    }),
+  );
 
-  return { values: listItemValues, avatars, initialSort: "name-asc" };
+  return { values, initialSort: "name-asc" };
 }

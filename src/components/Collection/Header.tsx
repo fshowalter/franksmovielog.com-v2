@@ -1,4 +1,4 @@
-import type { AvatarImageData } from "src/api/avatars";
+import type { AvatarImageProps } from "src/api/avatars";
 import type { Collection } from "src/api/collections";
 import { Avatar } from "src/components/Avatar";
 import { PageTitle } from "src/components/PageTitle";
@@ -22,13 +22,13 @@ interface Props
     Collection,
     "name" | "description" | "titleCount" | "reviewCount"
   > {
-  avatarImageData: AvatarImageData;
+  avatarImageProps: AvatarImageProps | null;
 }
 
 export function Header({
   name,
   description,
-  avatarImageData,
+  avatarImageProps,
   titleCount,
   reviewCount,
 }: Props): JSX.Element {
@@ -38,11 +38,11 @@ export function Header({
         <a href="/collections/">Collections</a>
       </div>
       <div className="spacer-y-4" />
-      {avatarImageData && (
+      {avatarImageProps && (
         <div className="flex flex-col items-center">
           <div className="safari-border-radius-fix w-[200px] max-w-[200px] overflow-hidden rounded-[50%] shadow-all">
             <Avatar
-              imageData={avatarImageData}
+              imageProps={avatarImageProps}
               name={name}
               width={AvatarImageConfig.width}
               height={AvatarImageConfig.height}

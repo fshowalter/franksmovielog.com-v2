@@ -1,5 +1,4 @@
 import { useReducer } from "react";
-import type { PosterImageData } from "src/api/posters";
 import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 
 import { Filters } from "./Filters";
@@ -17,7 +16,6 @@ export interface Props {
   distinctReleaseYears: readonly string[];
   distinctViewingYears: readonly string[];
   initialSort: Sort;
-  posters: Record<string, PosterImageData>;
 }
 
 export function Viewings({
@@ -28,7 +26,6 @@ export function Viewings({
   distinctReleaseYears,
   distinctViewingYears,
   initialSort,
-  posters,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -59,7 +56,6 @@ export function Viewings({
           groupedValues={state.groupedValues}
           totalCount={state.filteredValues.length}
           visibleCount={state.showCount}
-          posters={posters}
         />
       }
     />

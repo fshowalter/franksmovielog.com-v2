@@ -1,9 +1,10 @@
 import type { AlltimeStats } from "src/api/alltimeStats";
-import type { PosterImageData } from "src/api/posters";
 import { DecadeDistribution } from "src/components/DecadeDistribution";
 import { MediaDistribution } from "src/components/MediaDistribution";
 import { MostWatchedDirectors } from "src/components/MostWatchedDirectors";
+import type { MostWatchedMoviesListItemValue } from "src/components/MostWatchedMovies";
 import { MostWatchedMovies } from "src/components/MostWatchedMovies";
+import type { MostWatchedPeopleListItemValue } from "src/components/MostWatchedPeople";
 import { MostWatchedPerformers } from "src/components/MostWatchedPerformers";
 import { MostWatchedWriters } from "src/components/MostWatchedWriters";
 import { PageTitle } from "src/components/PageTitle";
@@ -18,25 +19,25 @@ export interface Props {
     | "decadeDistribution"
     | "gradeDistribution"
     | "mediaDistribution"
-    | "mostWatchedDirectors"
-    | "mostWatchedPerformers"
-    | "mostWatchedTitles"
-    | "mostWatchedWriters"
     | "reviewCount"
     | "titleCount"
     | "viewingCount"
     | "watchlistTitlesReviewedCount"
   >;
-  mostWatchedMoviesPosters: Record<string, PosterImageData>;
-  mostWatchedPeoplePosters: Record<string, PosterImageData>;
+  mostWatchedMovies: MostWatchedMoviesListItemValue[];
+  mostWatchedDirectors: MostWatchedPeopleListItemValue[];
+  mostWatchedPerformers: MostWatchedPeopleListItemValue[];
+  mostWatchedWriters: MostWatchedPeopleListItemValue[];
   distinctStatYears: readonly string[];
 }
 
 export function AlltimeStats({
   stats,
   distinctStatYears,
-  mostWatchedMoviesPosters,
-  mostWatchedPeoplePosters,
+  mostWatchedMovies,
+  mostWatchedDirectors,
+  mostWatchedPerformers,
+  mostWatchedWriters,
 }: Props): JSX.Element {
   return (
     <main className="flex flex-col items-center">
@@ -66,25 +67,13 @@ export function AlltimeStats({
         </div>
       </header>
       <div className="flex w-full max-w-[960px] flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin">
-        <MostWatchedMovies
-          values={stats.mostWatchedTitles}
-          posters={mostWatchedMoviesPosters}
-        />
+        <MostWatchedMovies values={mostWatchedMovies} />
         <DecadeDistribution values={stats.decadeDistribution} />
         <MediaDistribution values={stats.mediaDistribution} />
         <GradeDistribution values={stats.gradeDistribution} />
-        <MostWatchedDirectors
-          values={stats.mostWatchedDirectors}
-          posters={mostWatchedPeoplePosters}
-        />
-        <MostWatchedPerformers
-          values={stats.mostWatchedPerformers}
-          posters={mostWatchedPeoplePosters}
-        />
-        <MostWatchedWriters
-          values={stats.mostWatchedWriters}
-          posters={mostWatchedPeoplePosters}
-        />
+        <MostWatchedDirectors values={mostWatchedDirectors} />
+        <MostWatchedPerformers values={mostWatchedPerformers} />
+        <MostWatchedWriters values={mostWatchedWriters} />
       </div>
     </main>
   );

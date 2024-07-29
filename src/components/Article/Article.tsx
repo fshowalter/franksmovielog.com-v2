@@ -1,4 +1,4 @@
-import type { StillImageData } from "src/api/stills";
+import type { BackdropImageProps } from "src/api/backdrops";
 
 import { LongFormText } from "../LongFormText";
 import { PageTitle } from "../PageTitle";
@@ -7,7 +7,7 @@ import { StillListHeading } from "../StillListHeading";
 import type { StillListItemValue } from "../StillListItem";
 import { StillListNav } from "../StillListNav";
 
-export const StillImageConfig = {
+export const BackdropImageConfig = {
   width: 960,
   height: 540,
   sizes: "(min-width: 960px) 960px, 100vw",
@@ -17,18 +17,16 @@ export interface Props {
   alt: string;
   content: string | null;
   title: string;
-  imageData: StillImageData;
-  moreReviewsValues: StillListItemValue[];
-  moreReviewsStills: Record<string, StillImageData>;
+  backdropImageProps: BackdropImageProps;
+  recentReviews: StillListItemValue[];
 }
 
 export function Article({
   alt,
   title,
   content,
-  moreReviewsValues,
-  moreReviewsStills,
-  imageData,
+  recentReviews,
+  backdropImageProps,
 }: Props): JSX.Element {
   return (
     <main>
@@ -37,10 +35,10 @@ export function Article({
           {title}
         </PageTitle>
         <img
-          {...imageData}
-          width={StillImageConfig.width}
-          height={StillImageConfig.height}
-          sizes={StillImageConfig.sizes}
+          {...backdropImageProps}
+          width={BackdropImageConfig.width}
+          height={BackdropImageConfig.height}
+          sizes={BackdropImageConfig.sizes}
           loading="lazy"
           decoding="async"
           alt={alt}
@@ -60,8 +58,7 @@ export function Article({
             linkTarget={`/reviews/`}
           />
           <StillList
-            stills={moreReviewsStills}
-            values={moreReviewsValues}
+            values={recentReviews}
             seeAllLinkTarget="/reviews/"
             seeAllLinkText="Reviews"
           />

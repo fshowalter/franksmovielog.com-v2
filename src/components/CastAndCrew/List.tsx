@@ -1,4 +1,4 @@
-import type { AvatarImageData } from "src/api/avatars";
+import type { AvatarImageProps } from "src/api/avatars";
 import type { CastAndCrewMember } from "src/api/castAndCrew";
 import { CreditedAs } from "src/components/CreditedAs";
 import { ListInfo } from "src/components/ListInfo";
@@ -10,31 +10,25 @@ export interface ListItemValue
   extends Pick<
     CastAndCrewMember,
     "name" | "slug" | "totalCount" | "reviewCount" | "creditedAs"
-  > {}
+  > {
+  avatarImageProps: AvatarImageProps | null;
+}
 
 export function List({
   values,
   totalCount,
   visibleCount,
-  avatars,
 }: {
   values: readonly ListItemValue[];
   totalCount: number;
   visibleCount: number;
-  avatars: Record<string, AvatarImageData>;
 }): JSX.Element {
   return (
     <>
       <ListInfo totalCount={totalCount} visibleCount={visibleCount} />
       <ol data-testid="list">
         {values.map((value) => {
-          return (
-            <MemberListItem
-              key={value.name}
-              value={value}
-              imageData={avatars[value.slug]}
-            />
-          );
+          return <MemberListItem key={value.name} value={value} />;
         })}
       </ol>
       <div className="spacer-y-8" />
@@ -42,19 +36,13 @@ export function List({
   );
 }
 
-function MemberListItem({
-  value,
-  imageData,
-}: {
-  value: ListItemValue;
-  imageData: AvatarImageData | undefined;
-}): JSX.Element {
+function MemberListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem className="items-center">
       <ListItemAvatar
         name={value.name}
         href={`/cast-and-crew/${value.slug}/`}
-        imageData={imageData}
+        imageProps={value.avatarImageProps}
       />
       <Name value={value} />
       <ListItemCounts current={value.reviewCount} total={value.totalCount} />
