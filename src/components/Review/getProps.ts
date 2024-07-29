@@ -1,10 +1,8 @@
-import { getImage } from "astro:assets";
 import { getAvatars } from "src/api/avatars";
-import { getFluidWidthPosters } from "src/api/posters";
+import { getFluidWidthPosterImageProps } from "src/api/posters";
 import { allReviews, loadContent } from "src/api/reviews";
-import { getStillImagePath, getStills, images } from "src/api/stills";
+import { getOpenGraphStillSrc, getStill, getStills } from "src/api/stills";
 import { StillListItemImageConfig } from "src/components/StillListItem";
-import { normalizeSources } from "src/utils";
 
 import { ChipAvatarImageConfig } from "./Chips";
 import { PosterImageConfig } from "./Credits";
@@ -18,35 +16,58 @@ export async function getProps(slug: string): Promise<Props> {
   })!;
 
   const value = await loadContent(review);
+  const seoImageSrc = await getOpenGraphStillSrc(slug);
+  const stillImageProps = await getStill(slug, StillImageConfig);
 
-  const imagePath = getStillImagePath(value.slug);
-  const stillFile = await images[imagePath]();
+  const avatarSlugs = new Set<string>();
 
-  const optimizedImage = await getImage({
-    src: stillFile.default,
-    width: 1200,
-    height: 675,
-    format: "jpeg",
-    quality: 80,
+  value.castAndCrew.forEach((member) => {
+    avatarSlugs.add(member.slug);
   });
 
-  const seoImageSrc = normalizeSources(optimizedImage.src);
+  value.collections.forEach((collection) => {
+    avatarSlugs.add(collection.slug);
+  });
 
-  const stills = await getStills(StillImageConfig);
-  const stillImageData = stills[value.slug];
-  const avatars = await getAvatars(ChipAvatarImageConfig);
+  const chipAvatars = await getAvatars(
+    Array.from(avatarSlugs),
+    ChipAvatarImageConfig,
+  );
 
-  const stillListStills = await getStills(StillListItemImageConfig);
+  const moreReviewsSlugs = new Set<string>();
 
-  const posters = await getFluidWidthPosters(PosterImageConfig);
-  const posterImageData = posters[value.slug];
+  value.moreCastAndCrew.forEach((member) => {
+    member.titles.forEach((title) => {
+      moreReviewsSlugs.add(title.slug);
+    });
+  });
+
+  value.moreCollections.forEach((collection) => {
+    collection.titles.forEach((title) => {
+      moreReviewsSlugs.add(title.slug);
+    });
+  });
+
+  value.moreReviews.forEach((title) => {
+    moreReviewsSlugs.add(title.slug);
+  });
+
+  const moreReviewsStills = await getStills(
+    Array.from(moreReviewsSlugs),
+    StillListItemImageConfig,
+  );
+
+  const posterImageProps = await getFluidWidthPosterImageProps(
+    slug,
+    PosterImageConfig,
+  );
 
   return {
     value,
     seoImageSrc,
-    stillImageData,
-    stillListStills,
-    posterImageData,
-    avatars,
+    stillImageProps,
+    moreReviewsStills,
+    posterImageProps,
+    chipAvatars,
   };
 }

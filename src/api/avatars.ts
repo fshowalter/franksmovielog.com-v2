@@ -1,39 +1,39 @@
-import { basename, extname } from "node:path";
-
 import { getImage } from "astro:assets";
-import { normalizeSources } from "src/utils";
+
+import { normalizeSources } from "./utils/normalizeSources";
 
 export interface AvatarImageData {
   src: string;
   srcSet: string;
 }
 
-interface Props {
-  width: number;
-  height: number;
-}
-
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/avatars/*.png",
 );
 
-const cache: Record<string, Record<string, AvatarImageData>> = {};
-
-export async function getAvatars({
-  width,
-  height,
-}: Props): Promise<Record<string, AvatarImageData>> {
-  const key = width.toString();
-
-  if (key in cache) {
-    return cache[key];
-  }
-
+export async function getAvatars(
+  slugs: string[],
+  {
+    width,
+    height,
+  }: {
+    width: number;
+    height: number;
+  },
+): Promise<Record<string, AvatarImageData>> {
   const imageMap: Record<string, AvatarImageData> = {};
 
   await Promise.all(
-    Object.keys(images).map(async (image) => {
-      const avatarFile = await images[image]();
+    slugs.map(async (slug) => {
+      const avatarFilePath = Object.keys(images).find((path) => {
+        return path.endsWith(`${slug}.png`);
+      });
+
+      if (!avatarFilePath) {
+        return null;
+      }
+
+      const avatarFile = await images[avatarFilePath]();
 
       const optimizedImage = await getImage({
         src: avatarFile.default,
@@ -44,14 +44,12 @@ export async function getAvatars({
         quality: 80,
       });
 
-      imageMap[basename(image, extname(image))] = {
+      imageMap[slug] = {
         srcSet: normalizeSources(optimizedImage.srcSet.attribute),
         src: normalizeSources(optimizedImage.src),
       };
     }),
   );
-
-  cache[key] = imageMap;
 
   return imageMap;
 }

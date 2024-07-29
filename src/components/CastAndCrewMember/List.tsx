@@ -1,5 +1,5 @@
 import type { CastAndCrewMember } from "src/api/castAndCrew";
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import { CreditedAs } from "src/components/CreditedAs";
 import { Grade } from "src/components/Grade";
 import { GroupedList } from "src/components/GroupedList";
@@ -39,7 +39,7 @@ export function List({
   dispatch: React.Dispatch<ActionType>;
   totalCount: number;
   visibleCount: number;
-  posters: Record<string, PosterImageData>;
+  posters: Record<string, PosterImageProps>;
 }) {
   return (
     <GroupedList
@@ -67,7 +67,7 @@ function TitleListItem({
   imageData,
 }: {
   value: ListItemValue;
-  imageData: PosterImageData;
+  imageData: PosterImageProps;
 }): JSX.Element {
   return (
     <ListItem className="items-center">

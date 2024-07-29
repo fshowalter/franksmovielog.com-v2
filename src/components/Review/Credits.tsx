@@ -1,4 +1,4 @@
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import type { Review } from "src/api/reviews";
 import { Poster } from "src/components/Poster";
 import { toSentence } from "src/utils";
@@ -24,7 +24,7 @@ interface Props
   > {
   className?: string;
   children: React.ReactNode;
-  posterImageData: PosterImageData;
+  posterImageProps: PosterImageProps;
 }
 
 export function Credits({
@@ -38,7 +38,7 @@ export function Credits({
   writerNames,
   className,
   children,
-  posterImageData,
+  posterImageProps,
 }: Props): JSX.Element {
   return (
     <aside
@@ -61,7 +61,7 @@ export function Credits({
           loading="lazy"
           className="h-auto rounded-xl"
           decoding="async"
-          imageData={posterImageData}
+          imageProps={posterImageProps}
         />
       </div>
 

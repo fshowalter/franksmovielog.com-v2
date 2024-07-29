@@ -1,5 +1,5 @@
 import type { Collection } from "src/api/collections";
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import { Grade } from "src/components/Grade";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
@@ -32,7 +32,7 @@ export function List({
   dispatch: React.Dispatch<ActionType>;
   totalCount: number;
   visibleCount: number;
-  posters: Record<string, PosterImageData>;
+  posters: Record<string, PosterImageProps>;
 }) {
   return (
     <GroupedList
@@ -60,7 +60,7 @@ function CollectionListItem({
   imageData,
 }: {
   value: ListItemValue;
-  imageData: PosterImageData;
+  imageData: PosterImageProps;
 }): JSX.Element {
   return (
     <ListItem className="items-center">

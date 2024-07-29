@@ -9,7 +9,7 @@ import { twMerge } from "tailwind-merge";
 interface Props
   extends Pick<Review, "moreCastAndCrew" | "moreCollections" | "moreReviews"> {
   className?: string;
-  stillListStills: Record<string, StillImageData>;
+  stills: Record<string, StillImageData>;
 }
 
 export function MoreReviews({
@@ -17,7 +17,7 @@ export function MoreReviews({
   moreCollections,
   moreReviews,
   className,
-  stillListStills,
+  stills,
 }: Props) {
   return (
     <div
@@ -33,7 +33,7 @@ export function MoreReviews({
           linkText={castAndCrewMember.name}
           linkTarget={`/cast-and-crew/${castAndCrewMember.slug}`}
           values={castAndCrewMember.titles}
-          stills={stillListStills}
+          stills={stills}
         />
       ))}
 
@@ -44,7 +44,7 @@ export function MoreReviews({
           linkText={collection.name}
           linkTarget={`/collections/${collection.slug}`}
           values={collection.titles}
-          stills={stillListStills}
+          stills={stills}
         />
       ))}
 
@@ -53,7 +53,7 @@ export function MoreReviews({
         linkText="Reviews"
         linkTarget="/reviews/"
         values={moreReviews}
-        stills={stillListStills}
+        stills={stills}
       />
     </div>
   );
@@ -86,7 +86,7 @@ function MoreReviewsList({
   leadText: string;
   linkText: string;
   linkTarget: string;
-  values: StillListItemValue[];
+  values: Omit<StillListItemValue, "stillImageProps">[];
   stills: Record<string, StillImageData>;
 }) {
   return (
@@ -97,10 +97,14 @@ function MoreReviewsList({
         linkTarget={linkTarget}
       />
       <StillList
-        values={values}
+        values={values.map((value) => {
+          return {
+            ...value,
+            stillImageProps: stills[value.slug],
+          };
+        })}
         seeAllLinkTarget={linkTarget}
         seeAllLinkText={linkText}
-        stills={stills}
       />
     </StillListNav>
   );

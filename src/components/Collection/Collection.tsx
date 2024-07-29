@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import type { AvatarImageData } from "src/api/avatars";
 import type { Collection } from "src/api/collections";
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 
 import { initState, reducer, type Sort } from "./Collection.reducer";
@@ -17,7 +17,7 @@ export interface Props {
   distinctReleaseYears: readonly string[];
   initialSort: Sort;
   avatarImageData: AvatarImageData;
-  posters: Record<string, PosterImageData>;
+  posters: Record<string, PosterImageProps>;
 }
 
 export function Collection({

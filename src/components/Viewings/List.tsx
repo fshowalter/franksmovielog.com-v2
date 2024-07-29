@@ -1,4 +1,4 @@
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import type { Viewing } from "src/api/viewings";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
@@ -26,6 +26,7 @@ export interface ListItemValue
   > {
   viewingMonth: string;
   viewingDay: string;
+  posterImageProps: PosterImageProps;
 }
 
 export function List({
@@ -33,12 +34,10 @@ export function List({
   visibleCount,
   totalCount,
   dispatch,
-  posters,
 }: {
   groupedValues: Map<string, Map<string, ListItemValue[]>>;
   visibleCount: number;
   totalCount: number;
-  posters: Record<string, PosterImageData>;
   dispatch: React.Dispatch<ActionType>;
 }) {
   return (
@@ -55,7 +54,6 @@ export function List({
           <DateListItem
             values={values}
             key={dayAndDate}
-            posters={posters}
             dayAndDate={dayAndDate}
           />
         );
@@ -67,11 +65,9 @@ export function List({
 function DateListItem({
   dayAndDate,
   values,
-  posters,
 }: {
   dayAndDate: string;
   values: ListItemValue[];
-  posters: Record<string, PosterImageData>;
 }): JSX.Element {
   const [day, date] = dayAndDate.split("-");
 
@@ -88,33 +84,21 @@ function DateListItem({
       </div>
       <ul className="flex grow flex-col gap-y-4">
         {values.map((value) => {
-          return (
-            <SubListItem
-              value={value}
-              key={value.sequence}
-              imageData={posters[value.slug || "default"]}
-            />
-          );
+          return <SubListItem value={value} key={value.sequence} />;
         })}
       </ul>
     </ListItem>
   );
 }
 
-function SubListItem({
-  value,
-  imageData,
-}: {
-  value: ListItemValue;
-  imageData: PosterImageData;
-}): JSX.Element {
+function SubListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem className="items-center pt-0 shadow-bottom even:bg-unset last-of-type:shadow-none">
       <ListItemPoster
         slug={value.slug}
         title={value.title}
         year={value.year}
-        imageData={imageData}
+        imageProps={value.posterImageProps}
       />
       <div className="grow">
         <div>

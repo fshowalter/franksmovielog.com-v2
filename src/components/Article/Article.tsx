@@ -1,10 +1,10 @@
+import type { Review } from "src/api/reviews";
 import type { StillImageData } from "src/api/stills";
 
 import { LongFormText } from "../LongFormText";
 import { PageTitle } from "../PageTitle";
 import { StillList } from "../StillList";
 import { StillListHeading } from "../StillListHeading";
-import type { StillListItemValue } from "../StillListItem";
 import { StillListNav } from "../StillListNav";
 
 export const StillImageConfig = {
@@ -17,8 +17,8 @@ export interface Props {
   alt: string;
   content: string | null;
   title: string;
-  imageData: StillImageData;
-  moreReviewsValues: StillListItemValue[];
+  backdropImageProps: StillImageData;
+  moreReviewsValues: Review[];
   moreReviewsStills: Record<string, StillImageData>;
 }
 
@@ -28,7 +28,7 @@ export function Article({
   content,
   moreReviewsValues,
   moreReviewsStills,
-  imageData,
+  backdropImageProps,
 }: Props): JSX.Element {
   return (
     <main>
@@ -37,7 +37,7 @@ export function Article({
           {title}
         </PageTitle>
         <img
-          {...imageData}
+          {...backdropImageProps}
           width={StillImageConfig.width}
           height={StillImageConfig.height}
           sizes={StillImageConfig.sizes}
@@ -60,8 +60,12 @@ export function Article({
             linkTarget={`/reviews/`}
           />
           <StillList
-            stills={moreReviewsStills}
-            values={moreReviewsValues}
+            values={moreReviewsValues.map((value) => {
+              return {
+                ...value,
+                stillImageProps: moreReviewsStills[value.slug],
+              };
+            })}
             seeAllLinkTarget="/reviews/"
             seeAllLinkText="Reviews"
           />

@@ -1,5 +1,5 @@
 import type { AvatarImageData } from "src/api/avatars";
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import type { Review, ReviewWithContent } from "src/api/reviews";
 import type { StillImageData } from "src/api/stills";
 import { Still } from "src/components/Still";
@@ -20,20 +20,20 @@ export const StillImageConfig = {
 
 export interface Props {
   value: ReviewWithContent;
-  stillImageData: StillImageData;
-  posterImageData: PosterImageData;
-  avatars: Record<string, AvatarImageData>;
-  stillListStills: Record<string, StillImageData>;
+  stillImageProps: StillImageData;
+  posterImageProps: PosterImageProps;
+  chipAvatars: Record<string, AvatarImageData>;
+  moreReviewsStills: Record<string, StillImageData>;
   seoImageSrc: string;
 }
 
 export function Review({
   value,
-  stillImageData,
-  posterImageData,
-  avatars,
+  stillImageProps,
+  posterImageProps,
+  chipAvatars,
   seoImageSrc,
-  stillListStills,
+  moreReviewsStills,
 }: Props): JSX.Element {
   return (
     <main
@@ -55,7 +55,7 @@ export function Review({
         height={StillImageConfig.height}
         sizes={StillImageConfig.sizes}
         className="mb-[5.33px]"
-        imageData={stillImageData}
+        imageProps={stillImageProps}
         loading="eager"
         decoding="sync"
       />
@@ -81,13 +81,13 @@ export function Review({
         originalTitle={value.originalTitle}
         runtimeMinutes={value.runtimeMinutes}
         countries={value.countries}
-        posterImageData={posterImageData}
+        posterImageProps={posterImageProps}
         className="w-full max-w-popout"
       >
         <Chips
           castAndCrew={value.castAndCrew}
           collections={value.collections}
-          avatars={avatars}
+          avatars={chipAvatars}
         />
       </Credits>
       <div className="spacer-y-32" />
@@ -95,7 +95,7 @@ export function Review({
         moreCastAndCrew={value.moreCastAndCrew}
         moreCollections={value.moreCollections}
         moreReviews={value.moreReviews}
-        stillListStills={stillListStills}
+        stills={moreReviewsStills}
         className="w-full max-w-popout tablet:max-w-full"
       />
       <div className="spacer-y-32 tablet:spacer-y-0" />

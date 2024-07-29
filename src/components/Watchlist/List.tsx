@@ -1,4 +1,4 @@
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import type { WatchlistTitle } from "src/api/watchlistTitles";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
@@ -29,13 +29,13 @@ export function List({
   dispatch,
   totalCount,
   visibleCount,
-  defaultPosterImageData,
+  defaultPosterImageProps,
 }: {
   groupedValues: Map<string, ListItemValue[]>;
   dispatch: React.Dispatch<ActionType>;
   totalCount: number;
   visibleCount: number;
-  defaultPosterImageData: PosterImageData;
+  defaultPosterImageProps: PosterImageProps;
 }) {
   return (
     <GroupedList
@@ -50,7 +50,7 @@ export function List({
           <WatchlistTitle
             value={value}
             key={value.imdbId}
-            defaultPosterImageData={defaultPosterImageData}
+            defaultPosterImageProps={defaultPosterImageProps}
           />
         );
       }}
@@ -60,17 +60,17 @@ export function List({
 
 function WatchlistTitle({
   value,
-  defaultPosterImageData,
+  defaultPosterImageProps,
 }: {
   value: ListItemValue;
-  defaultPosterImageData: PosterImageData;
+  defaultPosterImageProps: PosterImageProps;
 }): JSX.Element {
   return (
     <ListItem className="items-center">
       <ListItemPoster
         title={value.title}
         year={value.year}
-        imageData={defaultPosterImageData}
+        imageProps={defaultPosterImageProps}
       />
       <div className="flex-1 pr-gutter tablet:w-full desktop:pr-4">
         <div>

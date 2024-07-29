@@ -4,7 +4,7 @@ import { twJoin } from "tailwind-merge";
 interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
   title: string;
   year: string | number;
-  imageData: StillImageData;
+  imageProps: StillImageData;
   sizes: string;
   width: number;
   height: number;
@@ -16,7 +16,7 @@ interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
 export function Still({
   title,
   year,
-  imageData,
+  imageProps,
   loading = "lazy",
   decoding = "async",
   className,
@@ -24,7 +24,7 @@ export function Still({
 }: Props): JSX.Element {
   return (
     <img
-      {...imageData}
+      {...imageProps}
       alt={`A still from ${title} (${year})`}
       loading={loading}
       decoding={decoding}

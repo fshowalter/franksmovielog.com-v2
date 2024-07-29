@@ -1,4 +1,4 @@
-import { getFixedWidthPosters } from "src/api/posters";
+import { getFixedWidthPosterImageProps } from "src/api/posters";
 import { allWatchlistTitles } from "src/api/watchlistTitles";
 import { ListItemPosterImageConfig } from "src/components/ListItemPoster";
 
@@ -14,8 +14,10 @@ export async function getProps(): Promise<Props> {
     distinctWriters,
   } = await allWatchlistTitles();
 
-  const posters = await getFixedWidthPosters(ListItemPosterImageConfig);
-  const defaultPosterImageData = posters["default"];
+  const defaultPosterImageProps = await getFixedWidthPosterImageProps(
+    "default",
+    ListItemPosterImageConfig,
+  );
 
   watchlistTitles.sort((a, b) =>
     a.releaseSequence.localeCompare(b.releaseSequence),
@@ -28,7 +30,7 @@ export async function getProps(): Promise<Props> {
     distinctPerformers,
     distinctWriters,
     distinctReleaseYears,
-    defaultPosterImageData,
+    defaultPosterImageProps,
     initialSort: "release-date-asc",
   };
 }

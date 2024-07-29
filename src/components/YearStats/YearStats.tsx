@@ -1,9 +1,10 @@
-import type { PosterImageData } from "src/api/posters";
 import type { YearStats } from "src/api/yearStats";
 import { DecadeDistribution } from "src/components/DecadeDistribution";
 import { MediaDistribution } from "src/components/MediaDistribution";
 import { MostWatchedDirectors } from "src/components/MostWatchedDirectors";
+import type { MostWatchedMoviesListItemValue } from "src/components/MostWatchedMovies";
 import { MostWatchedMovies } from "src/components/MostWatchedMovies";
+import type { MostWatchedPeopleListItemValue } from "src/components/MostWatchedPeople";
 import { MostWatchedPerformers } from "src/components/MostWatchedPerformers";
 import { MostWatchedWriters } from "src/components/MostWatchedWriters";
 import { PageTitle } from "src/components/PageTitle";
@@ -15,16 +16,20 @@ export interface Props {
   year: string;
   stats: YearStats;
   distinctStatYears: readonly string[];
-  mostWatchedMoviesPosters: Record<string, PosterImageData>;
-  mostWatchedPeoplePosters: Record<string, PosterImageData>;
+  mostWatchedMovies: MostWatchedMoviesListItemValue[];
+  mostWatchedDirectors: MostWatchedPeopleListItemValue[];
+  mostWatchedPerformers: MostWatchedPeopleListItemValue[];
+  mostWatchedWriters: MostWatchedPeopleListItemValue[];
 }
 
 export function YearStats({
   year,
   stats,
   distinctStatYears,
-  mostWatchedMoviesPosters,
-  mostWatchedPeoplePosters,
+  mostWatchedMovies,
+  mostWatchedDirectors,
+  mostWatchedPerformers,
+  mostWatchedWriters,
 }: Props): JSX.Element {
   return (
     <main className="flex flex-col items-center">
@@ -59,24 +64,12 @@ export function YearStats({
         </div>
       </header>
       <div className="flex w-full max-w-[960px] flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin">
-        <MostWatchedMovies
-          posters={mostWatchedMoviesPosters}
-          values={stats.mostWatchedTitles}
-        />
+        <MostWatchedMovies values={mostWatchedMovies} />
         <DecadeDistribution values={stats.decadeDistribution} />
         <MediaDistribution values={stats.mediaDistribution} />
-        <MostWatchedDirectors
-          posters={mostWatchedPeoplePosters}
-          values={stats.mostWatchedDirectors}
-        />
-        <MostWatchedPerformers
-          posters={mostWatchedPeoplePosters}
-          values={stats.mostWatchedPerformers}
-        />
-        <MostWatchedWriters
-          posters={mostWatchedPeoplePosters}
-          values={stats.mostWatchedWriters}
-        />
+        <MostWatchedDirectors values={mostWatchedDirectors} />
+        <MostWatchedPerformers values={mostWatchedPerformers} />
+        <MostWatchedWriters values={mostWatchedWriters} />
       </div>
     </main>
   );

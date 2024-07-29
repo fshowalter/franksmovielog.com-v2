@@ -19,7 +19,7 @@ export function TableHead({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <thead className="sticky top-10 z-10 bg-default px-6 leading-[calc(2.5rem_-_2px)] desktop:top-[calc(160px_+_2.5rem)] max:top-[calc(128px_+_2.5rem)]">
+    <thead className="sticky top-10 z-10 bg-default px-6 leading-[calc(2.5rem_-_2px)] desktop:top-[calc(var(--header-offset)_+_2.5rem)] max:top-[calc(var(--header-offset)_+_2.5rem)]">
       {children}
     </thead>
   );

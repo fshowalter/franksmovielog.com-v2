@@ -17,15 +17,10 @@ export interface StillListItemValue {
   slug: string;
   year: string;
   genres: string[];
+  stillImageProps: StillImageData;
 }
 
-export function StillListItem({
-  value,
-  imageData,
-}: {
-  value: StillListItemValue;
-  imageData: StillImageData;
-}) {
+export function StillListItem({ value }: { value: StillListItemValue }) {
   return (
     <li className="flow-root w-full px-gutter py-6 even:bg-subtle tablet:grid tablet:max-w-[312px] tablet:grid-rows-[auto_auto_1fr_auto] tablet:gap-y-2 tablet:overflow-hidden tablet:rounded-lg tablet:bg-default tablet:p-0 tablet:pb-8 tablet:shadow-all tablet:shadow-border tablet:even:bg-default">
       <div className="row-start-1 row-end-1">
@@ -36,7 +31,7 @@ export function StillListItem({
           <Still
             title={value.title}
             year={value.year}
-            imageData={imageData}
+            imageProps={value.stillImageProps}
             width={StillListItemImageConfig.width}
             height={StillListItemImageConfig.height}
             className="h-auto"

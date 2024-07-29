@@ -1,4 +1,4 @@
-import type { PosterImageData } from "src/api/posters";
+import type { PosterImageProps } from "src/api/posters";
 import type { UnderseenGem } from "src/api/underseenGems";
 import { Grade } from "src/components/Grade";
 import { GroupedList } from "src/components/GroupedList";
@@ -22,20 +22,20 @@ export interface ListItemValue
     | "gradeValue"
     | "imdbId"
     | "genres"
-  > {}
+  > {
+  posterImageProps: PosterImageProps;
+}
 
 export function List({
   groupedValues,
   totalCount,
   visibleCount,
   dispatch,
-  posters,
 }: {
   groupedValues: Map<string, ListItemValue[]>;
   totalCount: number;
   visibleCount: number;
   dispatch: React.Dispatch<ActionType>;
-  posters: Record<string, PosterImageData>;
 }) {
   return (
     <GroupedList
@@ -45,23 +45,15 @@ export function List({
       totalCount={totalCount}
       onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
     >
-      {(value) => (
-        <UnderseenGemsListItem
-          value={value}
-          key={value.imdbId}
-          imageData={posters[value.slug]}
-        />
-      )}
+      {(value) => <UnderseenGemsListItem value={value} key={value.imdbId} />}
     </GroupedList>
   );
 }
 
 function UnderseenGemsListItem({
   value,
-  imageData,
 }: {
   value: ListItemValue;
-  imageData: PosterImageData;
 }): JSX.Element {
   return (
     <ListItem className="items-center">
@@ -69,7 +61,7 @@ function UnderseenGemsListItem({
         slug={value.slug}
         title={value.title}
         year={value.year}
-        imageData={imageData}
+        imageProps={value.posterImageProps}
       />
       <div className="grow pr-gutter tablet:w-full desktop:pr-4">
         <div>

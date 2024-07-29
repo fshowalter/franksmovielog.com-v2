@@ -1,3 +1,4 @@
+import { getBackdrop } from "src/api/backdrops";
 import { getPage } from "src/api/pages";
 import { mostRecentReviews } from "src/api/reviews";
 import { getStills } from "src/api/stills";
@@ -17,17 +18,19 @@ export async function getProps({
 
   const moreReviewsValues = await mostRecentReviews(4);
 
-  const stills = await getStills(StillImageConfig);
-  const imageData = stills[slug];
+  const backdropImageProps = await getBackdrop(slug, StillImageConfig);
 
-  const moreReviewsStills = await getStills(StillListItemImageConfig);
+  const moreReviewsStills = await getStills(
+    moreReviewsValues.map((value) => value.slug),
+    StillListItemImageConfig,
+  );
 
   return {
     title,
     content,
     alt,
     moreReviewsStills,
-    imageData,
+    backdropImageProps,
     moreReviewsValues,
   };
 }

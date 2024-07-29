@@ -38,11 +38,11 @@ export interface ListItemValue
 export function HomeListItem({
   value,
   eagerLoadImage,
-  stillImageData,
+  stillImageProps: stillImageData,
 }: {
   value: ListItemValue;
   eagerLoadImage: boolean;
-  stillImageData: StillImageData | undefined;
+  stillImageProps: StillImageData | undefined;
 }) {
   return (
     <li className="flex even:bg-subtle">
@@ -62,7 +62,7 @@ export function HomeListItem({
               width={StillImageConfig.width}
               height={StillImageConfig.height}
               sizes={StillImageConfig.sizes}
-              imageData={stillImageData}
+              imageProps={stillImageData}
               loading={eagerLoadImage ? "eager" : "lazy"}
               className="h-auto rounded-xl"
               decoding={eagerLoadImage ? "sync" : "async"}

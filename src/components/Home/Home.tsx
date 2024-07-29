@@ -18,7 +18,7 @@ export function Home({ values, stills }: Props): JSX.Element {
               key={value.sequence}
               value={value}
               eagerLoadImage={index === 0}
-              stillImageData={stills[value.slug]}
+              stillImageProps={stills[value.slug]}
             />
           );
         })}
