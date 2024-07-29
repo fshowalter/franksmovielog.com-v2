@@ -498,7 +498,7 @@ exports[`Review > matches snapshot for slug 'event-horizon-1997' 1`] = `
       class="spacer-y-32"
     />
     <div
-      class="flex flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24 w-full max-w-popout tablet:max-w-full"
+      class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -846,7 +846,7 @@ exports[`Review > matches snapshot for slug 'event-horizon-1997' 1`] = `
     <script
       type="application/ld+json"
     >
-      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"Event Horizon","sameAs":"http://www.imdb.com/title/tt0119081/","image":"/_image?href=%2F%40fs%2FUsers%2Ffrank%2FDeveloper%2Ffranksmovielog.com%2Fcontent%2Fassets%2Fstills%2Fevent-horizon-1997.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1997","director":{"@type":"Person","name":"Paul W.S. Anderson"}},"reviewRating":{"@type":"Rating","ratingValue":4},"author":{"@type":"Person","name":"Frank Showalter"}}
+      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"Event Horizon","sameAs":"http://www.imdb.com/title/tt0119081/","image":"/_image?/content%2Fassets%2Fstills%2Fevent-horizon-1997.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1997","director":{"@type":"Person","name":"Paul W.S. Anderson"}},"reviewRating":{"@type":"Rating","ratingValue":4},"author":{"@type":"Person","name":"Frank Showalter"}}
     </script>
   </main>
 </DocumentFragment>
@@ -1278,7 +1278,7 @@ exports[`Review > matches snapshot for slug 'hellraiser-1987' 1`] = `
       class="spacer-y-32"
     />
     <div
-      class="flex flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24 w-full max-w-popout tablet:max-w-full"
+      class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -1935,7 +1935,7 @@ exports[`Review > matches snapshot for slug 'hellraiser-1987' 1`] = `
     <script
       type="application/ld+json"
     >
-      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"Hellraiser","sameAs":"http://www.imdb.com/title/tt0093177/","image":"/_image?href=%2F%40fs%2FUsers%2Ffrank%2FDeveloper%2Ffranksmovielog.com%2Fcontent%2Fassets%2Fstills%2Fhellraiser-1987.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1987","director":{"@type":"Person","name":"Clive Barker"}},"reviewRating":{"@type":"Rating","ratingValue":5},"author":{"@type":"Person","name":"Frank Showalter"}}
+      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"Hellraiser","sameAs":"http://www.imdb.com/title/tt0093177/","image":"/_image?/content%2Fassets%2Fstills%2Fhellraiser-1987.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1987","director":{"@type":"Person","name":"Clive Barker"}},"reviewRating":{"@type":"Rating","ratingValue":5},"author":{"@type":"Person","name":"Frank Showalter"}}
     </script>
   </main>
 </DocumentFragment>
@@ -2439,7 +2439,7 @@ exports[`Review > matches snapshot for slug 'horror-express-1972' 1`] = `
       class="spacer-y-32"
     />
     <div
-      class="flex flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24 w-full max-w-popout tablet:max-w-full"
+      class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -3393,7 +3393,7 @@ exports[`Review > matches snapshot for slug 'horror-express-1972' 1`] = `
     <script
       type="application/ld+json"
     >
-      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"Horror Express","sameAs":"http://www.imdb.com/title/tt0068713/","image":"/_image?href=%2F%40fs%2FUsers%2Ffrank%2FDeveloper%2Ffranksmovielog.com%2Fcontent%2Fassets%2Fstills%2Fhorror-express-1972.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1972","director":{"@type":"Person","name":"Eugenio Martín"}},"reviewRating":{"@type":"Rating","ratingValue":2},"author":{"@type":"Person","name":"Frank Showalter"}}
+      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"Horror Express","sameAs":"http://www.imdb.com/title/tt0068713/","image":"/_image?/content%2Fassets%2Fstills%2Fhorror-express-1972.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1972","director":{"@type":"Person","name":"Eugenio Martín"}},"reviewRating":{"@type":"Rating","ratingValue":2},"author":{"@type":"Person","name":"Frank Showalter"}}
     </script>
   </main>
 </DocumentFragment>
@@ -3993,7 +3993,7 @@ exports[`Review > matches snapshot for slug 'night-train-to-terror-1985' 1`] = `
       class="spacer-y-32"
     />
     <div
-      class="flex flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24 w-full max-w-popout tablet:max-w-full"
+      class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -4326,7 +4326,7 @@ exports[`Review > matches snapshot for slug 'night-train-to-terror-1985' 1`] = `
     <script
       type="application/ld+json"
     >
-      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"Night Train to Terror","sameAs":"http://www.imdb.com/title/tt0087798/","image":"/_image?href=%2F%40fs%2FUsers%2Ffrank%2FDeveloper%2Ffranksmovielog.com%2Fcontent%2Fassets%2Fstills%2Fnight-train-to-terror-1985.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1985","director":{"@type":"Person","name":"John Carr"}},"reviewRating":{"@type":"Rating","ratingValue":3},"author":{"@type":"Person","name":"Frank Showalter"}}
+      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"Night Train to Terror","sameAs":"http://www.imdb.com/title/tt0087798/","image":"/_image?/content%2Fassets%2Fstills%2Fnight-train-to-terror-1985.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1985","director":{"@type":"Person","name":"John Carr"}},"reviewRating":{"@type":"Rating","ratingValue":3},"author":{"@type":"Person","name":"Frank Showalter"}}
     </script>
   </main>
 </DocumentFragment>
@@ -4963,7 +4963,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
       class="spacer-y-32"
     />
     <div
-      class="flex flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24 w-full max-w-popout tablet:max-w-full"
+      class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -6283,7 +6283,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
     <script
       type="application/ld+json"
     >
-      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"Rio Bravo","sameAs":"http://www.imdb.com/title/tt0053221/","image":"/_image?href=%2F%40fs%2FUsers%2Ffrank%2FDeveloper%2Ffranksmovielog.com%2Fcontent%2Fassets%2Fstills%2Frio-bravo-1959.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1959","director":{"@type":"Person","name":"Howard Hawks"}},"reviewRating":{"@type":"Rating","ratingValue":5},"author":{"@type":"Person","name":"Frank Showalter"}}
+      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"Rio Bravo","sameAs":"http://www.imdb.com/title/tt0053221/","image":"/_image?/content%2Fassets%2Fstills%2Frio-bravo-1959.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1959","director":{"@type":"Person","name":"Howard Hawks"}},"reviewRating":{"@type":"Rating","ratingValue":5},"author":{"@type":"Person","name":"Frank Showalter"}}
     </script>
   </main>
 </DocumentFragment>
@@ -6787,7 +6787,7 @@ exports[`Review > matches snapshot for slug 'the-curse-of-frankenstein-1957' 1`]
       class="spacer-y-32"
     />
     <div
-      class="flex flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24 w-full max-w-popout tablet:max-w-full"
+      class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -8077,7 +8077,7 @@ exports[`Review > matches snapshot for slug 'the-curse-of-frankenstein-1957' 1`]
     <script
       type="application/ld+json"
     >
-      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"The Curse of Frankenstein","sameAs":"http://www.imdb.com/title/tt0050280/","image":"/_image?href=%2F%40fs%2FUsers%2Ffrank%2FDeveloper%2Ffranksmovielog.com%2Fcontent%2Fassets%2Fstills%2Fthe-curse-of-frankenstein-1957.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1957","director":{"@type":"Person","name":"Terence Fisher"}},"reviewRating":{"@type":"Rating","ratingValue":5},"author":{"@type":"Person","name":"Frank Showalter"}}
+      {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"The Curse of Frankenstein","sameAs":"http://www.imdb.com/title/tt0050280/","image":"/_image?/content%2Fassets%2Fstills%2Fthe-curse-of-frankenstein-1957.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&w=1200&h=675&q=80&f=jpeg","dateCreated":"1957","director":{"@type":"Person","name":"Terence Fisher"}},"reviewRating":{"@type":"Rating","ratingValue":5},"author":{"@type":"Person","name":"Frank Showalter"}}
     </script>
   </main>
 </DocumentFragment>

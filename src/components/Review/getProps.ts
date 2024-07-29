@@ -1,10 +1,10 @@
-import { getAvatars } from "src/api/avatars";
+import { getAvatarImageProps } from "src/api/avatars";
 import { getFluidWidthPosterImageProps } from "src/api/posters";
 import { allReviews, loadContent } from "src/api/reviews";
-import { getOpenGraphStillSrc, getStill, getStills } from "src/api/stills";
+import { getOpenGraphStillSrc, getStillImageProps } from "src/api/stills";
 import { StillListItemImageConfig } from "src/components/StillListItem";
 
-import { ChipAvatarImageConfig } from "./Chips";
+import { ChipAvatarImageConfig } from "./Chip";
 import { PosterImageConfig } from "./Credits";
 import { type Props, StillImageConfig } from "./Review";
 
@@ -15,59 +15,82 @@ export async function getProps(slug: string): Promise<Props> {
     return review.slug === slug;
   })!;
 
-  const value = await loadContent(review);
-  const seoImageSrc = await getOpenGraphStillSrc(slug);
-  const stillImageProps = await getStill(slug, StillImageConfig);
-
-  const avatarSlugs = new Set<string>();
-
-  value.castAndCrew.forEach((member) => {
-    avatarSlugs.add(member.slug);
-  });
-
-  value.collections.forEach((collection) => {
-    avatarSlugs.add(collection.slug);
-  });
-
-  const chipAvatars = await getAvatars(
-    Array.from(avatarSlugs),
-    ChipAvatarImageConfig,
-  );
-
-  const moreReviewsSlugs = new Set<string>();
-
-  value.moreCastAndCrew.forEach((member) => {
-    member.titles.forEach((title) => {
-      moreReviewsSlugs.add(title.slug);
-    });
-  });
-
-  value.moreCollections.forEach((collection) => {
-    collection.titles.forEach((title) => {
-      moreReviewsSlugs.add(title.slug);
-    });
-  });
-
-  value.moreReviews.forEach((title) => {
-    moreReviewsSlugs.add(title.slug);
-  });
-
-  const moreReviewsStills = await getStills(
-    Array.from(moreReviewsSlugs),
-    StillListItemImageConfig,
-  );
-
-  const posterImageProps = await getFluidWidthPosterImageProps(
-    slug,
-    PosterImageConfig,
-  );
-
   return {
-    value,
-    seoImageSrc,
-    stillImageProps,
-    moreReviewsStills,
-    posterImageProps,
-    chipAvatars,
+    value: await loadContent(review),
+    seoImageSrc: await getOpenGraphStillSrc(slug),
+    stillImageProps: await getStillImageProps(slug, StillImageConfig),
+    posterImageProps: await getFluidWidthPosterImageProps(
+      slug,
+      PosterImageConfig,
+    ),
+    castAndCrewChips: await Promise.all(
+      review.castAndCrew.map(async (value) => {
+        return {
+          ...value,
+          avatarImageProps: await getAvatarImageProps(
+            value.slug,
+            ChipAvatarImageConfig,
+          ),
+        };
+      }),
+    ),
+    collectionChips: await Promise.all(
+      review.collections.map(async (value) => {
+        return {
+          ...value,
+          avatarImageProps: await getAvatarImageProps(
+            value.slug,
+            ChipAvatarImageConfig,
+          ),
+        };
+      }),
+    ),
+    moreFromCastAndCrew: await Promise.all(
+      review.moreCastAndCrew.map(async (value) => {
+        return {
+          ...value,
+          titles: await Promise.all(
+            value.titles.map(async (title) => {
+              return {
+                ...title,
+                stillImageProps: await getStillImageProps(
+                  title.slug,
+                  StillListItemImageConfig,
+                ),
+              };
+            }),
+          ),
+        };
+      }),
+    ),
+    moreInCollections: await Promise.all(
+      review.moreCollections.map(async (value) => {
+        return {
+          ...value,
+          titles: await Promise.all(
+            value.titles.map(async (title) => {
+              return {
+                ...title,
+                stillImageProps: await getStillImageProps(
+                  title.slug,
+                  StillListItemImageConfig,
+                ),
+              };
+            }),
+          ),
+        };
+      }),
+    ),
+    moreReviews: await Promise.all(
+      review.moreReviews.map(async (value) => {
+        return {
+          ...value,
+          stillImageProps: await getStillImageProps(
+            value.slug,
+            StillListItemImageConfig,
+          ),
+        };
+      }),
+    ),
   };
 }

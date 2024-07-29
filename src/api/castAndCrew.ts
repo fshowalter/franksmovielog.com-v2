@@ -3,14 +3,12 @@ import {
   type CastAndCrewMemberJson,
 } from "./data/castAndCrewJson";
 
-interface CastAndCrew {
-  castAndCrew: CastAndCrewMember[];
-  distinctReleaseYears: string[];
-}
-
 export interface CastAndCrewMember extends CastAndCrewMemberJson {}
 
-export async function allCastAndCrew(): Promise<CastAndCrew> {
+export async function allCastAndCrew(): Promise<{
+  castAndCrew: CastAndCrewMember[];
+  distinctReleaseYears: string[];
+}> {
   const castAndCrewJson = await allCastAndCrewJson();
   const releaseYears = new Set<string>();
 
@@ -22,6 +20,25 @@ export async function allCastAndCrew(): Promise<CastAndCrew> {
 
   return {
     castAndCrew: castAndCrewJson,
+    distinctReleaseYears: Array.from(releaseYears).toSorted(),
+  };
+}
+
+export async function castAndCrewMember(slug: string): Promise<{
+  member: CastAndCrewMember;
+  distinctReleaseYears: string[];
+}> {
+  const castAndCrewJson = await allCastAndCrewJson();
+  const member = castAndCrewJson.find((value) => value.slug === slug)!;
+
+  const releaseYears = new Set<string>();
+
+  member.titles.forEach((title) => {
+    releaseYears.add(title.year);
+  });
+
+  return {
+    member,
     distinctReleaseYears: Array.from(releaseYears).toSorted(),
   };
 }

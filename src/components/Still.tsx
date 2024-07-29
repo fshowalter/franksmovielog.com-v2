@@ -1,10 +1,10 @@
-import type { StillImageData } from "src/api/stills";
+import type { StillImageProps } from "src/api/stills";
 import { twJoin } from "tailwind-merge";
 
 interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
   title: string;
   year: string | number;
-  imageProps: StillImageData;
+  imageProps: StillImageProps;
   sizes: string;
   width: number;
   height: number;

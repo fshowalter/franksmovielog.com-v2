@@ -2,7 +2,7 @@ import { getImage } from "astro:assets";
 
 import { normalizeSources } from "./utils/normalizeSources";
 
-export interface AvatarImageData {
+export interface AvatarImageProps {
   src: string;
   srcSet: string;
 }
@@ -11,8 +11,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/avatars/*.png",
 );
 
-export async function getAvatars(
-  slugs: string[],
+export async function getAvatarImageProps(
+  slug: string,
   {
     width,
     height,
@@ -20,36 +20,28 @@ export async function getAvatars(
     width: number;
     height: number;
   },
-): Promise<Record<string, AvatarImageData>> {
-  const imageMap: Record<string, AvatarImageData> = {};
+): Promise<AvatarImageProps | null> {
+  const avatarFilePath = Object.keys(images).find((path) => {
+    return path.endsWith(`${slug}.png`);
+  });
 
-  await Promise.all(
-    slugs.map(async (slug) => {
-      const avatarFilePath = Object.keys(images).find((path) => {
-        return path.endsWith(`${slug}.png`);
-      });
+  if (!avatarFilePath) {
+    return null;
+  }
 
-      if (!avatarFilePath) {
-        return null;
-      }
+  const avatarFile = await images[avatarFilePath]();
 
-      const avatarFile = await images[avatarFilePath]();
+  const optimizedImage = await getImage({
+    src: avatarFile.default,
+    width: width,
+    height: height,
+    format: "avif",
+    densities: [1, 2],
+    quality: 80,
+  });
 
-      const optimizedImage = await getImage({
-        src: avatarFile.default,
-        width: width,
-        height: height,
-        format: "avif",
-        densities: [1, 2],
-        quality: 80,
-      });
-
-      imageMap[slug] = {
-        srcSet: normalizeSources(optimizedImage.srcSet.attribute),
-        src: normalizeSources(optimizedImage.src),
-      };
-    }),
-  );
-
-  return imageMap;
+  return {
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: normalizeSources(optimizedImage.src),
+  };
 }

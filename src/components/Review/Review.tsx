@@ -1,16 +1,18 @@
-import type { AvatarImageData } from "src/api/avatars";
 import type { PosterImageProps } from "src/api/posters";
 import type { Review, ReviewWithContent } from "src/api/reviews";
-import type { StillImageData } from "src/api/stills";
+import type { StillImageProps } from "src/api/stills";
 import { Still } from "src/components/Still";
 
-import { Chips } from "./Chips";
+import { CastAndCrewChips } from "./CastAndCrewChips";
+import { CollectionChips } from "./CollectionChips";
 import { Content } from "./Content";
 import { Credits } from "./Credits";
 import { Header } from "./Header";
+import { MoreFromCastAndCrew } from "./MoreFromCastAndCrew";
+import { MoreInCollections } from "./MoreInCollections";
 import { MoreReviews } from "./MoreReviews";
 import { StructuredData } from "./StructuredData";
-import { ViewingHistory } from "./ViewingHistory";
+import { ViewingHistoryListItem } from "./ViewingHistoryListItem";
 
 export const StillImageConfig = {
   width: 960,
@@ -20,10 +22,15 @@ export const StillImageConfig = {
 
 export interface Props {
   value: ReviewWithContent;
-  stillImageProps: StillImageData;
+  stillImageProps: StillImageProps;
   posterImageProps: PosterImageProps;
-  chipAvatars: Record<string, AvatarImageData>;
-  moreReviewsStills: Record<string, StillImageData>;
+  moreFromCastAndCrew: React.ComponentProps<
+    typeof MoreFromCastAndCrew
+  >["values"];
+  moreInCollections: React.ComponentProps<typeof MoreInCollections>["values"];
+  moreReviews: React.ComponentProps<typeof MoreReviews>["values"];
+  castAndCrewChips: React.ComponentProps<typeof CastAndCrewChips>["values"];
+  collectionChips: React.ComponentProps<typeof CollectionChips>["values"];
   seoImageSrc: string;
 }
 
@@ -31,9 +38,12 @@ export function Review({
   value,
   stillImageProps,
   posterImageProps,
-  chipAvatars,
+  collectionChips,
   seoImageSrc,
-  moreReviewsStills,
+  moreFromCastAndCrew,
+  moreInCollections,
+  moreReviews,
+  castAndCrewChips,
 }: Props): JSX.Element {
   return (
     <main
@@ -67,10 +77,17 @@ export function Review({
         className="items-center px-pageMargin"
       />
       <div className="spacer-y-20" />
-      <ViewingHistory
-        viewings={value.viewings}
-        className="w-full max-w-popout"
-      />
+      <div className="w-full max-w-popout">
+        <h3 className="px-gutter text-md font-normal text-subtle shadow-bottom">
+          Viewing History
+          <div className="h-2 min-h-2" />
+        </h3>
+        <ul>
+          {value.viewings.map((viewing) => (
+            <ViewingHistoryListItem key={viewing.sequence} value={viewing} />
+          ))}
+        </ul>
+      </div>
       <div className="spacer-y-32" />
       <Credits
         title={value.title}
@@ -84,20 +101,17 @@ export function Review({
         posterImageProps={posterImageProps}
         className="w-full max-w-popout"
       >
-        <Chips
-          castAndCrew={value.castAndCrew}
-          collections={value.collections}
-          avatars={chipAvatars}
-        />
+        <ul className="flex flex-wrap gap-2">
+          <CastAndCrewChips values={castAndCrewChips} />
+          <CollectionChips values={collectionChips} />
+        </ul>
       </Credits>
       <div className="spacer-y-32" />
-      <MoreReviews
-        moreCastAndCrew={value.moreCastAndCrew}
-        moreCollections={value.moreCollections}
-        moreReviews={value.moreReviews}
-        stills={moreReviewsStills}
-        className="w-full max-w-popout tablet:max-w-full"
-      />
+      <div className="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24">
+        <MoreFromCastAndCrew values={moreFromCastAndCrew} />
+        <MoreInCollections values={moreInCollections} />
+        <MoreReviews values={moreReviews} />
+      </div>
       <div className="spacer-y-32 tablet:spacer-y-0" />
       <StructuredData
         title={value.title}

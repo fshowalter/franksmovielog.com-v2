@@ -7,7 +7,7 @@ export interface BackdropImageProps {
   srcSet: string;
 }
 
-export const images = import.meta.glob<{ default: ImageMetadata }>(
+const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/backdrops/*.png",
 );
 
@@ -26,10 +26,10 @@ export async function getOpenGraphBackdropSrc(slug: string) {
     quality: 80,
   });
 
-  return image.src;
+  return normalizeSources(image.src);
 }
 
-export async function getBackdrop(
+export async function getBackdropImageProps(
   slug: string,
   {
     width,

@@ -2,7 +2,7 @@ import { getContainerRenderer as reactContainerRenderer } from "@astrojs/react";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import { loadRenderers } from "astro:container";
-import { parse } from "node-html-parser";
+import * as prettier from "prettier";
 import { allReviews } from "src/api/reviews";
 import { describe, it } from "vitest";
 
@@ -36,11 +36,9 @@ describe("/reviews/:slug", () => {
         },
       );
 
-      const root = parse(result);
-
-      void expect(root.querySelector("head")?.toString()).toMatchFileSnapshot(
-        `__snapshots__/${review.slug}.html`,
-      );
+      void expect(
+        await prettier.format(result, { parser: "html" }),
+      ).toMatchFileSnapshot(`__snapshots__/${review.slug}.html`);
     },
   );
 });

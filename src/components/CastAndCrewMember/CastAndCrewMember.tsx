@@ -1,36 +1,35 @@
 import { useReducer } from "react";
-import type { AvatarImageData } from "src/api/avatars";
+import type { AvatarImageProps } from "src/api/avatars";
 import type { CastAndCrewMember } from "src/api/castAndCrew";
-import type { PosterImageProps } from "src/api/posters";
 import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 
 import { initState, reducer, type Sort } from "./CastAndCrewMember.reducer";
 import { Filters } from "./Filters";
 import { Header } from "./Header";
-import { List } from "./List";
+import { List, type ListItemValue } from "./List";
 
 export interface Props {
   value: Pick<
     CastAndCrewMember,
-    "name" | "reviewCount" | "totalCount" | "creditedAs" | "titles"
+    "name" | "reviewCount" | "totalCount" | "creditedAs"
   >;
+  titles: ListItemValue[];
   initialSort: Sort;
   distinctReleaseYears: readonly string[];
-  posters: Record<string, PosterImageProps>;
-  avatarImageData: AvatarImageData;
+  avatarImageProps: AvatarImageProps | null;
 }
 
 export function CastAndCrewMember({
   value,
+  titles,
   initialSort,
   distinctReleaseYears,
-  posters,
-  avatarImageData,
+  avatarImageProps,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      values: [...value.titles],
+      values: [...titles],
       initialSort,
     },
     initState,
@@ -43,7 +42,7 @@ export function CastAndCrewMember({
           totalCount={value.totalCount}
           reviewCount={value.reviewCount}
           name={value.name}
-          avatarImageData={avatarImageData}
+          avatarImageProps={avatarImageProps}
         />
       }
       filters={
@@ -61,7 +60,6 @@ export function CastAndCrewMember({
           totalCount={state.filteredValues.length}
           visibleCount={state.showCount}
           groupedValues={state.groupedValues}
-          posters={posters}
         />
       }
     />

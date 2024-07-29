@@ -1,4 +1,4 @@
-import type { AvatarImageData } from "src/api/avatars";
+import type { AvatarImageProps } from "src/api/avatars";
 import { PageTitle } from "src/components/PageTitle";
 
 import { Avatar } from "../Avatar";
@@ -43,13 +43,13 @@ export function Header({
   creditedAs,
   reviewCount,
   totalCount,
-  avatarImageData,
+  avatarImageProps,
 }: {
   name: string;
   creditedAs: string[];
   reviewCount: number;
   totalCount: number;
-  avatarImageData: AvatarImageData;
+  avatarImageProps: AvatarImageProps | null;
 }): JSX.Element {
   return (
     <>
@@ -57,11 +57,11 @@ export function Header({
         <a href="/cast-and-crew/">Cast & Crew</a>
       </div>
       <div className="spacer-y-4" />
-      {avatarImageData && (
+      {avatarImageProps && (
         <div className="flex flex-col items-center">
           <div className="safari-border-radius-fix w-[200px] max-w-[200px] overflow-hidden rounded-[50%] shadow-all">
             <Avatar
-              imageData={avatarImageData}
+              imageProps={avatarImageProps}
               name={name}
               width={200}
               height={200}

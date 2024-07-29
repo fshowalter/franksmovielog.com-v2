@@ -1,4 +1,4 @@
-import type { StillImageData } from "src/api/stills";
+import type { StillImageProps } from "src/api/stills";
 
 import { Grade } from "./Grade";
 import { Still } from "./Still";
@@ -17,7 +17,7 @@ export interface StillListItemValue {
   slug: string;
   year: string;
   genres: string[];
-  stillImageProps: StillImageData;
+  stillImageProps: StillImageProps;
 }
 
 export function StillListItem({ value }: { value: StillListItemValue }) {

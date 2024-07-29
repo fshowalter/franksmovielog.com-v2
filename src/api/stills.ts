@@ -2,12 +2,12 @@ import { getImage } from "astro:assets";
 
 import { normalizeSources } from "./utils/normalizeSources";
 
-export interface StillImageData {
+export interface StillImageProps {
   src: string;
   srcSet: string;
 }
 
-export const images = import.meta.glob<{ default: ImageMetadata }>(
+const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/stills/*.png",
 );
 
@@ -26,14 +26,14 @@ export async function getOpenGraphStillSrc(slug: string) {
     quality: 80,
   });
 
-  return image.src;
+  return normalizeSources(image.src);
 }
 
 export async function getStills(
   slugs: string[],
   { width, height }: { width: number; height: number },
-): Promise<Record<string, StillImageData>> {
-  const imageMap: Record<string, StillImageData> = {};
+): Promise<Record<string, StillImageProps>> {
+  const imageMap: Record<string, StillImageProps> = {};
 
   await Promise.all(
     slugs.map(async (slug) => {
@@ -62,7 +62,7 @@ export async function getStills(
   return imageMap;
 }
 
-export async function getStill(
+export async function getStillImageProps(
   slug: string,
   {
     width,
@@ -71,7 +71,7 @@ export async function getStill(
     width: number;
     height: number;
   },
-): Promise<StillImageData> {
+): Promise<StillImageProps> {
   const stillFilePath = Object.keys(images).find((path) => {
     return path.endsWith(`${slug}.png`);
   })!;

@@ -1,5 +1,5 @@
 import type { ReviewWithExcerpt } from "src/api/reviews";
-import type { StillImageData } from "src/api/stills";
+import type { StillImageProps } from "src/api/stills";
 import { Grade } from "src/components/Grade";
 import { RenderedMarkdown } from "src/components/RenderedMarkdown";
 import { Still } from "src/components/Still";
@@ -42,7 +42,7 @@ export function HomeListItem({
 }: {
   value: ListItemValue;
   eagerLoadImage: boolean;
-  stillImageProps: StillImageData | undefined;
+  stillImageProps: StillImageProps | undefined;
 }) {
   return (
     <li className="flex even:bg-subtle">
