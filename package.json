@@ -76,7 +76,7 @@
     "prettier-plugin-tailwindcss": "0.6.5",
     "react-select-event": "5.5.1",
     "typescript": "5.5.4",
-    "typescript-eslint": "7.17.0",
+    "typescript-eslint": "7.18.0",
     "vitest": "2.0.4"
   }
 }
