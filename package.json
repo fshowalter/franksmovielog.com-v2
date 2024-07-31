@@ -24,11 +24,11 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.1",
-    "@astrojs/react": "3.6.0",
+    "@astrojs/react": "3.6.1",
     "@astrojs/rss": "4.0.7",
     "@astrojs/sitemap": "3.1.6",
     "@astrojs/tailwind": "5.1.0",
-    "astro": "4.12.2",
+    "astro": "4.12.3",
     "gray-matter": "4.0.3",
     "react": "18.3.1",
     "react-dom": "18.3.1",
