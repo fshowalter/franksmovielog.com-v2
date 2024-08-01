@@ -9,6 +9,7 @@ export function PageTitle({
 }): JSX.Element {
   return (
     <h1
+      data-pagefind-meta="title"
       className={twMerge(
         "text-[2rem] font-normal leading-none desktop:text-[2.25rem]",
         className,

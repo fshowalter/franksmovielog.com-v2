@@ -38,22 +38,23 @@ export function Header({
         <a href="/collections/">Collections</a>
       </div>
       <div className="spacer-y-4" />
-      {avatarImageProps && (
-        <div className="flex flex-col items-center">
-          <div className="safari-border-radius-fix w-[200px] max-w-[200px] overflow-hidden rounded-[50%] shadow-all">
-            <Avatar
-              imageProps={avatarImageProps}
-              name={name}
-              width={AvatarImageConfig.width}
-              height={AvatarImageConfig.height}
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
+      <div className="flex flex-col items-center">
+        <div className="safari-border-radius-fix w-[200px] max-w-[200px] overflow-hidden rounded-[50%] shadow-all">
+          <Avatar
+            imageProps={avatarImageProps}
+            name={name}
+            width={AvatarImageConfig.width}
+            height={AvatarImageConfig.height}
+            loading="lazy"
+            decoding="async"
+            data-pagefind-meta="image[src], image_alt[alt]"
+          />
         </div>
-      )}
+      </div>
       <div className="spacer-y-4" />
-      <PageTitle className="text-center">{name}</PageTitle>
+      <PageTitle data-pagefind-meta="title" className="text-center">
+        {name}
+      </PageTitle>
       <div className="spacer-y-6" />
       <div className="max-w-prose px-gutter text-center text-subtle">
         <RenderedMarkdown

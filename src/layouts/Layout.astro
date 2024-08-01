@@ -1,5 +1,6 @@
 ---
 import "./base.css";
+import "@pagefind/default-ui/css/ui.css";
 
 import { Layout as LayoutComponent } from "src/components/Layout";
 
@@ -129,7 +130,7 @@ const pathname = new URL(Astro.request.url).pathname;
   const openModal = (event?: MouseEvent) => {
     dialog.showModal();
     document.body.toggleAttribute("data-search-modal-open", true);
-    document.querySelector("input")?.focus();
+    dialog.querySelector("input")?.focus();
     event?.stopPropagation();
     window.addEventListener("click", onClick);
   };
@@ -231,6 +232,16 @@ const pathname = new URL(Astro.request.url).pathname;
   #pagefind__search .pagefind-ui__form:before {
     left: calc(var(--gutter-width) + 1rem);
     top: 2rem;
+  }
+
+  #pagefind__search .pagefind-ui__form:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--border-default);
+    top: 80px;
   }
 
   #pagefind__search .pagefind-ui__search-clear {

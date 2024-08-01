@@ -20,7 +20,7 @@ export function Header({
 }: Props) {
   return (
     <header className={twMerge("flex flex-col gap-y-4", className)}>
-      <PageTitle>{title}</PageTitle>
+      <PageTitle data-pagefind-meta="title">{title}</PageTitle>
       <OriginalTitle value={originalTitle} />
       <Meta year={year} countries={countries} runtimeMinutes={runtimeMinutes} />
     </header>

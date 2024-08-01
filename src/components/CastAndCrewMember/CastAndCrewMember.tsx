@@ -35,33 +35,35 @@ export function CastAndCrewMember({
     initState,
   );
   return (
-    <ListWithFiltersLayout
-      header={
-        <Header
-          creditedAs={value.creditedAs}
-          totalCount={value.totalCount}
-          reviewCount={value.reviewCount}
-          name={value.name}
-          avatarImageProps={avatarImageProps}
-        />
-      }
-      filters={
-        <Filters
-          dispatch={dispatch}
-          creditedAs={value.creditedAs}
-          hideReviewed={state.hideReviewed}
-          sortValue={state.sortValue}
-          distinctReleaseYears={distinctReleaseYears}
-        />
-      }
-      list={
-        <List
-          dispatch={dispatch}
-          totalCount={state.filteredValues.length}
-          visibleCount={state.showCount}
-          groupedValues={state.groupedValues}
-        />
-      }
-    />
+    <div data-pagefind-body>
+      <ListWithFiltersLayout
+        header={
+          <Header
+            creditedAs={value.creditedAs}
+            totalCount={value.totalCount}
+            reviewCount={value.reviewCount}
+            name={value.name}
+            avatarImageProps={avatarImageProps}
+          />
+        }
+        filters={
+          <Filters
+            dispatch={dispatch}
+            creditedAs={value.creditedAs}
+            hideReviewed={state.hideReviewed}
+            sortValue={state.sortValue}
+            distinctReleaseYears={distinctReleaseYears}
+          />
+        }
+        list={
+          <List
+            dispatch={dispatch}
+            totalCount={state.filteredValues.length}
+            visibleCount={state.showCount}
+            groupedValues={state.groupedValues}
+          />
+        }
+      />
+    </div>
   );
 }

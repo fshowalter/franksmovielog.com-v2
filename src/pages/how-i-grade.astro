@@ -20,5 +20,7 @@ const openGraphImage = await getOpenGraphBackdropSrc(slug);
   image={openGraphImage}
   article
 >
-  <Article {...props} />
+  <div data-pagefind-body>
+    <Article {...props} />
+  </div>
 </Layout>

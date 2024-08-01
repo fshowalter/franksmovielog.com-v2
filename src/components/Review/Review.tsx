@@ -48,6 +48,7 @@ export function Review({
   return (
     <main
       id="top"
+      data-pagefind-body
       className="flex scroll-mt-[var(--header-offset)] flex-col items-center"
     >
       <Header
@@ -107,7 +108,10 @@ export function Review({
         </ul>
       </Credits>
       <div className="spacer-y-32" />
-      <div className="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24">
+      <div
+        data-pagefind-ignore
+        className="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      >
         <MoreFromCastAndCrew values={moreFromCastAndCrew} />
         <MoreInCollections values={moreInCollections} />
         <MoreReviews values={moreReviews} />

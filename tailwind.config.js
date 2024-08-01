@@ -33,6 +33,7 @@ export default {
     screens: {
       tablet: "510px",
       desktop: "1288px",
+      max: "1416px",
     },
     extend: {
       boxShadow: {
@@ -62,7 +63,7 @@ export default {
         gutter: "var(--gutter-width)",
       },
       maxWidth: {
-        canvas: `clamp(${STILL_WIDTH}, 95vw, 1160px)`,
+        canvas: `clamp(${STILL_WIDTH}, 95vw, 1416px)`,
         prose: PROSE_CONTENT_WIDTH,
         popout: `calc((var(--gutter-width) * 2) + ${PROSE_CONTENT_WIDTH})`,
         poster: POSTER_WIDTH,

@@ -50,7 +50,10 @@ export function Article({
         </div>
         <div className="spacer-y-32" />
       </article>
-      <div className="flex w-full max-w-popout items-center justify-center bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8">
+      <div
+        data-pagefind-ignore
+        className="flex w-full max-w-popout items-center justify-center bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8"
+      >
         <StillListNav>
           <StillListHeading
             leadText="Latest"

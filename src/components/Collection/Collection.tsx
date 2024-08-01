@@ -35,33 +35,35 @@ export function Collection({
     initState,
   );
   return (
-    <ListWithFiltersLayout
-      header={
-        <Header
-          name={value.name}
-          reviewCount={value.reviewCount}
-          titleCount={value.titleCount}
-          avatarImageProps={avatarImageProps}
-          description={value.description}
-        />
-      }
-      filters={
-        <Filters
-          dispatch={dispatch}
-          hideReviewed={state.hideReviewed}
-          sortValue={state.sortValue}
-          distinctReleaseYears={distinctReleaseYears}
-          showHideReviewed={value.reviewCount != titles.length}
-        />
-      }
-      list={
-        <List
-          dispatch={dispatch}
-          totalCount={state.filteredValues.length}
-          visibleCount={state.showCount}
-          groupedValues={state.groupedValues}
-        />
-      }
-    />
+    <div data-pagefind-body>
+      <ListWithFiltersLayout
+        header={
+          <Header
+            name={value.name}
+            reviewCount={value.reviewCount}
+            titleCount={value.titleCount}
+            avatarImageProps={avatarImageProps}
+            description={value.description}
+          />
+        }
+        filters={
+          <Filters
+            dispatch={dispatch}
+            hideReviewed={state.hideReviewed}
+            sortValue={state.sortValue}
+            distinctReleaseYears={distinctReleaseYears}
+            showHideReviewed={value.reviewCount != titles.length}
+          />
+        }
+        list={
+          <List
+            dispatch={dispatch}
+            totalCount={state.filteredValues.length}
+            visibleCount={state.showCount}
+            groupedValues={state.groupedValues}
+          />
+        }
+      />
+    </div>
   );
 }
