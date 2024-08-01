@@ -1,6 +1,6 @@
 import type { Review } from "src/api/reviews";
 import { PageTitle } from "src/components/PageTitle";
-import { twMerge } from "tailwind-merge";
+import { ccn } from "src/utils/concatClassNames";
 
 interface Props
   extends Pick<
@@ -19,8 +19,8 @@ export function Header({
   className,
 }: Props) {
   return (
-    <header className={twMerge("flex flex-col gap-y-4", className)}>
-      <PageTitle>{title}</PageTitle>
+    <header className={ccn("flex flex-col gap-y-4", className)}>
+      <PageTitle data-pagefind-meta="title">{title}</PageTitle>
       <OriginalTitle value={originalTitle} />
       <Meta year={year} countries={countries} runtimeMinutes={runtimeMinutes} />
     </header>

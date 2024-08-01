@@ -1,4 +1,4 @@
-import { twMerge } from "tailwind-merge";
+import { ccn } from "src/utils/concatClassNames";
 
 export function PageTitle({
   children,
@@ -9,7 +9,8 @@ export function PageTitle({
 }): JSX.Element {
   return (
     <h1
-      className={twMerge(
+      data-pagefind-meta="title"
+      className={ccn(
         "text-[2rem] font-normal leading-none desktop:text-[2.25rem]",
         className,
       )}

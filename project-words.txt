@@ -9,6 +9,8 @@ Astro's
 Brackett
 bucketlist
 Callouts
+Cpath
+Csvg
 dirents
 Drafthouse
 franksmovielog
@@ -17,8 +19,11 @@ hellraiser
 imdb
 knip
 Loudoun
+lukeed
 mdast
 movielog
+pagefind
+Pagefind
 popout
 rehype
 Rehype

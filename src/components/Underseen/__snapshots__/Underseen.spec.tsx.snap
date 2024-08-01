@@ -8,7 +8,7 @@ exports[`Underseen > can filter by genres 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 1;"
     >
       <div
@@ -122,7 +122,7 @@ exports[`Underseen > can filter by release year 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 1;"
     >
       <div
@@ -213,7 +213,7 @@ exports[`Underseen > can filter by release year 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 2;"
     >
       <div
@@ -377,7 +377,7 @@ exports[`Underseen > can filter by release year 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 3;"
     >
       <div
@@ -484,7 +484,7 @@ exports[`Underseen > can filter by release year 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 4;"
     >
       <div
@@ -648,7 +648,7 @@ exports[`Underseen > can filter by release year 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 5;"
     >
       <div
@@ -743,7 +743,7 @@ exports[`Underseen > can filter by release year 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 6;"
     >
       <div
@@ -846,7 +846,7 @@ exports[`Underseen > can filter by release year 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 7;"
     >
       <div
@@ -945,7 +945,7 @@ exports[`Underseen > can filter by release year 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 8;"
     >
       <div
@@ -1124,7 +1124,7 @@ exports[`Underseen > can filter by release year reversed 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 1;"
     >
       <div
@@ -1223,7 +1223,7 @@ exports[`Underseen > can filter by release year reversed 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 2;"
     >
       <div
@@ -1314,7 +1314,7 @@ exports[`Underseen > can filter by release year reversed 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 3;"
     >
       <div
@@ -1485,7 +1485,7 @@ exports[`Underseen > can filter by title 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 1;"
     >
       <div
@@ -1595,7 +1595,7 @@ exports[`Underseen > can sort by grade with best first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 1;"
     >
       <div
@@ -1690,7 +1690,7 @@ exports[`Underseen > can sort by grade with best first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 2;"
     >
       <div
@@ -1935,7 +1935,7 @@ exports[`Underseen > can sort by grade with best first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 3;"
     >
       <div
@@ -2549,7 +2549,7 @@ exports[`Underseen > can sort by grade with best first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 4;"
     >
       <div
@@ -4114,7 +4114,7 @@ exports[`Underseen > can sort by grade with worst first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 1;"
     >
       <div
@@ -5672,7 +5672,7 @@ exports[`Underseen > can sort by grade with worst first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 2;"
     >
       <div
@@ -6286,7 +6286,7 @@ exports[`Underseen > can sort by grade with worst first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 3;"
     >
       <div
@@ -6531,7 +6531,7 @@ exports[`Underseen > can sort by grade with worst first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 4;"
     >
       <div
@@ -6633,7 +6633,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 1;"
     >
       <div
@@ -6732,7 +6732,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 2;"
     >
       <div
@@ -6823,7 +6823,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 3;"
     >
       <div
@@ -6987,7 +6987,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 4;"
     >
       <div
@@ -7094,7 +7094,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 5;"
     >
       <div
@@ -7258,7 +7258,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 6;"
     >
       <div
@@ -7353,7 +7353,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 7;"
     >
       <div
@@ -7456,7 +7456,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 8;"
     >
       <div
@@ -7555,7 +7555,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 9;"
     >
       <div
@@ -7727,7 +7727,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 10;"
     >
       <div
@@ -7822,7 +7822,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 11;"
     >
       <div
@@ -8152,7 +8152,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 12;"
     >
       <div
@@ -8328,7 +8328,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 13;"
     >
       <div
@@ -8431,7 +8431,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 14;"
     >
       <div
@@ -8526,7 +8526,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 15;"
     >
       <div
@@ -8702,7 +8702,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 16;"
     >
       <div
@@ -8809,7 +8809,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 17;"
     >
       <div
@@ -8912,7 +8912,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 18;"
     >
       <div
@@ -9080,7 +9080,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 19;"
     >
       <div
@@ -9171,7 +9171,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 20;"
     >
       <div
@@ -9270,7 +9270,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 21;"
     >
       <div
@@ -9365,7 +9365,7 @@ exports[`Underseen > can sort by release date with newest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 22;"
     >
       <div
@@ -9548,7 +9548,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 1;"
     >
       <div
@@ -9724,7 +9724,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 2;"
     >
       <div
@@ -9819,7 +9819,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 3;"
     >
       <div
@@ -9918,7 +9918,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 4;"
     >
       <div
@@ -10009,7 +10009,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 5;"
     >
       <div
@@ -10177,7 +10177,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 6;"
     >
       <div
@@ -10280,7 +10280,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 7;"
     >
       <div
@@ -10387,7 +10387,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 8;"
     >
       <div
@@ -10563,7 +10563,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 9;"
     >
       <div
@@ -10658,7 +10658,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 10;"
     >
       <div
@@ -10761,7 +10761,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 11;"
     >
       <div
@@ -10937,7 +10937,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 12;"
     >
       <div
@@ -11267,7 +11267,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 13;"
     >
       <div
@@ -11362,7 +11362,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 14;"
     >
       <div
@@ -11534,7 +11534,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 15;"
     >
       <div
@@ -11633,7 +11633,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 16;"
     >
       <div
@@ -11736,7 +11736,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 17;"
     >
       <div
@@ -11831,7 +11831,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 18;"
     >
       <div
@@ -11995,7 +11995,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 19;"
     >
       <div
@@ -12102,7 +12102,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 20;"
     >
       <div
@@ -12266,7 +12266,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 21;"
     >
       <div
@@ -12357,7 +12357,7 @@ exports[`Underseen > can sort by release date with oldest first 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 22;"
     >
       <div
@@ -12463,7 +12463,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 1;"
     >
       <div
@@ -12562,7 +12562,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 2;"
     >
       <div
@@ -12665,7 +12665,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 3;"
     >
       <div
@@ -12995,7 +12995,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 4;"
     >
       <div
@@ -13394,7 +13394,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 5;"
     >
       <div
@@ -13566,7 +13566,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 6;"
     >
       <div
@@ -13665,7 +13665,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 7;"
     >
       <div
@@ -13760,7 +13760,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 8;"
     >
       <div
@@ -13855,7 +13855,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 9;"
     >
       <div
@@ -13950,7 +13950,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 10;"
     >
       <div
@@ -14053,7 +14053,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 11;"
     >
       <div
@@ -14148,7 +14148,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 12;"
     >
       <div
@@ -14324,7 +14324,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 13;"
     >
       <div
@@ -14431,7 +14431,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 14;"
     >
       <div
@@ -14607,7 +14607,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 15;"
     >
       <div
@@ -14917,7 +14917,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 16;"
     >
       <div
@@ -15012,7 +15012,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 17;"
     >
       <div
@@ -15111,7 +15111,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 18;"
     >
       <div
@@ -15206,7 +15206,7 @@ exports[`Underseen > can sort by title (A → Z) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 19;"
     >
       <div
@@ -15312,7 +15312,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 1;"
     >
       <div
@@ -15411,7 +15411,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 2;"
     >
       <div
@@ -15506,7 +15506,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 3;"
     >
       <div
@@ -15605,7 +15605,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 4;"
     >
       <div
@@ -15700,7 +15700,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 5;"
     >
       <div
@@ -16010,7 +16010,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 6;"
     >
       <div
@@ -16186,7 +16186,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 7;"
     >
       <div
@@ -16293,7 +16293,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 8;"
     >
       <div
@@ -16469,7 +16469,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 9;"
     >
       <div
@@ -16564,7 +16564,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 10;"
     >
       <div
@@ -16667,7 +16667,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 11;"
     >
       <div
@@ -16762,7 +16762,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 12;"
     >
       <div
@@ -16857,7 +16857,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 13;"
     >
       <div
@@ -16952,7 +16952,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 14;"
     >
       <div
@@ -17051,7 +17051,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 15;"
     >
       <div
@@ -17223,7 +17223,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 16;"
     >
       <div
@@ -17622,7 +17622,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 17;"
     >
       <div
@@ -17952,7 +17952,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 18;"
     >
       <div
@@ -18055,7 +18055,7 @@ exports[`Underseen > can sort by title (Z → A) 1`] = `
     class="block"
   >
     <div
-      class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+      class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       style="z-index: 19;"
     >
       <div
@@ -18159,10 +18159,10 @@ exports[`Underseen > renders 1`] = `
     class="flex flex-col items-center"
   >
     <main
-      class="flex w-full max-w-prose flex-col items-stretch gap-x-24 desktop:max-w-full desktop:flex-row desktop:px-pageMargin"
+      class="flex w-full max-w-prose flex-col items-stretch gap-x-20 desktop:max-w-full desktop:flex-row desktop:px-pageMargin"
     >
       <div
-        class="flex basis-md flex-col items-center gap-y-8 px-gutter pt-8 desktop:px-0"
+        class="flex basis-96 flex-col items-center px-gutter pt-8 desktop:px-0"
       >
         <div
           class="flex flex-col items-center"
@@ -18178,6 +18178,7 @@ exports[`Underseen > renders 1`] = `
           </div>
           <h1
             class="text-[2rem] font-normal leading-none desktop:text-[2.25rem] text-center"
+            data-pagefind-meta="title"
           >
             Underseen Gems
           </h1>
@@ -18202,410 +18203,420 @@ exports[`Underseen > renders 1`] = `
             Four and five star movies with a below average number of IMDb votes.
           </p>
         </div>
-        <fieldset
-          class="rounded-md px-gutter pb-8 pt-6 text-subtle shadow-all desktop:sticky desktop:top-[208px] desktop:self-start max:top-[160px]"
+        <div
+          class="desktop:sticky desktop:top-[var(--header-offset)]"
         >
-          <legend
-            class="bg-default px-ch text-center text-md"
-          >
-            Filter & Sort
-          </legend>
           <div
-            class="tablet::gap-8 flex flex-wrap justify-between gap-6 *:shrink-0 *:grow *:basis-64"
+            class="spacer-y-8"
+          />
+          <fieldset
+            class="rounded-md px-gutter pb-8 pt-6 text-subtle shadow-all desktop:self-start"
           >
-            <label
-              class="flex flex-col text-subtle"
+            <legend
+              class="bg-default px-ch text-center text-md"
             >
-              <span
-                class="inline-block h-6 text-left text-sm font-semibold leading-none tracking-0.5px"
-              >
-                Title
-              </span>
-              <input
-                class="rounded-sm border-0 bg-subtle px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
-                placeholder="Enter all or part of a title"
-                type="text"
-              />
-            </label>
-            <fieldset>
-              <legend
-                class="inline-block h-6 text-left text-sm font-semibold leading-none tracking-0.5px"
-              >
-                Release Year
-              </legend>
-              <div
-                class="flex items-baseline"
-              >
-                <label
-                  class="flex flex-1 items-center gap-x-[.5ch]"
-                >
-                  <span
-                    class="min-w-10 text-left text-sm tracking-0.5px"
-                  >
-                    From
-                  </span>
-                  <select
-                    class="select-background-image w-full appearance-none rounded-sm border-none bg-subtle py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all"
-                  >
-                    <option
-                      value="1930"
-                    >
-                      1930
-                    </option>
-                    <option
-                      value="1931"
-                    >
-                      1931
-                    </option>
-                    <option
-                      value="1932"
-                    >
-                      1932
-                    </option>
-                    <option
-                      value="1945"
-                    >
-                      1945
-                    </option>
-                    <option
-                      value="1946"
-                    >
-                      1946
-                    </option>
-                    <option
-                      value="1951"
-                    >
-                      1951
-                    </option>
-                    <option
-                      value="1956"
-                    >
-                      1956
-                    </option>
-                    <option
-                      value="1958"
-                    >
-                      1958
-                    </option>
-                    <option
-                      value="1965"
-                    >
-                      1965
-                    </option>
-                    <option
-                      value="1968"
-                    >
-                      1968
-                    </option>
-                    <option
-                      value="1969"
-                    >
-                      1969
-                    </option>
-                    <option
-                      value="1972"
-                    >
-                      1972
-                    </option>
-                    <option
-                      value="1973"
-                    >
-                      1973
-                    </option>
-                    <option
-                      value="1975"
-                    >
-                      1975
-                    </option>
-                    <option
-                      value="1977"
-                    >
-                      1977
-                    </option>
-                    <option
-                      value="1979"
-                    >
-                      1979
-                    </option>
-                    <option
-                      value="1982"
-                    >
-                      1982
-                    </option>
-                    <option
-                      value="1983"
-                    >
-                      1983
-                    </option>
-                    <option
-                      value="1985"
-                    >
-                      1985
-                    </option>
-                    <option
-                      value="1986"
-                    >
-                      1986
-                    </option>
-                    <option
-                      value="1987"
-                    >
-                      1987
-                    </option>
-                    <option
-                      value="1989"
-                    >
-                      1989
-                    </option>
-                  </select>
-                </label>
-                <label
-                  class="flex flex-1 items-center"
-                >
-                  <span
-                    class="min-w-10 text-center text-sm tracking-0.5px"
-                  >
-                    to
-                  </span>
-                  <select
-                    class="select-background-image w-full appearance-none rounded-sm border-none bg-subtle py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all"
-                  >
-                    <option
-                      value="1989"
-                    >
-                      1989
-                    </option>
-                    <option
-                      value="1987"
-                    >
-                      1987
-                    </option>
-                    <option
-                      value="1986"
-                    >
-                      1986
-                    </option>
-                    <option
-                      value="1985"
-                    >
-                      1985
-                    </option>
-                    <option
-                      value="1983"
-                    >
-                      1983
-                    </option>
-                    <option
-                      value="1982"
-                    >
-                      1982
-                    </option>
-                    <option
-                      value="1979"
-                    >
-                      1979
-                    </option>
-                    <option
-                      value="1977"
-                    >
-                      1977
-                    </option>
-                    <option
-                      value="1975"
-                    >
-                      1975
-                    </option>
-                    <option
-                      value="1973"
-                    >
-                      1973
-                    </option>
-                    <option
-                      value="1972"
-                    >
-                      1972
-                    </option>
-                    <option
-                      value="1969"
-                    >
-                      1969
-                    </option>
-                    <option
-                      value="1968"
-                    >
-                      1968
-                    </option>
-                    <option
-                      value="1965"
-                    >
-                      1965
-                    </option>
-                    <option
-                      value="1958"
-                    >
-                      1958
-                    </option>
-                    <option
-                      value="1956"
-                    >
-                      1956
-                    </option>
-                    <option
-                      value="1951"
-                    >
-                      1951
-                    </option>
-                    <option
-                      value="1946"
-                    >
-                      1946
-                    </option>
-                    <option
-                      value="1945"
-                    >
-                      1945
-                    </option>
-                    <option
-                      value="1932"
-                    >
-                      1932
-                    </option>
-                    <option
-                      value="1931"
-                    >
-                      1931
-                    </option>
-                    <option
-                      value="1930"
-                    >
-                      1930
-                    </option>
-                  </select>
-                </label>
-              </div>
-            </fieldset>
+              Filter & Sort
+            </legend>
             <div
-              class="flex flex-col text-left"
+              class="tablet::gap-8 flex flex-wrap justify-between gap-6 *:shrink-0 *:grow *:basis-64"
             >
               <label
-                class="inline-block h-6 text-left text-sm font-semibold leading-none tracking-0.5px"
-                for="Genres"
-              >
-                Genres
-              </label>
-              <div
-                class=" css-b62m3t-container"
+                class="flex flex-col text-subtle"
               >
                 <span
-                  class="css-1f43avz-a11yText-A11yText"
-                  id="react-select-2-live-region"
-                />
-                <span
-                  aria-atomic="false"
-                  aria-live="polite"
-                  aria-relevant="additions text"
-                  class="css-1f43avz-a11yText-A11yText"
-                  role="log"
-                />
-                <div
-                  class="reactSelect__control css-8r88ul-control"
+                  class="inline-block h-6 text-left text-sm font-semibold leading-none tracking-0.5px"
                 >
-                  <div
-                    class="reactSelect__value-container reactSelect__value-container--is-multi css-hlgwow"
-                  >
-                    <div
-                      class="reactSelect__placeholder css-5rb5s-placeholder"
-                      id="react-select-2-placeholder"
-                    >
-                      Select...
-                    </div>
-                    <input
-                      aria-activedescendant=""
-                      aria-autocomplete="list"
-                      aria-describedby="react-select-2-placeholder"
-                      aria-expanded="false"
-                      aria-haspopup="true"
-                      aria-readonly="true"
-                      class="css-mohuvp-dummyInput-DummyInput"
-                      id="Genres"
-                      inputmode="none"
-                      role="combobox"
-                      tabindex="0"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="reactSelect__indicators css-1wy0on6"
+                  Title
+                </span>
+                <input
+                  class="rounded-sm border-0 bg-subtle px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
+                  placeholder="Enter all or part of a title"
+                  type="text"
+                />
+              </label>
+              <fieldset>
+                <legend
+                  class="inline-block h-6 text-left text-sm font-semibold leading-none tracking-0.5px"
+                >
+                  Release Year
+                </legend>
+                <div
+                  class="flex items-baseline"
+                >
+                  <label
+                    class="flex flex-1 items-center gap-x-[.5ch]"
                   >
                     <span
-                      class="reactSelect__indicator-separator css-1xn9wwu-indicatorSeparator"
-                    />
-                    <div
-                      aria-hidden="true"
-                      class="reactSelect__indicator reactSelect__dropdown-indicator css-1mycq09-indicatorContainer"
+                      class="min-w-10 text-left text-sm tracking-0.5px"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-tj5bde-Svg"
-                        focusable="false"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        width="20"
+                      From
+                    </span>
+                    <select
+                      class="select-background-image w-full appearance-none rounded-sm border-none bg-subtle py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all"
+                    >
+                      <option
+                        value="1930"
                       >
-                        <path
-                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-                        />
-                      </svg>
+                        1930
+                      </option>
+                      <option
+                        value="1931"
+                      >
+                        1931
+                      </option>
+                      <option
+                        value="1932"
+                      >
+                        1932
+                      </option>
+                      <option
+                        value="1945"
+                      >
+                        1945
+                      </option>
+                      <option
+                        value="1946"
+                      >
+                        1946
+                      </option>
+                      <option
+                        value="1951"
+                      >
+                        1951
+                      </option>
+                      <option
+                        value="1956"
+                      >
+                        1956
+                      </option>
+                      <option
+                        value="1958"
+                      >
+                        1958
+                      </option>
+                      <option
+                        value="1965"
+                      >
+                        1965
+                      </option>
+                      <option
+                        value="1968"
+                      >
+                        1968
+                      </option>
+                      <option
+                        value="1969"
+                      >
+                        1969
+                      </option>
+                      <option
+                        value="1972"
+                      >
+                        1972
+                      </option>
+                      <option
+                        value="1973"
+                      >
+                        1973
+                      </option>
+                      <option
+                        value="1975"
+                      >
+                        1975
+                      </option>
+                      <option
+                        value="1977"
+                      >
+                        1977
+                      </option>
+                      <option
+                        value="1979"
+                      >
+                        1979
+                      </option>
+                      <option
+                        value="1982"
+                      >
+                        1982
+                      </option>
+                      <option
+                        value="1983"
+                      >
+                        1983
+                      </option>
+                      <option
+                        value="1985"
+                      >
+                        1985
+                      </option>
+                      <option
+                        value="1986"
+                      >
+                        1986
+                      </option>
+                      <option
+                        value="1987"
+                      >
+                        1987
+                      </option>
+                      <option
+                        value="1989"
+                      >
+                        1989
+                      </option>
+                    </select>
+                  </label>
+                  <label
+                    class="flex flex-1 items-center"
+                  >
+                    <span
+                      class="min-w-10 text-center text-sm tracking-0.5px"
+                    >
+                      to
+                    </span>
+                    <select
+                      class="select-background-image w-full appearance-none rounded-sm border-none bg-subtle py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all"
+                    >
+                      <option
+                        value="1989"
+                      >
+                        1989
+                      </option>
+                      <option
+                        value="1987"
+                      >
+                        1987
+                      </option>
+                      <option
+                        value="1986"
+                      >
+                        1986
+                      </option>
+                      <option
+                        value="1985"
+                      >
+                        1985
+                      </option>
+                      <option
+                        value="1983"
+                      >
+                        1983
+                      </option>
+                      <option
+                        value="1982"
+                      >
+                        1982
+                      </option>
+                      <option
+                        value="1979"
+                      >
+                        1979
+                      </option>
+                      <option
+                        value="1977"
+                      >
+                        1977
+                      </option>
+                      <option
+                        value="1975"
+                      >
+                        1975
+                      </option>
+                      <option
+                        value="1973"
+                      >
+                        1973
+                      </option>
+                      <option
+                        value="1972"
+                      >
+                        1972
+                      </option>
+                      <option
+                        value="1969"
+                      >
+                        1969
+                      </option>
+                      <option
+                        value="1968"
+                      >
+                        1968
+                      </option>
+                      <option
+                        value="1965"
+                      >
+                        1965
+                      </option>
+                      <option
+                        value="1958"
+                      >
+                        1958
+                      </option>
+                      <option
+                        value="1956"
+                      >
+                        1956
+                      </option>
+                      <option
+                        value="1951"
+                      >
+                        1951
+                      </option>
+                      <option
+                        value="1946"
+                      >
+                        1946
+                      </option>
+                      <option
+                        value="1945"
+                      >
+                        1945
+                      </option>
+                      <option
+                        value="1932"
+                      >
+                        1932
+                      </option>
+                      <option
+                        value="1931"
+                      >
+                        1931
+                      </option>
+                      <option
+                        value="1930"
+                      >
+                        1930
+                      </option>
+                    </select>
+                  </label>
+                </div>
+              </fieldset>
+              <div
+                class="flex flex-col text-left"
+              >
+                <label
+                  class="inline-block h-6 text-left text-sm font-semibold leading-none tracking-0.5px"
+                  for="Genres"
+                >
+                  Genres
+                </label>
+                <div
+                  class=" css-b62m3t-container"
+                >
+                  <span
+                    class="css-1f43avz-a11yText-A11yText"
+                    id="react-select-2-live-region"
+                  />
+                  <span
+                    aria-atomic="false"
+                    aria-live="polite"
+                    aria-relevant="additions text"
+                    class="css-1f43avz-a11yText-A11yText"
+                    role="log"
+                  />
+                  <div
+                    class="reactSelect__control css-8r88ul-control"
+                  >
+                    <div
+                      class="reactSelect__value-container reactSelect__value-container--is-multi css-hlgwow"
+                    >
+                      <div
+                        class="reactSelect__placeholder css-5rb5s-placeholder"
+                        id="react-select-2-placeholder"
+                      >
+                        Select...
+                      </div>
+                      <input
+                        aria-activedescendant=""
+                        aria-autocomplete="list"
+                        aria-describedby="react-select-2-placeholder"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        aria-readonly="true"
+                        class="css-mohuvp-dummyInput-DummyInput"
+                        id="Genres"
+                        inputmode="none"
+                        role="combobox"
+                        tabindex="0"
+                        value=""
+                      />
+                    </div>
+                    <div
+                      class="reactSelect__indicators css-1wy0on6"
+                    >
+                      <span
+                        class="reactSelect__indicator-separator css-1xn9wwu-indicatorSeparator"
+                      />
+                      <div
+                        aria-hidden="true"
+                        class="reactSelect__indicator reactSelect__dropdown-indicator css-1mycq09-indicatorContainer"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="css-tj5bde-Svg"
+                          focusable="false"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          width="20"
+                        >
+                          <path
+                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                          />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <label
+                class="flex flex-col"
+              >
+                <span
+                  class="inline-block h-6 text-left text-sm font-semibold leading-none tracking-0.5px"
+                >
+                  Order By
+                </span>
+                <select
+                  class="select-background-image w-full appearance-none rounded-sm border-none bg-subtle py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all"
+                >
+                  <option
+                    value="title-asc"
+                  >
+                    Title (A → Z)
+                  </option>
+                  <option
+                    value="title-desc"
+                  >
+                    Title (Z → A)
+                  </option>
+                  <option
+                    value="grade-desc"
+                  >
+                    Grade (Best First)
+                  </option>
+                  <option
+                    value="grade-asc"
+                  >
+                    Grade (Worst First)
+                  </option>
+                  <option
+                    value="release-date-desc"
+                  >
+                    Release Date (Newest First)
+                  </option>
+                  <option
+                    value="release-date-asc"
+                  >
+                    Release Date (Oldest First)
+                  </option>
+                </select>
+              </label>
             </div>
-            <label
-              class="flex flex-col"
-            >
-              <span
-                class="inline-block h-6 text-left text-sm font-semibold leading-none tracking-0.5px"
-              >
-                Order By
-              </span>
-              <select
-                class="select-background-image w-full appearance-none rounded-sm border-none bg-subtle py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all"
-              >
-                <option
-                  value="title-asc"
-                >
-                  Title (A → Z)
-                </option>
-                <option
-                  value="title-desc"
-                >
-                  Title (Z → A)
-                </option>
-                <option
-                  value="grade-desc"
-                >
-                  Grade (Best First)
-                </option>
-                <option
-                  value="grade-asc"
-                >
-                  Grade (Worst First)
-                </option>
-                <option
-                  value="release-date-desc"
-                >
-                  Release Date (Newest First)
-                </option>
-                <option
-                  value="release-date-asc"
-                >
-                  Release Date (Oldest First)
-                </option>
-              </select>
-            </label>
-          </div>
-        </fieldset>
+          </fieldset>
+          <div
+            class="spacer-y-8"
+          />
+        </div>
       </div>
       <div
         class="flex grow flex-col"
@@ -18614,7 +18625,7 @@ exports[`Underseen > renders 1`] = `
           class="h-0 min-h-0 desktop:h-8 desktop:min-h-8"
         />
         <div
-          class="sticky top-0 z-40 bg-default px-gutter text-center leading-10 text-subtle desktop:top-[177px] max:top-[129px]"
+          class="sticky top-0 z-40 bg-default px-gutter text-center leading-10 text-subtle desktop:top-[var(--header-offset)]"
         >
           Showing 32 of 32
         </div>
@@ -18625,7 +18636,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 1;"
             >
               <div
@@ -18721,7 +18732,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 2;"
             >
               <div
@@ -18811,7 +18822,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 3;"
             >
               <div
@@ -18972,7 +18983,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 4;"
             >
               <div
@@ -19074,7 +19085,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 5;"
             >
               <div
@@ -19235,7 +19246,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 6;"
             >
               <div
@@ -19328,7 +19339,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 7;"
             >
               <div
@@ -19427,7 +19438,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 8;"
             >
               <div
@@ -19523,7 +19534,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 9;"
             >
               <div
@@ -19690,7 +19701,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 10;"
             >
               <div
@@ -19783,7 +19794,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 11;"
             >
               <div
@@ -20101,7 +20112,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 12;"
             >
               <div
@@ -20271,7 +20282,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 13;"
             >
               <div
@@ -20370,7 +20381,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 14;"
             >
               <div
@@ -20463,7 +20474,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 15;"
             >
               <div
@@ -20633,7 +20644,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 16;"
             >
               <div
@@ -20735,7 +20746,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 17;"
             >
               <div
@@ -20834,7 +20845,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 18;"
             >
               <div
@@ -20998,7 +21009,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 19;"
             >
               <div
@@ -21088,7 +21099,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 20;"
             >
               <div
@@ -21184,7 +21195,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 21;"
             >
               <div
@@ -21277,7 +21288,7 @@ exports[`Underseen > renders 1`] = `
             class="block"
           >
             <div
-              class="sticky top-8 bg-default pt-0 text-md desktop:top-[216px] max:top-[168px]"
+              class="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
               style="z-index: 22;"
             >
               <div
@@ -21446,6 +21457,9 @@ exports[`Underseen > renders 1`] = `
         </ol>
         <div
           class="flex flex-col items-center px-pageMargin"
+        />
+        <div
+          class="spacer-y-6"
         />
       </div>
     </main>

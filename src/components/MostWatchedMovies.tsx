@@ -1,5 +1,5 @@
 import type { PosterImageProps } from "src/api/posters";
-import { twMerge } from "tailwind-merge";
+import { ccn } from "src/utils/concatClassNames";
 
 import { ListItemTitle } from "./ListItemTitle";
 import { Poster } from "./Poster";
@@ -104,7 +104,7 @@ function FluidListItemPoster({
     return (
       <a
         href={`/reviews/${slug}/`}
-        className={twMerge(
+        className={ccn(
           "safari-border-radius-fix w-full min-w-12 max-w-12 overflow-hidden rounded-lg shadow-all tablet:max-w-poster",
           className,
         )}
@@ -125,7 +125,7 @@ function FluidListItemPoster({
 
   return (
     <div
-      className={twMerge(
+      className={ccn(
         "safari-border-radius-fix min-w-12 max-w-12 overflow-hidden rounded-lg shadow-all tablet:max-w-poster",
         className,
       )}

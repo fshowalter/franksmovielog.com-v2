@@ -3,7 +3,7 @@ import type { StillImageProps } from "src/api/stills";
 import { Grade } from "src/components/Grade";
 import { RenderedMarkdown } from "src/components/RenderedMarkdown";
 import { Still } from "src/components/Still";
-import { toSentence } from "src/utils";
+import { toSentence } from "src/utils/toSentence";
 
 export const StillImageConfig = {
   width: 480,
@@ -46,14 +46,14 @@ export function HomeListItem({
 }) {
   return (
     <li className="flex even:bg-subtle">
-      <article className="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8">
+      <article className="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-2 desktop:gap-x-[calc(2_*_var(--gutter-width))] max:grid-cols-7">
         <div className="col-span-full mb-6 text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:mb-0 desktop:pb-6 desktop:text-left desktop:leading-8 max:col-span-1 max:self-start">
           {formatDate(value.date)}
         </div>
         <a
           rel="canonical"
           href={`/reviews/${value.slug}/`}
-          className="still-border block max-w-prose desktop:col-start-4 desktop:col-end-9 desktop:row-span-2 desktop:row-start-2 desktop:self-start desktop:justify-self-end max:row-start-1 max:mt-0"
+          className="still-border block max-w-prose desktop:col-start-2 desktop:col-end-2 desktop:row-span-2 desktop:row-start-2 desktop:self-start desktop:justify-self-end max:col-start-4 max:col-end-9 max:row-start-1 max:mt-0"
         >
           {stillImageData && (
             <Still
@@ -69,7 +69,7 @@ export function HomeListItem({
             />
           )}
         </a>
-        <div className="flex max-w-lg flex-col items-center pt-4 desktop:col-span-4 desktop:col-start-1 desktop:row-start-2 desktop:items-start desktop:place-self-start desktop:pt-0 max:col-start-2 max:row-start-1">
+        <div className="flex max-w-lg flex-col items-center pt-4 desktop:col-span-1 desktop:col-start-1 desktop:row-start-2 desktop:items-start desktop:place-self-start desktop:pt-0 max:col-span-3 max:col-start-2 max:row-start-1 max:max-w-unset">
           <h2 className="text-2.5xl font-bold leading-8">
             <a
               href={`/reviews/${value.slug}/`}

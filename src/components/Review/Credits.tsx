@@ -1,8 +1,8 @@
 import type { PosterImageProps } from "src/api/posters";
 import type { Review } from "src/api/reviews";
 import { Poster } from "src/components/Poster";
-import { toSentence } from "src/utils";
-import { twMerge } from "tailwind-merge";
+import { ccn } from "src/utils/concatClassNames";
+import { toSentence } from "src/utils/toSentence";
 
 export const PosterImageConfig = {
   width: 248,
@@ -43,10 +43,11 @@ export function Credits({
   return (
     <aside
       id="credits"
-      className={twMerge(
+      className={ccn(
         "relative scroll-mt-[var(--header-offset)] bg-subtle px-gutter pb-8 pt-8 tablet:pt-12",
         className,
       )}
+      data-pagefind-meta={`image:${posterImageProps.src}`}
     >
       <header className="flex items-center justify-center gap-x-2 pb-6 text-center text-2.5xl">
         {title} <span className="text-sm font-light text-subtle">({year})</span>
@@ -62,6 +63,7 @@ export function Credits({
           className="h-auto rounded-xl"
           decoding="async"
           imageProps={posterImageProps}
+          data-pagefind-meta="image[src], image_alt[alt]"
         />
       </div>
 

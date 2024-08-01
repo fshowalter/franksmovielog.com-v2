@@ -1,5 +1,5 @@
 import type { ElementType } from "react";
-import { twMerge } from "tailwind-merge";
+import { ccn } from "src/utils/concatClassNames";
 
 export function RenderedMarkdown({
   className,
@@ -18,7 +18,7 @@ export function RenderedMarkdown({
 
   return (
     <Component
-      className={twMerge("rendered-markdown font-light", className)}
+      className={ccn("rendered-markdown font-light", className)}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
         __html: text,
