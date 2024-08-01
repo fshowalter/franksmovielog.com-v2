@@ -101,6 +101,11 @@
       text-decoration-line: underline;
     }
 
+    sup a,
+    .data-footnote-backref {
+      color: var(--fg-accent);
+    }
+
     p {
       margin-bottom: 24px;
     }
@@ -166,6 +171,32 @@
     li {
       line-height: 28px;
       margin-bottom: 1.4rem;
+    }
+
+    .footnotes {
+      box-shadow: 0px -1px var(--border-default);
+      padding-top: 2rem;
+      font-size: 0.875rem;
+
+      ol {
+        list-style-type: none;
+        position: relative;
+      }
+
+      li {
+        line-height: 1.5rem;
+      }
+
+      li::before {
+        display: block;
+        content: counter(
+          list-item
+        ); /* list item is the default user-agent counter and doesn't require defining! It'll match the expected li value in an ol */
+        position: absolute;
+        right: calc(100% + 0.25em);
+        text-align: right;
+        font-size: 0.6875em;
+      }
     }
   }
 
