@@ -4,6 +4,7 @@ exports[`Review > matches snapshot for slug 'event-horizon-1997' 1`] = `
 <DocumentFragment>
   <main
     class="flex scroll-mt-[var(--header-offset)] flex-col items-center"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -11,6 +12,7 @@ exports[`Review > matches snapshot for slug 'event-horizon-1997' 1`] = `
     >
       <h1
         class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+        data-pagefind-meta="title"
       >
         Event Horizon
       </h1>
@@ -365,6 +367,7 @@ exports[`Review > matches snapshot for slug 'event-horizon-1997' 1`] = `
     />
     <aside
       class="relative scroll-mt-[var(--header-offset)] bg-subtle px-gutter pb-8 pt-8 tablet:pt-12 w-full max-w-popout"
+      data-pagefind-meta="image:/_image?/content%2Fassets%2Fposters%2Fevent-horizon-1997.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       id="credits"
     >
       <header
@@ -383,6 +386,7 @@ exports[`Review > matches snapshot for slug 'event-horizon-1997' 1`] = `
         <img
           alt="A poster from Event Horizon (1997)"
           class="aspect-[0.66666667] h-auto rounded-xl"
+          data-pagefind-meta="image[src], image_alt[alt]"
           decoding="async"
           height="372"
           loading="lazy"
@@ -499,6 +503,7 @@ exports[`Review > matches snapshot for slug 'event-horizon-1997' 1`] = `
     />
     <div
       class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -856,6 +861,7 @@ exports[`Review > matches snapshot for slug 'hellraiser-1987' 1`] = `
 <DocumentFragment>
   <main
     class="flex scroll-mt-[var(--header-offset)] flex-col items-center"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -863,6 +869,7 @@ exports[`Review > matches snapshot for slug 'hellraiser-1987' 1`] = `
     >
       <h1
         class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+        data-pagefind-meta="title"
       >
         Hellraiser
       </h1>
@@ -1124,6 +1131,7 @@ exports[`Review > matches snapshot for slug 'hellraiser-1987' 1`] = `
     />
     <aside
       class="relative scroll-mt-[var(--header-offset)] bg-subtle px-gutter pb-8 pt-8 tablet:pt-12 w-full max-w-popout"
+      data-pagefind-meta="image:/_image?/content%2Fassets%2Fposters%2Fhellraiser-1987.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       id="credits"
     >
       <header
@@ -1142,6 +1150,7 @@ exports[`Review > matches snapshot for slug 'hellraiser-1987' 1`] = `
         <img
           alt="A poster from Hellraiser (1987)"
           class="aspect-[0.66666667] h-auto rounded-xl"
+          data-pagefind-meta="image[src], image_alt[alt]"
           decoding="async"
           height="372"
           loading="lazy"
@@ -1279,6 +1288,7 @@ exports[`Review > matches snapshot for slug 'hellraiser-1987' 1`] = `
     />
     <div
       class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -1945,6 +1955,7 @@ exports[`Review > matches snapshot for slug 'horror-express-1972' 1`] = `
 <DocumentFragment>
   <main
     class="flex scroll-mt-[var(--header-offset)] flex-col items-center"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -1952,6 +1963,7 @@ exports[`Review > matches snapshot for slug 'horror-express-1972' 1`] = `
     >
       <h1
         class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+        data-pagefind-meta="title"
       >
         Horror Express
       </h1>
@@ -2248,6 +2260,7 @@ exports[`Review > matches snapshot for slug 'horror-express-1972' 1`] = `
     />
     <aside
       class="relative scroll-mt-[var(--header-offset)] bg-subtle px-gutter pb-8 pt-8 tablet:pt-12 w-full max-w-popout"
+      data-pagefind-meta="image:/_image?/content%2Fassets%2Fposters%2Fhorror-express-1972.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       id="credits"
     >
       <header
@@ -2266,6 +2279,7 @@ exports[`Review > matches snapshot for slug 'horror-express-1972' 1`] = `
         <img
           alt="A poster from Horror Express (1972)"
           class="aspect-[0.66666667] h-auto rounded-xl"
+          data-pagefind-meta="image[src], image_alt[alt]"
           decoding="async"
           height="372"
           loading="lazy"
@@ -2440,6 +2454,7 @@ exports[`Review > matches snapshot for slug 'horror-express-1972' 1`] = `
     />
     <div
       class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -3403,6 +3418,7 @@ exports[`Review > matches snapshot for slug 'night-train-to-terror-1985' 1`] = `
 <DocumentFragment>
   <main
     class="flex scroll-mt-[var(--header-offset)] flex-col items-center"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -3410,6 +3426,7 @@ exports[`Review > matches snapshot for slug 'night-train-to-terror-1985' 1`] = `
     >
       <h1
         class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+        data-pagefind-meta="title"
       >
         Night Train to Terror
       </h1>
@@ -3848,6 +3865,7 @@ exports[`Review > matches snapshot for slug 'night-train-to-terror-1985' 1`] = `
     />
     <aside
       class="relative scroll-mt-[var(--header-offset)] bg-subtle px-gutter pb-8 pt-8 tablet:pt-12 w-full max-w-popout"
+      data-pagefind-meta="image:/_image?/content%2Fassets%2Fposters%2Fnight-train-to-terror-1985.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       id="credits"
     >
       <header
@@ -3866,6 +3884,7 @@ exports[`Review > matches snapshot for slug 'night-train-to-terror-1985' 1`] = `
         <img
           alt="A poster from Night Train to Terror (1985)"
           class="aspect-[0.66666667] h-auto rounded-xl"
+          data-pagefind-meta="image[src], image_alt[alt]"
           decoding="async"
           height="372"
           loading="lazy"
@@ -3994,6 +4013,7 @@ exports[`Review > matches snapshot for slug 'night-train-to-terror-1985' 1`] = `
     />
     <div
       class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -4336,6 +4356,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
 <DocumentFragment>
   <main
     class="flex scroll-mt-[var(--header-offset)] flex-col items-center"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -4343,6 +4364,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
     >
       <h1
         class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+        data-pagefind-meta="title"
       >
         Rio Bravo
       </h1>
@@ -4717,6 +4739,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
     />
     <aside
       class="relative scroll-mt-[var(--header-offset)] bg-subtle px-gutter pb-8 pt-8 tablet:pt-12 w-full max-w-popout"
+      data-pagefind-meta="image:/_image?/content%2Fassets%2Fposters%2Frio-bravo-1959.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       id="credits"
     >
       <header
@@ -4735,6 +4758,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
         <img
           alt="A poster from Rio Bravo (1959)"
           class="aspect-[0.66666667] h-auto rounded-xl"
+          data-pagefind-meta="image[src], image_alt[alt]"
           decoding="async"
           height="372"
           loading="lazy"
@@ -4882,20 +4906,25 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
             href="/cast-and-crew/ward-bond"
           >
             <div
-              class="mr-[1ch] block size-10 rounded-[50%]"
+              data-pagefind-meta="image:/assets/default_avatar.svg"
             >
-              <svg
-                fill="var(--bg-stripe)"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="mr-[1ch] block size-10 rounded-[50%]"
+                data-pagefind-meta="image_alt:Ward Bond"
               >
-                <path
-                  clip-rule="evenodd"
-                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                  fill-rule="evenodd"
-                />
-              </svg>
+                <svg
+                  fill="var(--bg-stripe)"
+                  viewBox="0 0 16 16"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
             </div>
             Ward Bond
           </a>
@@ -4964,6 +4993,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
     />
     <div
       class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -6293,6 +6323,7 @@ exports[`Review > matches snapshot for slug 'the-curse-of-frankenstein-1957' 1`]
 <DocumentFragment>
   <main
     class="flex scroll-mt-[var(--header-offset)] flex-col items-center"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -6300,6 +6331,7 @@ exports[`Review > matches snapshot for slug 'the-curse-of-frankenstein-1957' 1`]
     >
       <h1
         class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+        data-pagefind-meta="title"
       >
         The Curse of Frankenstein
       </h1>
@@ -6590,6 +6622,7 @@ exports[`Review > matches snapshot for slug 'the-curse-of-frankenstein-1957' 1`]
     />
     <aside
       class="relative scroll-mt-[var(--header-offset)] bg-subtle px-gutter pb-8 pt-8 tablet:pt-12 w-full max-w-popout"
+      data-pagefind-meta="image:/_image?/content%2Fassets%2Fposters%2Fthe-curse-of-frankenstein-1957.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       id="credits"
     >
       <header
@@ -6608,6 +6641,7 @@ exports[`Review > matches snapshot for slug 'the-curse-of-frankenstein-1957' 1`]
         <img
           alt="A poster from The Curse of Frankenstein (1957)"
           class="aspect-[0.66666667] h-auto rounded-xl"
+          data-pagefind-meta="image[src], image_alt[alt]"
           decoding="async"
           height="372"
           loading="lazy"
@@ -6788,6 +6822,7 @@ exports[`Review > matches snapshot for slug 'the-curse-of-frankenstein-1957' 1`]
     />
     <div
       class="flex w-full max-w-popout flex-col items-center gap-y-12 bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
