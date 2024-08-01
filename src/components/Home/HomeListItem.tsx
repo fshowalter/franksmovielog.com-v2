@@ -3,7 +3,7 @@ import type { StillImageProps } from "src/api/stills";
 import { Grade } from "src/components/Grade";
 import { RenderedMarkdown } from "src/components/RenderedMarkdown";
 import { Still } from "src/components/Still";
-import { toSentence } from "src/utils";
+import { toSentence } from "src/utils/toSentence";
 
 export const StillImageConfig = {
   width: 480,

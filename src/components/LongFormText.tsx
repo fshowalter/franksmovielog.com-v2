@@ -1,4 +1,4 @@
-import { twMerge } from "tailwind-merge";
+import { ccn } from "src/utils/concatClassNames";
 
 import { RenderedMarkdown } from "./RenderedMarkdown";
 
@@ -16,10 +16,7 @@ export function LongFormText({
   return (
     <RenderedMarkdown
       text={text}
-      className={twMerge(
-        "text-md/7 tracking-0.3px tablet:text-xl/8",
-        className,
-      )}
+      className={ccn("text-md/7 tracking-0.3px tablet:text-xl/8", className)}
     />
   );
 }

@@ -1,4 +1,4 @@
-import { toSentence } from "src/utils";
+import { toSentence } from "src/utils/toSentence";
 
 export function WatchlistTitleSlug({
   directorNames,

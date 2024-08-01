@@ -1,4 +1,4 @@
-import { capitalize } from "src/utils";
+import { capitalize } from "src/utils/capitalize";
 
 export function CreditedAs({
   values,

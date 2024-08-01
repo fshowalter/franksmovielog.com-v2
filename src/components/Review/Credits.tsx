@@ -1,8 +1,8 @@
 import type { PosterImageProps } from "src/api/posters";
 import type { Review } from "src/api/reviews";
 import { Poster } from "src/components/Poster";
-import { toSentence } from "src/utils";
-import { twMerge } from "tailwind-merge";
+import { ccn } from "src/utils/concatClassNames";
+import { toSentence } from "src/utils/toSentence";
 
 export const PosterImageConfig = {
   width: 248,
@@ -43,7 +43,7 @@ export function Credits({
   return (
     <aside
       id="credits"
-      className={twMerge(
+      className={ccn(
         "relative scroll-mt-[var(--header-offset)] bg-subtle px-gutter pb-8 pt-8 tablet:pt-12",
         className,
       )}

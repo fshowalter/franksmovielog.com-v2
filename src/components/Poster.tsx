@@ -1,5 +1,5 @@
 import type { PosterImageProps } from "src/api/posters";
-import { twMerge } from "tailwind-merge";
+import { ccn } from "src/utils/concatClassNames";
 
 interface PosterProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   title: string;
@@ -27,7 +27,7 @@ export function Poster({
       {...imageProps}
       alt={`A poster from ${title} (${year})`}
       {...rest}
-      className={twMerge("aspect-[0.66666667]", className)}
+      className={ccn("aspect-[0.66666667]", className)}
       loading={loading}
       decoding={decoding}
     />
