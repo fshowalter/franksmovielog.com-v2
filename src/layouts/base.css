@@ -54,14 +54,6 @@
   :root {
     --gutter-width: 32px;
     --page-margin-width: 64px;
-    --header-offset: 176px;
-  }
-}
-
-@media screen(max) {
-  :root {
-    --gutter-width: 32px;
-    --page-margin-width: 64px;
     --header-offset: 128px;
   }
 }
