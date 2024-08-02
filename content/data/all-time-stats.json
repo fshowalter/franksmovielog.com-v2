@@ -1,6 +1,6 @@
 {
-  "viewingCount": 1613,
-  "titleCount": 1317,
+  "viewingCount": 1616,
+  "titleCount": 1320,
   "reviewCount": 711,
   "watchlistTitlesReviewedCount": 390,
   "gradeDistribution": [
@@ -73,7 +73,7 @@
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 291
+      "count": 292
     },
     {
       "name": "Netflix",
@@ -143,7 +143,7 @@
     },
     {
       "name": "1990s",
-      "count": 93
+      "count": 94
     },
     {
       "name": "2000s",
@@ -155,7 +155,7 @@
     },
     {
       "name": "2020s",
-      "count": 64
+      "count": 66
     }
   ],
   "mostWatchedTitles": [

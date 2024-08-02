@@ -1,12 +1,12 @@
 {
   "year": "2024",
-  "newTitleCount": 42,
-  "viewingCount": 59,
-  "titleCount": 58,
+  "newTitleCount": 45,
+  "viewingCount": 62,
+  "titleCount": 61,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 27
+      "count": 28
     },
     {
       "name": "4k UHD Blu-ray",
@@ -52,7 +52,7 @@
     },
     {
       "name": "1990s",
-      "count": 7
+      "count": 8
     },
     {
       "name": "2000s",
@@ -64,7 +64,7 @@
     },
     {
       "name": "2020s",
-      "count": 7
+      "count": 9
     }
   ],
   "mostWatchedTitles": [
@@ -289,6 +289,49 @@
   ],
   "mostWatchedPerformers": [
     {
+      "name": "Nicolas Cage",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1582,
+          "date": "2024-04-13",
+          "slug": "mandy-2018",
+          "title": "Mandy",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        },
+        {
+          "sequence": 1595,
+          "date": "2024-06-06",
+          "slug": null,
+          "title": "Red Rock West",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1993"
+        },
+        {
+          "sequence": 1607,
+          "date": "2024-06-24",
+          "slug": null,
+          "title": "Vampire's Kiss",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1988"
+        },
+        {
+          "sequence": 1616,
+          "date": "2024-07-31",
+          "slug": null,
+          "title": "Longlegs",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2024"
+        }
+      ]
+    },
+    {
       "name": "Clint Eastwood",
       "count": 4,
       "slug": null,
@@ -430,40 +473,6 @@
           "medium": "4k UHD Blu-ray",
           "venue": null,
           "year": "1966"
-        }
-      ]
-    },
-    {
-      "name": "Nicolas Cage",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1582,
-          "date": "2024-04-13",
-          "slug": "mandy-2018",
-          "title": "Mandy",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2018"
-        },
-        {
-          "sequence": 1595,
-          "date": "2024-06-06",
-          "slug": null,
-          "title": "Red Rock West",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1993"
-        },
-        {
-          "sequence": 1607,
-          "date": "2024-06-24",
-          "slug": null,
-          "title": "Vampire's Kiss",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1988"
         }
       ]
     },
