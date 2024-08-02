@@ -27180,5 +27180,56 @@
       "Thriller"
     ],
     "releaseSequence": "1971-06-23tt0067309"
+  },
+  {
+    "sequence": 1614,
+    "viewingYear": "2024",
+    "viewingDate": "2024-07-21",
+    "title": "Die Hard 2",
+    "sortTitle": "Die Hard 2 (1990)",
+    "medium": "Blu-ray",
+    "venue": null,
+    "year": "1990",
+    "slug": null,
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "releaseSequence": "1990-07-02tt0099423"
+  },
+  {
+    "sequence": 1615,
+    "viewingYear": "2024",
+    "viewingDate": "2024-07-25",
+    "title": "Deadpool & Wolverine",
+    "sortTitle": "Deadpool & Wolverine (2024)",
+    "medium": null,
+    "venue": "Alamo Drafthouse Cinema - One Loudoun",
+    "year": "2024",
+    "slug": null,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "releaseSequence": "2024-07-22tt6263850"
+  },
+  {
+    "sequence": 1616,
+    "viewingYear": "2024",
+    "viewingDate": "2024-07-31",
+    "title": "Longlegs",
+    "sortTitle": "Longlegs (2024)",
+    "medium": null,
+    "venue": "Alamo Drafthouse Cinema - One Loudoun",
+    "year": "2024",
+    "slug": null,
+    "genres": [
+      "Crime",
+      "Horror",
+      "Thriller"
+    ],
+    "releaseSequence": "2024-05-31tt23468450"
   }
 ]
