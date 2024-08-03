@@ -1,8 +1,8 @@
 {
-  "viewingCount": 1616,
-  "titleCount": 1320,
-  "reviewCount": 711,
-  "watchlistTitlesReviewedCount": 390,
+  "viewingCount": 1617,
+  "titleCount": 1321,
+  "reviewCount": 712,
+  "watchlistTitlesReviewedCount": 391,
   "gradeDistribution": [
     {
       "name": "A+",
@@ -26,7 +26,7 @@
     },
     {
       "name": "B",
-      "count": 59,
+      "count": 60,
       "sortValue": 9
     },
     {
@@ -73,7 +73,7 @@
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 292
+      "count": 293
     },
     {
       "name": "Netflix",
@@ -127,7 +127,7 @@
     },
     {
       "name": "1950s",
-      "count": 109
+      "count": 110
     },
     {
       "name": "1960s",
@@ -1943,7 +1943,7 @@
   "mostWatchedPerformers": [
     {
       "name": "Humphrey Bogart",
-      "count": 60,
+      "count": 61,
       "slug": "humphrey-bogart",
       "viewings": [
         {
@@ -2485,6 +2485,15 @@
           "medium": "Watch TCM",
           "venue": null,
           "year": "1937"
+        },
+        {
+          "sequence": 1617,
+          "date": "2024-08-02",
+          "slug": "deadline-usa-1952",
+          "title": "Deadline - U.S.A.",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1952"
         }
       ]
     },

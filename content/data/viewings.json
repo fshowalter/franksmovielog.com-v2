@@ -27231,5 +27231,22 @@
       "Thriller"
     ],
     "releaseSequence": "2024-05-31tt23468450"
+  },
+  {
+    "sequence": 1617,
+    "viewingYear": "2024",
+    "viewingDate": "2024-08-02",
+    "title": "Deadline - U.S.A.",
+    "sortTitle": "Deadline - U.S.A. (1952)",
+    "medium": "Blu-ray",
+    "venue": null,
+    "year": "1952",
+    "slug": "deadline-usa-1952",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Film-Noir"
+    ],
+    "releaseSequence": "1952-03-14tt0044533"
   }
 ]

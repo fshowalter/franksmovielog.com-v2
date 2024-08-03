@@ -1323,17 +1323,15 @@
       "imdbId": "tt0044533",
       "title": "Deadline - U.S.A.",
       "year": "1952",
-      "slug": null,
-      "grade": null,
+      "slug": "deadline-usa-1952",
+      "grade": "B",
       "sortTitle": "Deadline - U.S.A. (1952)",
-      "gradeValue": null,
+      "gradeValue": 9,
       "releaseSequence": "1952-03-14tt0044533",
-      "reviewDate": null,
-      "viewingSequence": null,
+      "reviewDate": "2024-08-02",
+      "viewingSequence": "2024-08-02-1617",
       "watchlistDirectorNames": [],
-      "watchlistPerformerNames": [
-        "Humphrey Bogart"
-      ],
+      "watchlistPerformerNames": [],
       "watchlistWriterNames": [],
       "collectionNames": []
     },
@@ -1531,7 +1529,7 @@
       "collectionNames": []
     }
   ],
-  "reviewCount": 27,
+  "reviewCount": 28,
   "totalCount": 74,
   "creditedAs": [
     "performer"
