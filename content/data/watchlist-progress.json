@@ -1,6 +1,6 @@
 {
   "total": 3554,
-  "reviewed": 390,
+  "reviewed": 391,
   "directorTotal": 1205,
   "directorReviewed": 138,
   "directorDetails": [
@@ -276,7 +276,7 @@
     }
   ],
   "performerTotal": 2024,
-  "performerReviewed": 201,
+  "performerReviewed": 202,
   "performerDetails": [
     {
       "name": "Bela Lugosi",
@@ -342,7 +342,7 @@
       "name": "Humphrey Bogart",
       "titleCount": 75,
       "slug": "humphrey-bogart",
-      "reviewCount": 28
+      "reviewCount": 29
     },
     {
       "name": "Jack Lemmon",
@@ -448,7 +448,7 @@
     }
   ],
   "writerTotal": 2024,
-  "writerReviewed": 201,
+  "writerReviewed": 202,
   "writerDetails": [
     {
       "name": "Anthony Shaffer",

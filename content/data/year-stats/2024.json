@@ -1,12 +1,12 @@
 {
   "year": "2024",
-  "newTitleCount": 45,
-  "viewingCount": 62,
-  "titleCount": 61,
+  "newTitleCount": 46,
+  "viewingCount": 63,
+  "titleCount": 62,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 28
+      "count": 29
     },
     {
       "name": "4k UHD Blu-ray",
@@ -36,6 +36,10 @@
     },
     {
       "name": "1940s",
+      "count": 1
+    },
+    {
+      "name": "1950s",
       "count": 1
     },
     {

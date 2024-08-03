@@ -8481,15 +8481,15 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Dead of Night",
-        "imdbId": "tt0068457",
-        "year": "1974",
-        "slug": "deathdream-1974",
-        "grade": "B+",
+        "title": "Deadline - U.S.A.",
+        "imdbId": "tt0044533",
+        "year": "1952",
+        "slug": "deadline-usa-1952",
+        "grade": "B",
         "genres": [
+          "Crime",
           "Drama",
-          "Horror",
-          "Thriller"
+          "Film-Noir"
         ]
       },
       {
@@ -12989,24 +12989,24 @@
             ]
           },
           {
+            "title": "Deadline - U.S.A.",
+            "imdbId": "tt0044533",
+            "year": "1952",
+            "slug": "deadline-usa-1952",
+            "grade": "B",
+            "genres": [
+              "Crime",
+              "Drama",
+              "Film-Noir"
+            ]
+          },
+          {
             "title": "The Left Hand of God",
             "imdbId": "tt0048291",
             "year": "1955",
             "slug": "the-left-hand-of-god-1955",
             "grade": "C-",
             "genres": [
-              "Drama"
-            ]
-          },
-          {
-            "title": "Up the River",
-            "imdbId": "tt0021508",
-            "year": "1930",
-            "slug": "up-the-river-1930",
-            "grade": "B-",
-            "genres": [
-              "Comedy",
-              "Crime",
               "Drama"
             ]
           }
@@ -35386,6 +35386,166 @@
     ]
   },
   {
+    "imdbId": "tt0044533",
+    "title": "Deadline - U.S.A.",
+    "year": "1952",
+    "slug": "deadline-usa-1952",
+    "grade": "B",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Film-Noir"
+    ],
+    "sortTitle": "Deadline - U.S.A. (1952)",
+    "originalTitle": null,
+    "gradeValue": 9,
+    "runtimeMinutes": 87,
+    "releaseSequence": "1952-03-14tt0044533",
+    "directorNames": [
+      "Richard Brooks"
+    ],
+    "writerNames": [
+      "Richard Brooks"
+    ],
+    "principalCastNames": [
+      "Humphrey Bogart",
+      "Ethel Barrymore",
+      "Kim Hunter",
+      "Ed Begley"
+    ],
+    "reviewDate": "2024-08-02",
+    "reviewYear": "2024",
+    "sequence": "2024-08-02-1617",
+    "viewings": [
+      {
+        "sequence": 1617,
+        "medium": "Blu-ray",
+        "mediumNotes": "Kino Lorber, 2016",
+        "date": "2024-08-02",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "castAndCrew": [
+      {
+        "name": "Humphrey Bogart",
+        "slug": "humphrey-bogart",
+        "creditedAs": [
+          "performer"
+        ]
+      }
+    ],
+    "collections": [],
+    "moreCastAndCrew": [
+      {
+        "name": "Humphrey Bogart",
+        "slug": "humphrey-bogart",
+        "creditKind": "performer",
+        "titles": [
+          {
+            "title": "Dead Reckoning",
+            "imdbId": "tt0039305",
+            "year": "1946",
+            "slug": "dead-reckoning-1947",
+            "grade": "C+",
+            "genres": [
+              "Crime",
+              "Drama",
+              "Film-Noir",
+              "Mystery",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Chain Lightning",
+            "imdbId": "tt0042324",
+            "year": "1950",
+            "slug": "chain-lightning-1950",
+            "grade": "D+",
+            "genres": [
+              "Action",
+              "Adventure",
+              "Drama"
+            ]
+          },
+          {
+            "title": "The Left Hand of God",
+            "imdbId": "tt0048291",
+            "year": "1955",
+            "slug": "the-left-hand-of-god-1955",
+            "grade": "C-",
+            "genres": [
+              "Drama"
+            ]
+          },
+          {
+            "title": "Up the River",
+            "imdbId": "tt0021508",
+            "year": "1930",
+            "slug": "up-the-river-1930",
+            "grade": "B-",
+            "genres": [
+              "Comedy",
+              "Crime",
+              "Drama"
+            ]
+          }
+        ]
+      }
+    ],
+    "moreCollections": [],
+    "moreReviews": [
+      {
+        "title": "Dead of Night",
+        "imdbId": "tt0037635",
+        "year": "1945",
+        "slug": "dead-of-night-1945",
+        "grade": "C-",
+        "genres": [
+          "Drama",
+          "Horror"
+        ]
+      },
+      {
+        "title": "Dead of Night",
+        "imdbId": "tt0068457",
+        "year": "1974",
+        "slug": "deathdream-1974",
+        "grade": "B+",
+        "genres": [
+          "Drama",
+          "Horror",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Deadly Blessing",
+        "imdbId": "tt0082245",
+        "year": "1981",
+        "slug": "deadly-blessing-1981",
+        "grade": "D-",
+        "genres": [
+          "Horror",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "The Deadly Companions",
+        "imdbId": "tt0054795",
+        "year": "1961",
+        "slug": "the-deadly-companions-1961",
+        "grade": "C-",
+        "genres": [
+          "Adventure",
+          "Western"
+        ]
+      }
+    ]
+  },
+  {
     "imdbId": "tt0027805",
     "title": "Isle of Fury",
     "year": "1936",
@@ -47480,17 +47640,6 @@
     "moreReviews": [
       {
         "title": "Dead of Night",
-        "imdbId": "tt0037635",
-        "year": "1945",
-        "slug": "dead-of-night-1945",
-        "grade": "C-",
-        "genres": [
-          "Drama",
-          "Horror"
-        ]
-      },
-      {
-        "title": "Dead of Night",
         "imdbId": "tt0068457",
         "year": "1974",
         "slug": "deathdream-1974",
@@ -47499,6 +47648,18 @@
           "Drama",
           "Horror",
           "Thriller"
+        ]
+      },
+      {
+        "title": "Deadline - U.S.A.",
+        "imdbId": "tt0044533",
+        "year": "1952",
+        "slug": "deadline-usa-1952",
+        "grade": "B",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Film-Noir"
         ]
       },
       {
@@ -69015,14 +69176,15 @@
         ]
       },
       {
-        "title": "Deadly Blessing",
-        "imdbId": "tt0082245",
-        "year": "1981",
-        "slug": "deadly-blessing-1981",
-        "grade": "D-",
+        "title": "Deadline - U.S.A.",
+        "imdbId": "tt0044533",
+        "year": "1952",
+        "slug": "deadline-usa-1952",
+        "grade": "B",
         "genres": [
-          "Horror",
-          "Thriller"
+          "Crime",
+          "Drama",
+          "Film-Noir"
         ]
       }
     ]
@@ -71187,13 +71349,15 @@
             ]
           },
           {
-            "title": "The Left Hand of God",
-            "imdbId": "tt0048291",
-            "year": "1955",
-            "slug": "the-left-hand-of-god-1955",
-            "grade": "C-",
+            "title": "Deadline - U.S.A.",
+            "imdbId": "tt0044533",
+            "year": "1952",
+            "slug": "deadline-usa-1952",
+            "grade": "B",
             "genres": [
-              "Drama"
+              "Crime",
+              "Drama",
+              "Film-Noir"
             ]
           }
         ]
@@ -77334,15 +77498,15 @@
         "creditKind": "performer",
         "titles": [
           {
-            "title": "Chain Lightning",
-            "imdbId": "tt0042324",
-            "year": "1950",
-            "slug": "chain-lightning-1950",
-            "grade": "D+",
+            "title": "Deadline - U.S.A.",
+            "imdbId": "tt0044533",
+            "year": "1952",
+            "slug": "deadline-usa-1952",
+            "grade": "B",
             "genres": [
-              "Action",
-              "Adventure",
-              "Drama"
+              "Crime",
+              "Drama",
+              "Film-Noir"
             ]
           },
           {
@@ -88997,20 +89161,6 @@
         "creditKind": "performer",
         "titles": [
           {
-            "title": "Dead Reckoning",
-            "imdbId": "tt0039305",
-            "year": "1946",
-            "slug": "dead-reckoning-1947",
-            "grade": "C+",
-            "genres": [
-              "Crime",
-              "Drama",
-              "Film-Noir",
-              "Mystery",
-              "Thriller"
-            ]
-          },
-          {
             "title": "Chain Lightning",
             "imdbId": "tt0042324",
             "year": "1950",
@@ -89020,6 +89170,18 @@
               "Action",
               "Adventure",
               "Drama"
+            ]
+          },
+          {
+            "title": "Deadline - U.S.A.",
+            "imdbId": "tt0044533",
+            "year": "1952",
+            "slug": "deadline-usa-1952",
+            "grade": "B",
+            "genres": [
+              "Crime",
+              "Drama",
+              "Film-Noir"
             ]
           },
           {
@@ -93791,6 +93953,18 @@
         ]
       },
       {
+        "title": "Deadline - U.S.A.",
+        "imdbId": "tt0044533",
+        "year": "1952",
+        "slug": "deadline-usa-1952",
+        "grade": "B",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Film-Noir"
+        ]
+      },
+      {
         "title": "Deadly Blessing",
         "imdbId": "tt0082245",
         "year": "1981",
@@ -93799,17 +93973,6 @@
         "genres": [
           "Horror",
           "Thriller"
-        ]
-      },
-      {
-        "title": "The Deadly Companions",
-        "imdbId": "tt0054795",
-        "year": "1961",
-        "slug": "the-deadly-companions-1961",
-        "grade": "C-",
-        "genres": [
-          "Adventure",
-          "Western"
         ]
       }
     ]
