@@ -1,8 +1,8 @@
 {
-  "viewingCount": 1617,
+  "viewingCount": 1618,
   "titleCount": 1321,
-  "reviewCount": 712,
-  "watchlistTitlesReviewedCount": 391,
+  "reviewCount": 713,
+  "watchlistTitlesReviewedCount": 392,
   "gradeDistribution": [
     {
       "name": "A+",
@@ -46,7 +46,7 @@
     },
     {
       "name": "C-",
-      "count": 76,
+      "count": 77,
       "sortValue": 5
     },
     {
@@ -92,11 +92,11 @@
       "count": 97
     },
     {
-      "name": "DVD",
-      "count": 66
+      "name": "4k UHD Blu-ray",
+      "count": 67
     },
     {
-      "name": "4k UHD Blu-ray",
+      "name": "DVD",
       "count": 66
     },
     {
@@ -127,7 +127,7 @@
     },
     {
       "name": "1950s",
-      "count": 110
+      "count": 111
     },
     {
       "name": "1960s",

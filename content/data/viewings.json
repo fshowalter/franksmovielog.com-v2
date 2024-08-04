@@ -264,7 +264,7 @@
     "medium": "Netflix",
     "venue": null,
     "year": "1955",
-    "slug": null,
+    "slug": "killers-kiss-1955",
     "genres": [
       "Crime",
       "Drama",
@@ -27248,5 +27248,23 @@
       "Film-Noir"
     ],
     "releaseSequence": "1952-03-14tt0044533"
+  },
+  {
+    "sequence": 1618,
+    "viewingYear": "2024",
+    "viewingDate": "2024-08-03",
+    "title": "Killer's Kiss",
+    "sortTitle": "Killer's Kiss (1955)",
+    "medium": "4k UHD Blu-ray",
+    "venue": null,
+    "year": "1955",
+    "slug": "killers-kiss-1955",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Film-Noir",
+      "Thriller"
+    ],
+    "releaseSequence": "1955-09-21tt0048254"
   }
 ]
