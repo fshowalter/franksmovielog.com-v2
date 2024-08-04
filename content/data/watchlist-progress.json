@@ -1,8 +1,8 @@
 {
   "total": 3554,
-  "reviewed": 391,
+  "reviewed": 392,
   "directorTotal": 1205,
-  "directorReviewed": 138,
+  "directorReviewed": 139,
   "directorDetails": [
     {
       "name": "Abel Ferrara",
@@ -230,7 +230,7 @@
       "name": "Stanley Kubrick",
       "titleCount": 13,
       "slug": "stanley-kubrick",
-      "reviewCount": 1
+      "reviewCount": 2
     },
     {
       "name": "The Coen Brothers",

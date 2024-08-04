@@ -29,16 +29,14 @@
       "imdbId": "tt0048254",
       "title": "Killer's Kiss",
       "year": "1955",
-      "slug": null,
-      "grade": null,
+      "slug": "killers-kiss-1955",
+      "grade": "C-",
       "sortTitle": "Killer's Kiss (1955)",
-      "gradeValue": null,
+      "gradeValue": 5,
       "releaseSequence": "1955-09-21tt0048254",
-      "reviewDate": null,
-      "viewingSequence": null,
-      "watchlistDirectorNames": [
-        "Stanley Kubrick"
-      ],
+      "reviewDate": "2024-08-03",
+      "viewingSequence": "2024-08-03-16",
+      "watchlistDirectorNames": [],
       "watchlistPerformerNames": [],
       "watchlistWriterNames": [],
       "collectionNames": []
@@ -288,7 +286,7 @@
       "collectionNames": []
     }
   ],
-  "reviewCount": 1,
+  "reviewCount": 2,
   "totalCount": 13,
   "creditedAs": [
     "director",
