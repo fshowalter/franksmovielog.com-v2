@@ -71890,10 +71890,18 @@
       "Frank McHugh",
       "Marceline Day"
     ],
-    "reviewDate": "2017-01-17",
-    "reviewYear": "2017",
-    "sequence": "2017-01-17-580",
+    "reviewDate": "2024-08-05",
+    "reviewYear": "2024",
+    "sequence": "2024-08-05-1620",
     "viewings": [
+      {
+        "sequence": 1620,
+        "medium": "Watch TCM",
+        "mediumNotes": "",
+        "date": "2024-08-05",
+        "venue": null,
+        "venueNotes": null
+      },
       {
         "sequence": 580,
         "medium": "TCM",
