@@ -1,8 +1,8 @@
 {
   "year": "2024",
   "newTitleCount": 46,
-  "viewingCount": 64,
-  "titleCount": 63,
+  "viewingCount": 65,
+  "titleCount": 64,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
@@ -10,7 +10,7 @@
     },
     {
       "name": "4k UHD Blu-ray",
-      "count": 13
+      "count": 14
     },
     {
       "name": "iTunes",
@@ -32,7 +32,7 @@
   "decadeDistribution": [
     {
       "name": "1930s",
-      "count": 1
+      "count": 2
     },
     {
       "name": "1940s",
