@@ -27266,5 +27266,22 @@
       "Thriller"
     ],
     "releaseSequence": "1955-09-21tt0048254"
+  },
+  {
+    "sequence": 1619,
+    "viewingYear": "2024",
+    "viewingDate": "2024-08-04",
+    "title": "Bride of Frankenstein",
+    "sortTitle": "Bride of Frankenstein (1935)",
+    "medium": "4k UHD Blu-ray",
+    "venue": null,
+    "year": "1935",
+    "slug": null,
+    "genres": [
+      "Drama",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "releaseSequence": "1935-04-19tt0026138"
   }
 ]
