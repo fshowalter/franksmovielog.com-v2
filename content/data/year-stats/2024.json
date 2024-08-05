@@ -1,8 +1,8 @@
 {
   "year": "2024",
   "newTitleCount": 46,
-  "viewingCount": 65,
-  "titleCount": 64,
+  "viewingCount": 66,
+  "titleCount": 65,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
@@ -27,12 +27,16 @@
     {
       "name": "35mm",
       "count": 1
+    },
+    {
+      "name": "Watch TCM",
+      "count": 1
     }
   ],
   "decadeDistribution": [
     {
       "name": "1930s",
-      "count": 2
+      "count": 3
     },
     {
       "name": "1940s",
@@ -447,6 +451,40 @@
       ]
     },
     {
+      "name": "John Wayne",
+      "count": 3,
+      "slug": "john-wayne",
+      "viewings": [
+        {
+          "sequence": 1576,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "Stagecoach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1939"
+        },
+        {
+          "sequence": 1577,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "The Man Who Shot Liberty Valance",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1962"
+        },
+        {
+          "sequence": 1620,
+          "date": "2024-08-05",
+          "slug": "the-telegraph-trail-1933",
+          "title": "The Telegraph Trail",
+          "medium": "Watch TCM",
+          "venue": null,
+          "year": "1933"
+        }
+      ]
+    },
+    {
       "name": "Lee Van Cleef",
       "count": 3,
       "slug": null,
@@ -584,31 +622,6 @@
     },
     {
       "name": "Barbara Wyler",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1556,
-          "date": "2024-01-04",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1985"
-        },
-        {
-          "sequence": 1586,
-          "date": "2024-04-27",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1985"
-        }
-      ]
-    },
-    {
-      "name": "Jamie Scoggin",
       "count": 2,
       "slug": null,
       "viewings": [
