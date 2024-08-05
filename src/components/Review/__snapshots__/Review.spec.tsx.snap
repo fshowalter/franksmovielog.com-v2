@@ -1249,7 +1249,7 @@ exports[`Review > matches snapshot for slug 'hellraiser-1987' 1`] = `
         >
           <a
             class="flex items-center whitespace-nowrap rounded-lg bg-inverse px-4 py-2 text-accent shadow-all hover:shadow-accent"
-            href="/cast-and-crew/clive-barker"
+            href="/cast-and-crew/clive-barker/"
           >
             <img
               alt="More Clive Barker reviews"
@@ -2395,7 +2395,7 @@ exports[`Review > matches snapshot for slug 'horror-express-1972' 1`] = `
         >
           <a
             class="flex items-center whitespace-nowrap rounded-lg bg-inverse px-4 py-2 text-accent shadow-all hover:shadow-accent"
-            href="/cast-and-crew/peter-cushing"
+            href="/cast-and-crew/peter-cushing/"
           >
             <img
               alt="More Peter Cushing reviews"
@@ -2415,7 +2415,7 @@ exports[`Review > matches snapshot for slug 'horror-express-1972' 1`] = `
         >
           <a
             class="flex items-center whitespace-nowrap rounded-lg bg-inverse px-4 py-2 text-accent shadow-all hover:shadow-accent"
-            href="/cast-and-crew/christopher-lee"
+            href="/cast-and-crew/christopher-lee/"
           >
             <img
               alt="More Christopher Lee reviews"
@@ -4863,7 +4863,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
         >
           <a
             class="flex items-center whitespace-nowrap rounded-lg bg-inverse px-4 py-2 text-accent shadow-all hover:shadow-accent"
-            href="/cast-and-crew/howard-hawks"
+            href="/cast-and-crew/howard-hawks/"
           >
             <img
               alt="More Howard Hawks reviews"
@@ -4883,7 +4883,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
         >
           <a
             class="flex items-center whitespace-nowrap rounded-lg bg-inverse px-4 py-2 text-accent shadow-all hover:shadow-accent"
-            href="/cast-and-crew/leigh-brackett"
+            href="/cast-and-crew/leigh-brackett/"
           >
             <img
               alt="More Leigh Brackett reviews"
@@ -4903,7 +4903,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
         >
           <a
             class="flex items-center whitespace-nowrap rounded-lg bg-inverse px-4 py-2 text-accent shadow-all hover:shadow-accent"
-            href="/cast-and-crew/ward-bond"
+            href="/cast-and-crew/ward-bond/"
           >
             <div
               data-pagefind-meta="image:/assets/default_avatar.svg"
@@ -4934,7 +4934,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
         >
           <a
             class="flex items-center whitespace-nowrap rounded-lg bg-inverse px-4 py-2 text-accent shadow-all hover:shadow-accent"
-            href="/cast-and-crew/john-wayne"
+            href="/cast-and-crew/john-wayne/"
           >
             <img
               alt="More John Wayne reviews"
@@ -4954,7 +4954,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
         >
           <a
             class="flex items-center whitespace-nowrap rounded-lg bg-inverse px-4 py-2 text-accent shadow-all hover:shadow-accent"
-            href="/cast-and-crew/dean-martin"
+            href="/cast-and-crew/dean-martin/"
           >
             <img
               alt="More Dean Martin reviews"
@@ -6743,7 +6743,7 @@ exports[`Review > matches snapshot for slug 'the-curse-of-frankenstein-1957' 1`]
         >
           <a
             class="flex items-center whitespace-nowrap rounded-lg bg-inverse px-4 py-2 text-accent shadow-all hover:shadow-accent"
-            href="/cast-and-crew/peter-cushing"
+            href="/cast-and-crew/peter-cushing/"
           >
             <img
               alt="More Peter Cushing reviews"
@@ -6763,7 +6763,7 @@ exports[`Review > matches snapshot for slug 'the-curse-of-frankenstein-1957' 1`]
         >
           <a
             class="flex items-center whitespace-nowrap rounded-lg bg-inverse px-4 py-2 text-accent shadow-all hover:shadow-accent"
-            href="/cast-and-crew/christopher-lee"
+            href="/cast-and-crew/christopher-lee/"
           >
             <img
               alt="More Christopher Lee reviews"
