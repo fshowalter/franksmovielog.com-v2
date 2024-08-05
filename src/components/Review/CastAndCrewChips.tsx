@@ -16,7 +16,7 @@ export function CastAndCrewChips({ values }: Props): JSX.Element {
         return (
           <li key={value.slug} className="block">
             <Chip
-              linkTarget={`/cast-and-crew/${value.slug}`}
+              linkTarget={`/cast-and-crew/${value.slug}/`}
               name={value.name}
               key={value.slug}
               imageProps={value.avatarImageProps}
