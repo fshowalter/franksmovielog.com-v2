@@ -5201,7 +5201,7 @@
         "imdbId": "tt0024293",
         "year": "1933",
         "slug": "the-man-from-monterey-1933",
-        "grade": "D-",
+        "grade": "D",
         "genres": [
           "Adventure",
           "Music",
@@ -8735,7 +8735,7 @@
     "title": "The Man from Monterey",
     "year": "1933",
     "slug": "the-man-from-monterey-1933",
-    "grade": "D-",
+    "grade": "D",
     "countries": [
       "United States"
     ],
@@ -8747,7 +8747,7 @@
     ],
     "sortTitle": "Man from Monterey (1933)",
     "originalTitle": null,
-    "gradeValue": 2,
+    "gradeValue": 3,
     "runtimeMinutes": 57,
     "releaseSequence": "1933-07-15tt0024293",
     "directorNames": [
@@ -8762,10 +8762,18 @@
       "Ruth Hall",
       "Luis Alberni"
     ],
-    "reviewDate": "2022-08-18",
-    "reviewYear": "2022",
-    "sequence": "2022-08-18-1322",
+    "reviewDate": "2024-08-05",
+    "reviewYear": "2024",
+    "sequence": "2024-08-05-1621",
     "viewings": [
+      {
+        "sequence": 1621,
+        "medium": "Watch TCM",
+        "mediumNotes": "",
+        "date": "2024-08-05",
+        "venue": null,
+        "venueNotes": null
+      },
       {
         "sequence": 1322,
         "medium": "Watch TCM",
@@ -20165,7 +20173,7 @@
             "imdbId": "tt0024293",
             "year": "1933",
             "slug": "the-man-from-monterey-1933",
-            "grade": "D-",
+            "grade": "D",
             "genres": [
               "Adventure",
               "Music",
@@ -22630,7 +22638,7 @@
         "imdbId": "tt0024293",
         "year": "1933",
         "slug": "the-man-from-monterey-1933",
-        "grade": "D-",
+        "grade": "D",
         "genres": [
           "Adventure",
           "Music",
@@ -27935,7 +27943,7 @@
             "imdbId": "tt0024293",
             "year": "1933",
             "slug": "the-man-from-monterey-1933",
-            "grade": "D-",
+            "grade": "D",
             "genres": [
               "Adventure",
               "Music",
@@ -39059,7 +39067,7 @@
             "imdbId": "tt0024293",
             "year": "1933",
             "slug": "the-man-from-monterey-1933",
-            "grade": "D-",
+            "grade": "D",
             "genres": [
               "Adventure",
               "Music",
@@ -55323,7 +55331,7 @@
             "imdbId": "tt0024293",
             "year": "1933",
             "slug": "the-man-from-monterey-1933",
-            "grade": "D-",
+            "grade": "D",
             "genres": [
               "Adventure",
               "Music",
@@ -69692,7 +69700,7 @@
         "imdbId": "tt0024293",
         "year": "1933",
         "slug": "the-man-from-monterey-1933",
-        "grade": "D-",
+        "grade": "D",
         "genres": [
           "Adventure",
           "Music",
@@ -74235,7 +74243,7 @@
         "imdbId": "tt0024293",
         "year": "1933",
         "slug": "the-man-from-monterey-1933",
-        "grade": "D-",
+        "grade": "D",
         "genres": [
           "Adventure",
           "Music",

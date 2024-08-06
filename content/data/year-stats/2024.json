@@ -1,8 +1,8 @@
 {
   "year": "2024",
   "newTitleCount": 46,
-  "viewingCount": 66,
-  "titleCount": 65,
+  "viewingCount": 67,
+  "titleCount": 66,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
@@ -21,22 +21,22 @@
       "count": 3
     },
     {
+      "name": "Watch TCM",
+      "count": 2
+    },
+    {
       "name": "WEBRip",
       "count": 1
     },
     {
       "name": "35mm",
       "count": 1
-    },
-    {
-      "name": "Watch TCM",
-      "count": 1
     }
   ],
   "decadeDistribution": [
     {
       "name": "1930s",
-      "count": 3
+      "count": 4
     },
     {
       "name": "1940s",
@@ -297,6 +297,49 @@
   ],
   "mostWatchedPerformers": [
     {
+      "name": "John Wayne",
+      "count": 4,
+      "slug": "john-wayne",
+      "viewings": [
+        {
+          "sequence": 1576,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "Stagecoach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1939"
+        },
+        {
+          "sequence": 1577,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "The Man Who Shot Liberty Valance",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1962"
+        },
+        {
+          "sequence": 1620,
+          "date": "2024-08-05",
+          "slug": "the-telegraph-trail-1933",
+          "title": "The Telegraph Trail",
+          "medium": "Watch TCM",
+          "venue": null,
+          "year": "1933"
+        },
+        {
+          "sequence": 1621,
+          "date": "2024-08-05",
+          "slug": "the-man-from-monterey-1933",
+          "title": "The Man from Monterey",
+          "medium": "Watch TCM",
+          "venue": null,
+          "year": "1933"
+        }
+      ]
+    },
+    {
       "name": "Nicolas Cage",
       "count": 4,
       "slug": null,
@@ -447,40 +490,6 @@
           "medium": "Blu-ray",
           "venue": null,
           "year": "2003"
-        }
-      ]
-    },
-    {
-      "name": "John Wayne",
-      "count": 3,
-      "slug": "john-wayne",
-      "viewings": [
-        {
-          "sequence": 1576,
-          "date": "2024-03-12",
-          "slug": null,
-          "title": "Stagecoach",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1939"
-        },
-        {
-          "sequence": 1577,
-          "date": "2024-03-12",
-          "slug": null,
-          "title": "The Man Who Shot Liberty Valance",
-          "medium": "4k UHD Blu-ray",
-          "venue": null,
-          "year": "1962"
-        },
-        {
-          "sequence": 1620,
-          "date": "2024-08-05",
-          "slug": "the-telegraph-trail-1933",
-          "title": "The Telegraph Trail",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1933"
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "viewingCount": 1620,
+  "viewingCount": 1621,
   "titleCount": 1321,
   "reviewCount": 713,
   "watchlistTitlesReviewedCount": 392,
@@ -56,12 +56,12 @@
     },
     {
       "name": "D",
-      "count": 68,
+      "count": 69,
       "sortValue": 3
     },
     {
       "name": "D-",
-      "count": 22,
+      "count": 21,
       "sortValue": 2
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "name": "Watch TCM",
-      "count": 123
+      "count": 124
     },
     {
       "name": "iTunes",
@@ -119,7 +119,7 @@
     },
     {
       "name": "1930s",
-      "count": 198
+      "count": 199
     },
     {
       "name": "1940s",
@@ -2499,7 +2499,7 @@
     },
     {
       "name": "John Wayne",
-      "count": 56,
+      "count": 57,
       "slug": "john-wayne",
       "viewings": [
         {
@@ -3002,6 +3002,15 @@
           "date": "2024-08-05",
           "slug": "the-telegraph-trail-1933",
           "title": "The Telegraph Trail",
+          "medium": "Watch TCM",
+          "venue": null,
+          "year": "1933"
+        },
+        {
+          "sequence": 1621,
+          "date": "2024-08-05",
+          "slug": "the-man-from-monterey-1933",
+          "title": "The Man from Monterey",
           "medium": "Watch TCM",
           "venue": null,
           "year": "1933"
