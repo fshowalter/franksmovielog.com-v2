@@ -27301,5 +27301,23 @@
       "Western"
     ],
     "releaseSequence": "1933-03-18tt0024647"
+  },
+  {
+    "sequence": 1621,
+    "viewingYear": "2024",
+    "viewingDate": "2024-08-05",
+    "title": "The Man from Monterey",
+    "sortTitle": "Man from Monterey (1933)",
+    "medium": "Watch TCM",
+    "venue": null,
+    "year": "1933",
+    "slug": "the-man-from-monterey-1933",
+    "genres": [
+      "Adventure",
+      "Music",
+      "Romance",
+      "Western"
+    ],
+    "releaseSequence": "1933-07-15tt0024293"
   }
 ]
