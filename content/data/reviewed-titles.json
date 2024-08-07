@@ -1778,6 +1778,16 @@
             ]
           },
           {
+            "title": "Tall in the Saddle",
+            "imdbId": "tt0037343",
+            "year": "1944",
+            "slug": "tall-in-the-saddle-1944",
+            "grade": "B-",
+            "genres": [
+              "Western"
+            ]
+          },
+          {
             "title": "The Searchers",
             "imdbId": "tt0049730",
             "year": "1956",
@@ -1785,17 +1795,6 @@
             "grade": "A-",
             "genres": [
               "Adventure",
-              "Drama",
-              "Western"
-            ]
-          },
-          {
-            "title": "Rio Bravo",
-            "imdbId": "tt0053221",
-            "year": "1959",
-            "slug": "rio-bravo-1959",
-            "grade": "A+",
-            "genres": [
               "Drama",
               "Western"
             ]
@@ -6237,17 +6236,6 @@
         "creditKind": "performer",
         "titles": [
           {
-            "title": "The Lawless Frontier",
-            "imdbId": "tt0025373",
-            "year": "1934",
-            "slug": "the-lawless-frontier-1934",
-            "grade": "D",
-            "genres": [
-              "Drama",
-              "Western"
-            ]
-          },
-          {
             "title": "Reunion in France",
             "imdbId": "tt0035250",
             "year": "1942",
@@ -6257,6 +6245,16 @@
               "Drama",
               "Romance",
               "War"
+            ]
+          },
+          {
+            "title": "Tall in the Saddle",
+            "imdbId": "tt0037343",
+            "year": "1944",
+            "slug": "tall-in-the-saddle-1944",
+            "grade": "B-",
+            "genres": [
+              "Western"
             ]
           },
           {
@@ -14362,13 +14360,12 @@
         "creditKind": "performer",
         "titles": [
           {
-            "title": "The Oklahoma Kid",
-            "imdbId": "tt0031747",
-            "year": "1939",
-            "slug": "the-oklahoma-kid-1939",
-            "grade": "C-",
+            "title": "Tall in the Saddle",
+            "imdbId": "tt0037343",
+            "year": "1944",
+            "slug": "tall-in-the-saddle-1944",
+            "grade": "B-",
             "genres": [
-              "Action",
               "Western"
             ]
           },
@@ -23157,6 +23154,16 @@
         ]
       },
       {
+        "title": "Tall in the Saddle",
+        "imdbId": "tt0037343",
+        "year": "1944",
+        "slug": "tall-in-the-saddle-1944",
+        "grade": "B-",
+        "genres": [
+          "Western"
+        ]
+      },
+      {
         "title": "The Telegraph Trail",
         "imdbId": "tt0024647",
         "year": "1933",
@@ -23167,17 +23174,6 @@
           "Adventure",
           "Drama",
           "Western"
-        ]
-      },
-      {
-        "title": "Tetsuo: The Iron Man",
-        "imdbId": "tt0096251",
-        "year": "1989",
-        "slug": "tetsuo-the-iron-man-1989",
-        "grade": "B-",
-        "genres": [
-          "Horror",
-          "Sci-Fi"
         ]
       }
     ]
@@ -60134,18 +60130,6 @@
         "creditKind": "performer",
         "titles": [
           {
-            "title": "Born Reckless",
-            "imdbId": "tt0020702",
-            "year": "1930",
-            "slug": "born-reckless-1930",
-            "grade": "D+",
-            "genres": [
-              "Crime",
-              "Drama",
-              "War"
-            ]
-          },
-          {
             "title": "The Oklahoma Kid",
             "imdbId": "tt0031747",
             "year": "1939",
@@ -60153,6 +60137,16 @@
             "grade": "C-",
             "genres": [
               "Action",
+              "Western"
+            ]
+          },
+          {
+            "title": "Tall in the Saddle",
+            "imdbId": "tt0037343",
+            "year": "1944",
+            "slug": "tall-in-the-saddle-1944",
+            "grade": "B-",
+            "genres": [
               "Western"
             ]
           },
@@ -60187,15 +60181,13 @@
         "creditKind": "performer",
         "titles": [
           {
-            "title": "Reunion in France",
-            "imdbId": "tt0035250",
-            "year": "1942",
-            "slug": "reunion-in-france-1942",
-            "grade": "D-",
+            "title": "Tall in the Saddle",
+            "imdbId": "tt0037343",
+            "year": "1944",
+            "slug": "tall-in-the-saddle-1944",
+            "grade": "B-",
             "genres": [
-              "Drama",
-              "Romance",
-              "War"
+              "Western"
             ]
           },
           {
@@ -63517,17 +63509,13 @@
             ]
           },
           {
-            "title": "Big Jim McLain",
-            "imdbId": "tt0044418",
-            "year": "1952",
-            "slug": "big-jim-mclain-1952",
-            "grade": "C",
+            "title": "Tall in the Saddle",
+            "imdbId": "tt0037343",
+            "year": "1944",
+            "slug": "tall-in-the-saddle-1944",
+            "grade": "B-",
             "genres": [
-              "Crime",
-              "Drama",
-              "History",
-              "Romance",
-              "Thriller"
+              "Western"
             ]
           }
         ]
@@ -66199,6 +66187,16 @@
             ]
           },
           {
+            "title": "Tall in the Saddle",
+            "imdbId": "tt0037343",
+            "year": "1944",
+            "slug": "tall-in-the-saddle-1944",
+            "grade": "B-",
+            "genres": [
+              "Western"
+            ]
+          },
+          {
             "title": "Big Jim McLain",
             "imdbId": "tt0044418",
             "year": "1952",
@@ -66210,18 +66208,6 @@
               "History",
               "Romance",
               "Thriller"
-            ]
-          },
-          {
-            "title": "The Searchers",
-            "imdbId": "tt0049730",
-            "year": "1956",
-            "slug": "the-searchers-1956",
-            "grade": "A-",
-            "genres": [
-              "Adventure",
-              "Drama",
-              "Western"
             ]
           }
         ]
@@ -71986,19 +71972,6 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Swing Your Lady",
-        "imdbId": "tt0030820",
-        "year": "1938",
-        "slug": "swing-your-lady-1938",
-        "grade": "F",
-        "genres": [
-          "Comedy",
-          "Music",
-          "Romance",
-          "Sport"
-        ]
-      },
-      {
         "title": "Switchblade Sisters",
         "imdbId": "tt0073778",
         "year": "1975",
@@ -72008,6 +71981,16 @@
           "Action",
           "Crime",
           "Drama"
+        ]
+      },
+      {
+        "title": "Tall in the Saddle",
+        "imdbId": "tt0037343",
+        "year": "1944",
+        "slug": "tall-in-the-saddle-1944",
+        "grade": "B-",
+        "genres": [
+          "Western"
         ]
       },
       {
@@ -72928,15 +72911,13 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Switchblade Sisters",
-        "imdbId": "tt0073778",
-        "year": "1975",
-        "slug": "switchblade-sisters-1975",
-        "grade": "C-",
+        "title": "Tall in the Saddle",
+        "imdbId": "tt0037343",
+        "year": "1944",
+        "slug": "tall-in-the-saddle-1944",
+        "grade": "B-",
         "genres": [
-          "Action",
-          "Crime",
-          "Drama"
+          "Western"
         ]
       },
       {
@@ -76835,14 +76816,12 @@
             ]
           },
           {
-            "title": "The Searchers",
-            "imdbId": "tt0049730",
-            "year": "1956",
-            "slug": "the-searchers-1956",
-            "grade": "A-",
+            "title": "Tall in the Saddle",
+            "imdbId": "tt0037343",
+            "year": "1944",
+            "slug": "tall-in-the-saddle-1944",
+            "grade": "B-",
             "genres": [
-              "Adventure",
-              "Drama",
               "Western"
             ]
           }
@@ -77882,15 +77861,12 @@
         ]
       },
       {
-        "title": "The Telegraph Trail",
-        "imdbId": "tt0024647",
-        "year": "1933",
-        "slug": "the-telegraph-trail-1933",
-        "grade": "D-",
+        "title": "Tall in the Saddle",
+        "imdbId": "tt0037343",
+        "year": "1944",
+        "slug": "tall-in-the-saddle-1944",
+        "grade": "B-",
         "genres": [
-          "Action",
-          "Adventure",
-          "Drama",
           "Western"
         ]
       }
@@ -87151,6 +87127,231 @@
           "Horror",
           "Mystery",
           "Thriller"
+        ]
+      }
+    ]
+  },
+  {
+    "imdbId": "tt0037343",
+    "title": "Tall in the Saddle",
+    "year": "1944",
+    "slug": "tall-in-the-saddle-1944",
+    "grade": "B-",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Western"
+    ],
+    "sortTitle": "Tall in the Saddle (1944)",
+    "originalTitle": null,
+    "gradeValue": 8,
+    "runtimeMinutes": 87,
+    "releaseSequence": "1944-09-29tt0037343",
+    "directorNames": [
+      "Edwin L. Marin"
+    ],
+    "writerNames": [
+      "Michael Hogan",
+      "Paul Fix",
+      "Gordon Ray Young"
+    ],
+    "principalCastNames": [
+      "John Wayne",
+      "Ella Raines",
+      "Ward Bond",
+      "George 'Gabby' Hayes"
+    ],
+    "reviewDate": "2024-08-06",
+    "reviewYear": "2024",
+    "sequence": "2024-08-06-1622",
+    "viewings": [
+      {
+        "sequence": 1622,
+        "medium": "Watch TCM",
+        "mediumNotes": "",
+        "date": "2024-08-06",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "castAndCrew": [
+      {
+        "name": "Ward Bond",
+        "slug": "ward-bond",
+        "creditedAs": [
+          "performer"
+        ]
+      },
+      {
+        "name": "John Wayne",
+        "slug": "john-wayne",
+        "creditedAs": [
+          "performer"
+        ]
+      }
+    ],
+    "collections": [],
+    "moreCastAndCrew": [
+      {
+        "name": "Ward Bond",
+        "slug": "ward-bond",
+        "creditKind": "performer",
+        "titles": [
+          {
+            "title": "Born Reckless",
+            "imdbId": "tt0020702",
+            "year": "1930",
+            "slug": "born-reckless-1930",
+            "grade": "D+",
+            "genres": [
+              "Crime",
+              "Drama",
+              "War"
+            ]
+          },
+          {
+            "title": "The Oklahoma Kid",
+            "imdbId": "tt0031747",
+            "year": "1939",
+            "slug": "the-oklahoma-kid-1939",
+            "grade": "C-",
+            "genres": [
+              "Action",
+              "Western"
+            ]
+          },
+          {
+            "title": "The Searchers",
+            "imdbId": "tt0049730",
+            "year": "1956",
+            "slug": "the-searchers-1956",
+            "grade": "A-",
+            "genres": [
+              "Adventure",
+              "Drama",
+              "Western"
+            ]
+          },
+          {
+            "title": "Rio Bravo",
+            "imdbId": "tt0053221",
+            "year": "1959",
+            "slug": "rio-bravo-1959",
+            "grade": "A+",
+            "genres": [
+              "Drama",
+              "Western"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "John Wayne",
+        "slug": "john-wayne",
+        "creditKind": "performer",
+        "titles": [
+          {
+            "title": "The Lawless Frontier",
+            "imdbId": "tt0025373",
+            "year": "1934",
+            "slug": "the-lawless-frontier-1934",
+            "grade": "D",
+            "genres": [
+              "Drama",
+              "Western"
+            ]
+          },
+          {
+            "title": "Reunion in France",
+            "imdbId": "tt0035250",
+            "year": "1942",
+            "slug": "reunion-in-france-1942",
+            "grade": "D-",
+            "genres": [
+              "Drama",
+              "Romance",
+              "War"
+            ]
+          },
+          {
+            "title": "Big Jim McLain",
+            "imdbId": "tt0044418",
+            "year": "1952",
+            "slug": "big-jim-mclain-1952",
+            "grade": "C",
+            "genres": [
+              "Crime",
+              "Drama",
+              "History",
+              "Romance",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "The Searchers",
+            "imdbId": "tt0049730",
+            "year": "1956",
+            "slug": "the-searchers-1956",
+            "grade": "A-",
+            "genres": [
+              "Adventure",
+              "Drama",
+              "Western"
+            ]
+          }
+        ]
+      }
+    ],
+    "moreCollections": [],
+    "moreReviews": [
+      {
+        "title": "Swing Your Lady",
+        "imdbId": "tt0030820",
+        "year": "1938",
+        "slug": "swing-your-lady-1938",
+        "grade": "F",
+        "genres": [
+          "Comedy",
+          "Music",
+          "Romance",
+          "Sport"
+        ]
+      },
+      {
+        "title": "Switchblade Sisters",
+        "imdbId": "tt0073778",
+        "year": "1975",
+        "slug": "switchblade-sisters-1975",
+        "grade": "C-",
+        "genres": [
+          "Action",
+          "Crime",
+          "Drama"
+        ]
+      },
+      {
+        "title": "The Telegraph Trail",
+        "imdbId": "tt0024647",
+        "year": "1933",
+        "slug": "the-telegraph-trail-1933",
+        "grade": "D-",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama",
+          "Western"
+        ]
+      },
+      {
+        "title": "Tetsuo: The Iron Man",
+        "imdbId": "tt0096251",
+        "year": "1989",
+        "slug": "tetsuo-the-iron-man-1989",
+        "grade": "B-",
+        "genres": [
+          "Horror",
+          "Sci-Fi"
         ]
       }
     ]

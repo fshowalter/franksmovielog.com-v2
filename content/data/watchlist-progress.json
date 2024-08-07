@@ -1,6 +1,6 @@
 {
   "total": 3554,
-  "reviewed": 392,
+  "reviewed": 393,
   "directorTotal": 1205,
   "directorReviewed": 139,
   "directorDetails": [
@@ -276,7 +276,7 @@
     }
   ],
   "performerTotal": 2024,
-  "performerReviewed": 202,
+  "performerReviewed": 203,
   "performerDetails": [
     {
       "name": "Bela Lugosi",
@@ -378,7 +378,7 @@
       "name": "John Wayne",
       "titleCount": 146,
       "slug": "john-wayne",
-      "reviewCount": 23
+      "reviewCount": 24
     },
     {
       "name": "Lee Marvin",
@@ -448,7 +448,7 @@
     }
   ],
   "writerTotal": 2024,
-  "writerReviewed": 202,
+  "writerReviewed": 203,
   "writerDetails": [
     {
       "name": "Anthony Shaffer",

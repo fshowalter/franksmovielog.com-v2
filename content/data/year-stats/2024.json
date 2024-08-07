@@ -1,8 +1,8 @@
 {
   "year": "2024",
-  "newTitleCount": 46,
-  "viewingCount": 67,
-  "titleCount": 66,
+  "newTitleCount": 47,
+  "viewingCount": 68,
+  "titleCount": 67,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Watch TCM",
-      "count": 2
+      "count": 3
     },
     {
       "name": "WEBRip",
@@ -40,7 +40,7 @@
     },
     {
       "name": "1940s",
-      "count": 1
+      "count": 2
     },
     {
       "name": "1950s",
@@ -298,7 +298,7 @@
   "mostWatchedPerformers": [
     {
       "name": "John Wayne",
-      "count": 4,
+      "count": 5,
       "slug": "john-wayne",
       "viewings": [
         {
@@ -336,6 +336,15 @@
           "medium": "Watch TCM",
           "venue": null,
           "year": "1933"
+        },
+        {
+          "sequence": 1622,
+          "date": "2024-08-06",
+          "slug": "tall-in-the-saddle-1944",
+          "title": "Tall in the Saddle",
+          "medium": "Watch TCM",
+          "venue": null,
+          "year": "1944"
         }
       ]
     },

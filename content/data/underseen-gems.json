@@ -411,6 +411,19 @@
     "releaseSequence": "1945-03-29tt0037614"
   },
   {
+    "imdbId": "tt0037343",
+    "title": "Tall in the Saddle",
+    "year": "1944",
+    "sortTitle": "Tall in the Saddle (1944)",
+    "slug": "tall-in-the-saddle-1944",
+    "grade": "B-",
+    "gradeValue": 8,
+    "genres": [
+      "Western"
+    ],
+    "releaseSequence": "1944-09-29tt0037343"
+  },
+  {
     "imdbId": "tt0023731",
     "title": "20,000 Years in Sing Sing",
     "year": "1932",

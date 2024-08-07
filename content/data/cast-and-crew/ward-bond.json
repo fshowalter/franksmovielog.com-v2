@@ -469,17 +469,15 @@
       "imdbId": "tt0037343",
       "title": "Tall in the Saddle",
       "year": "1944",
-      "slug": null,
-      "grade": null,
+      "slug": "tall-in-the-saddle-1944",
+      "grade": "B-",
       "sortTitle": "Tall in the Saddle (1944)",
-      "gradeValue": null,
+      "gradeValue": 8,
       "releaseSequence": "1944-09-29tt0037343",
-      "reviewDate": null,
-      "viewingSequence": null,
+      "reviewDate": "2024-08-06",
+      "viewingSequence": "2024-08-06-1622",
       "watchlistDirectorNames": [],
-      "watchlistPerformerNames": [
-        "John Wayne"
-      ],
+      "watchlistPerformerNames": [],
       "watchlistWriterNames": [],
       "collectionNames": []
     },
@@ -892,7 +890,7 @@
       "collectionNames": []
     }
   ],
-  "reviewCount": 5,
+  "reviewCount": 6,
   "totalCount": 42,
   "creditedAs": [
     "performer"

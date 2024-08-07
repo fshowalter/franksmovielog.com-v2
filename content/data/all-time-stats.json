@@ -1,8 +1,8 @@
 {
-  "viewingCount": 1621,
-  "titleCount": 1321,
-  "reviewCount": 713,
-  "watchlistTitlesReviewedCount": 392,
+  "viewingCount": 1622,
+  "titleCount": 1322,
+  "reviewCount": 714,
+  "watchlistTitlesReviewedCount": 393,
   "gradeDistribution": [
     {
       "name": "A+",
@@ -31,7 +31,7 @@
     },
     {
       "name": "B-",
-      "count": 69,
+      "count": 70,
       "sortValue": 8
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "name": "Watch TCM",
-      "count": 124
+      "count": 125
     },
     {
       "name": "iTunes",
@@ -123,7 +123,7 @@
     },
     {
       "name": "1940s",
-      "count": 106
+      "count": 107
     },
     {
       "name": "1950s",
@@ -2499,7 +2499,7 @@
     },
     {
       "name": "John Wayne",
-      "count": 57,
+      "count": 58,
       "slug": "john-wayne",
       "viewings": [
         {
@@ -3014,6 +3014,15 @@
           "medium": "Watch TCM",
           "venue": null,
           "year": "1933"
+        },
+        {
+          "sequence": 1622,
+          "date": "2024-08-06",
+          "slug": "tall-in-the-saddle-1944",
+          "title": "Tall in the Saddle",
+          "medium": "Watch TCM",
+          "venue": null,
+          "year": "1944"
         }
       ]
     },

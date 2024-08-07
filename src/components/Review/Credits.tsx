@@ -52,7 +52,7 @@ export function Credits({
       <header className="flex items-center justify-center gap-x-2 pb-6 text-center text-2.5xl">
         {title} <span className="text-sm font-light text-subtle">({year})</span>
       </header>
-      <div className="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster tablet:float-left tablet:mx-0 tablet:mr-gutter">
+      <div className="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster bg-[#e9e7e0] tablet:float-left tablet:mx-0 tablet:mr-gutter">
         <Poster
           title={title}
           year={year}
