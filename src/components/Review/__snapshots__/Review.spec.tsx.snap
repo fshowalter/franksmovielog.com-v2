@@ -381,7 +381,7 @@ exports[`Review > matches snapshot for slug 'event-horizon-1997' 1`] = `
         </span>
       </header>
       <div
-        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster tablet:float-left tablet:mx-0 tablet:mr-gutter"
+        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster bg-[#e9e7e0] tablet:float-left tablet:mx-0 tablet:mr-gutter"
       >
         <img
           alt="A poster from Event Horizon (1997)"
@@ -1145,7 +1145,7 @@ exports[`Review > matches snapshot for slug 'hellraiser-1987' 1`] = `
         </span>
       </header>
       <div
-        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster tablet:float-left tablet:mx-0 tablet:mr-gutter"
+        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster bg-[#e9e7e0] tablet:float-left tablet:mx-0 tablet:mr-gutter"
       >
         <img
           alt="A poster from Hellraiser (1987)"
@@ -2274,7 +2274,7 @@ exports[`Review > matches snapshot for slug 'horror-express-1972' 1`] = `
         </span>
       </header>
       <div
-        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster tablet:float-left tablet:mx-0 tablet:mr-gutter"
+        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster bg-[#e9e7e0] tablet:float-left tablet:mx-0 tablet:mr-gutter"
       >
         <img
           alt="A poster from Horror Express (1972)"
@@ -3879,7 +3879,7 @@ exports[`Review > matches snapshot for slug 'night-train-to-terror-1985' 1`] = `
         </span>
       </header>
       <div
-        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster tablet:float-left tablet:mx-0 tablet:mr-gutter"
+        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster bg-[#e9e7e0] tablet:float-left tablet:mx-0 tablet:mr-gutter"
       >
         <img
           alt="A poster from Night Train to Terror (1985)"
@@ -4753,7 +4753,7 @@ exports[`Review > matches snapshot for slug 'rio-bravo-1959' 1`] = `
         </span>
       </header>
       <div
-        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster tablet:float-left tablet:mx-0 tablet:mr-gutter"
+        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster bg-[#e9e7e0] tablet:float-left tablet:mx-0 tablet:mr-gutter"
       >
         <img
           alt="A poster from Rio Bravo (1959)"
@@ -6636,7 +6636,7 @@ exports[`Review > matches snapshot for slug 'the-curse-of-frankenstein-1957' 1`]
         </span>
       </header>
       <div
-        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster tablet:float-left tablet:mx-0 tablet:mr-gutter"
+        class="poster-border mx-auto mb-4 mt-0 block size-full max-w-poster bg-[#e9e7e0] tablet:float-left tablet:mx-0 tablet:mr-gutter"
       >
         <img
           alt="A poster from The Curse of Frankenstein (1957)"
