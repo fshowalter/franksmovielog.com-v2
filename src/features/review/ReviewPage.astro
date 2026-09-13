@@ -82,13 +82,11 @@ const posterImageProps = await getFixedWidthPosterImageProps(review.slug);
         >
           {reviewedTitle.title}
         </h1>
-        {
-          reviewedTitle.originalTitle && (
-            <div class="text-center text-muted">
-              ({reviewedTitle.originalTitle})
-            </div>
-          )
-        }
+        {reviewedTitle.originalTitle && (
+          <div class="text-center text-muted">
+            ({reviewedTitle.originalTitle})
+          </div>
+        )}
       </div>
       <Grade className="mb-6" height={24} value={reviewedTitle.grade} />
       <div
@@ -98,19 +96,14 @@ const posterImageProps = await getFixedWidthPosterImageProps(review.slug);
           tablet:mb-12
         `}
       >
-        {reviewedTitle.releaseYear}
-        {" "}|{" "}
-        {
-          reviewedTitle.countries.map((country, index) => {
-            if (index === 0) {
-              return country;
-            }
-            return <Fragment set:html={`&ndash;${country}`} />;
-          })
-        }
-        {" "}|{" "}
-        {reviewedTitle.runtimeMinutes}&nbsp;min
-        {" "}|{" "}
+        {reviewedTitle.releaseYear} |{" "}
+        {reviewedTitle.countries.map((country, index) => {
+          if (index === 0) {
+            return country;
+          }
+          return <Fragment set:html={`&ndash;${country}`} />;
+        })}{" "}
+        | {reviewedTitle.runtimeMinutes}&nbsp;min |{" "}
         <a
           class={`
             relative -mb-1 inline-block origin-bottom-left pb-1 text-accent
@@ -194,14 +187,12 @@ const posterImageProps = await getFixedWidthPosterImageProps(review.slug);
 
           <dl class="flex min-w-0 shrink flex-col items-start gap-y-4">
             <Credit term="Title" value={reviewedTitle.title} />
-            {
-              reviewedTitle.originalTitle && (
-                <Credit
-                  term="Original Title"
-                  value={reviewedTitle.originalTitle}
-                />
-              )
-            }
+            {reviewedTitle.originalTitle && (
+              <Credit
+                term="Original Title"
+                value={reviewedTitle.originalTitle}
+              />
+            )}
             <Credit term="Year" value={reviewedTitle.releaseYear} />
             <Credit
               term="Financing"

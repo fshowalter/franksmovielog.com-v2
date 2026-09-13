@@ -17,64 +17,62 @@ type Props = {
 const { class: className, values } = Astro.props;
 ---
 
-{
-  values.length > 0 && (
-    <section
-      class:list={[
-        `
-          max-w-[1000px] pb-5
-          laptop:pb-10
-          desktop:max-w-[1192px]
-        `,
-        className,
-      ]}
+{values.length > 0 && (
+  <section
+    class:list={[
+      `
+        max-w-[1000px] pb-5
+        laptop:pb-10
+        desktop:max-w-[1192px]
+      `,
+      className,
+    ]}
+  >
+    <h2
+      class={`
+        px-container py-4 text-xl font-medium
+        tablet:text-center tablet:text-2xl
+        laptop:py-8
+      `}
     >
-      <h2
-        class={`
-          px-container py-4 text-xl font-medium
-          tablet:text-center tablet:text-2xl
-          laptop:py-8
-        `}
-      >
-        Most Watched Movies
-      </h2>
-      <PosterList className={`justify-center`}>
-        {await Promise.all(
-          values.map(async (value) => {
-            const posterImageProps = await getFluidWidthPosterImageProps(
-              value.reviewSlug,
-            );
-            return (
-              <PosterListItem
-                hasReview={Boolean(value.reviewSlug)}
-                posterImageProps={posterImageProps}
+      Most Watched Movies
+    </h2>
+    <PosterList className={`justify-center`}>
+      {await Promise.all(
+        values.map(async (value) => {
+          const posterImageProps = await getFluidWidthPosterImageProps(
+            value.reviewSlug,
+          );
+          return (
+            <PosterListItem
+              hasReview={Boolean(value.reviewSlug)}
+              posterImageProps={posterImageProps}
+            >
+              <div
+                class={`
+                  flex flex-col justify-center
+                  tablet:mt-2 tablet:w-full tablet:text-center
+                `}
               >
+                <ListItemTitle
+                  reviewSlug={value.reviewSlug}
+                  title={value.title}
+                  year={value.releaseYear}
+                />
                 <div
                   class={`
-                    flex flex-col justify-center
-                    tablet:mt-2 tablet:w-full tablet:text-center
+                    mt-1 flex justify-start font-sans text-[13px] font-normal
+                    text-subtle
+                    tablet:justify-center
                   `}
                 >
-                  <ListItemTitle
-                    reviewSlug={value.reviewSlug}
-                    title={value.title}
-                    year={value.releaseYear}
-                  />
-                  <div
-                    class={`
-                      mt-1 flex justify-start font-sans text-[13px] font-normal
-                      text-subtle
-                      tablet:justify-center
-                    `}
-                  >
-                    {value.count.toLocaleString()} times
-                  </div>
+                  {value.count.toLocaleString()} times
                 </div>
-              </PosterListItem>
-            );
-          }),
-        )}
-      </PosterList>
-    </section>
-  )
-}
+              </div>
+            </PosterListItem>
+          );
+        }),
+      )}
+    </PosterList>
+  </section>
+)}

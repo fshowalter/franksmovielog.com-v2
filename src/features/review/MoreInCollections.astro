@@ -12,26 +12,24 @@ type Props = {
 const { values } = Astro.props;
 ---
 
-{
-  await Promise.all(
-    values.map(async (value) => {
-      return (
-        <MoreReviews
-          cardProps={await Promise.all(
-            value.titles.map(async (title) => {
-              const reviewedTitleEntry = await getEntry(title);
-              return {
-                value: reviewedTitleEntry.data,
-              };
-            }),
-          )}
-          headingProps={{
-            accentText: value.name,
-            href: `/collections/${value.slug}/`,
-            text: "More ",
-          }}
-        />
-      );
-    }),
-  )
-}
+{await Promise.all(
+  values.map(async (value) => {
+    return (
+      <MoreReviews
+        cardProps={await Promise.all(
+          value.titles.map(async (title) => {
+            const reviewedTitleEntry = await getEntry(title);
+            return {
+              value: reviewedTitleEntry.data,
+            };
+          }),
+        )}
+        headingProps={{
+          accentText: value.name,
+          href: `/collections/${value.slug}/`,
+          text: "More ",
+        }}
+      />
+    );
+  }),
+)}
