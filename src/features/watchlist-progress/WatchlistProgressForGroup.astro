@@ -44,15 +44,14 @@ const { class: className, label, values, valueType } = Astro.props;
       laptop:grid-cols-[2rem_auto_24px_1fr_2rem]
     `}
   >
-    {
-      await Promise.all(
-        values.map(async (progressDetails) => {
-          const avatarImageProps = await getAvatarImageProps(
-            progressDetails.slug,
-          );
-          return (
-            <div
-              class={`
+    {await Promise.all(
+      values.map(async (progressDetails) => {
+        const avatarImageProps = await getAvatarImageProps(
+          progressDetails.slug,
+        );
+        return (
+          <div
+            class={`
                 group/list-item relative col-span-5 grid transform-gpu
                 grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] bg-default py-4
                 text-subtle transition-all duration-500
@@ -62,78 +61,77 @@ const { class: className, label, values, valueType } = Astro.props;
                 tablet-landscape:has-[a:hover]:shadow-all
                 tablet-landscape:has-[a:hover]:drop-shadow-2xl
               `}
-            >
-              <div
-                class={`
+          >
+            <div
+              class={`
                   relative col-start-2 row-span-4 transition-all
                   after:absolute after:top-0 after:left-0 after:z-above
                   after:size-full after:overflow-hidden after:rounded-full
                   after:bg-default after:opacity-20 after:duration-500
                   group-has-[a:hover]/list-item:after:opacity-0
                 `}
-              >
-                <div class={`w-12 overflow-hidden rounded-full`}>
-                  <Avatar
-                    className={`
+            >
+              <div class={`w-12 overflow-hidden rounded-full`}>
+                <Avatar
+                  className={`
                       w-full transform-gpu transition-transform duration-500
                       group-has-[a:hover]/list-item:scale-110
                     `}
-                    imageProps={avatarImageProps}
-                  />
-                </div>
+                  imageProps={avatarImageProps}
+                />
               </div>
-              <div
-                class={`
+            </div>
+            <div
+              class={`
                   col-start-4 row-start-2 flex items-center justify-between
                 `}
-              >
-                {progressDetails.slug ? (
-                  <span>
-                    <a
-                      class={`
+            >
+              {progressDetails.slug ? (
+                <span>
+                  <a
+                    class={`
                         pb-1 text-base leading-none font-normal text-default
                         transition-all duration-500
                         after:absolute after:top-0 after:left-0 after:z-above
                         after:size-full after:opacity-0
                         hover:text-accent
                       `}
-                      href={
-                        valueType === "collection"
-                          ? `/collections/${progressDetails.slug}/`
-                          : `/cast-and-crew/${progressDetails.slug}/`
-                      }
-                    >
-                      {progressDetails.name}
-                    </a>
-                  </span>
-                ) : (
-                  <span
-                    class={`
-                      block pb-1 font-sans text-sm leading-none text-subtle
-                    `}
+                    href={
+                      valueType === "collection"
+                        ? `/collections/${progressDetails.slug}/`
+                        : `/cast-and-crew/${progressDetails.slug}/`
+                    }
                   >
                     {progressDetails.name}
-                  </span>
-                )}
-                <div
+                  </a>
+                </span>
+              ) : (
+                <span
                   class={`
+                      block pb-1 font-sans text-sm leading-none text-subtle
+                    `}
+                >
+                  {progressDetails.name}
+                </span>
+              )}
+              <div
+                class={`
                     self-center pb-1 text-right font-sans text-xs leading-0
                     text-nowrap tabular-nums
                   `}
-                >
-                  {progressDetails.reviewCount} / {progressDetails.titleCount}
-                </div>
-              </div>
-              <div class="col-start-4 row-start-3 bg-subtle">
-                <BarGradient
-                  maxValue={progressDetails.titleCount}
-                  value={progressDetails.reviewCount}
-                />
+              >
+                {progressDetails.reviewCount} / {progressDetails.titleCount}
               </div>
             </div>
-          );
-        }),
-      )
-    }
+            <div class="col-start-4 row-start-3 bg-subtle">
+              <BarGradient
+                maxValue={progressDetails.titleCount}
+                value={progressDetails.reviewCount}
+              />
+            </div>
+          </div>
+        );
+      }),
+    )}
   </div>
 </section>

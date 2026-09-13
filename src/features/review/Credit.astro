@@ -12,10 +12,8 @@ const { term, value } = Astro.props;
     {term}
   </dt>
   <dd class="font-normal text-wrap text-muted">
-    {
-      Array.isArray(value)
-        ? value.map((termValue) => <div>{termValue}</div>)
-        : value
-    }
+    {Array.isArray(value)
+      ? value.map((termValue) => <div>{termValue}</div>)
+      : value}
   </dd>
 </div>

@@ -50,7 +50,10 @@ function formatDate(reviewDate: Date): string {
   hideLogo={true}
 >
   <nav class="mx-auto max-w-(--breakpoint-desktop) pb-8">
-    <SubHeading class="px-container" level="h2"> Latest Reviews </SubHeading>
+    <SubHeading class="px-container" level="h2">
+      {" "}
+      Latest Reviews{" "}
+    </SubHeading>
     <ul
       class={`
         flex w-full flex-col flex-wrap justify-center gap-x-[3%] pb-8
@@ -60,13 +63,12 @@ function formatDate(reviewDate: Date): string {
         desktop:gap-y-14
       `}
     >
-      {
-        await Promise.all(
-          reviewedTitles.map(async ({ data: reviewedTitle }) => {
-            const { data: review } = await getEntry(reviewedTitle.review);
-            return (
-              <li
-                class={`
+      {await Promise.all(
+        reviewedTitles.map(async ({ data: reviewedTitle }) => {
+          const { data: review } = await getEntry(reviewedTitle.review);
+          return (
+            <li
+              class={`
                   group/card relative mb-1 flex w-(--card-width) transform-gpu
                   flex-col bg-default px-[8%] pt-12 transition-transform
                   duration-500
@@ -74,9 +76,9 @@ function formatDate(reviewDate: Date): string {
                   tablet-landscape:has-[a:hover]:-translate-y-2
                   tablet-landscape:has-[a:hover]:drop-shadow-2xl
                 `}
-              >
-                <div
-                  class={`
+            >
+              <div
+                class={`
                     relative mb-6 block overflow-hidden
                     after:absolute after:top-0 after:left-0 after:aspect-video
                     after:size-full after:bg-default
@@ -84,37 +86,37 @@ function formatDate(reviewDate: Date): string {
                     group-has-[a:hover]/card:after:opacity-0
                     tablet:after:inset-x-0 tablet:after:top-0
                   `}
-                >
-                  <Still
-                    class={`
+              >
+                <Still
+                  class={`
                       h-auto w-full transform-gpu transition-transform
                       duration-500
                       group-has-[a:hover]/card:scale-110
                     `}
-                    decoding="async"
-                    imageConfig={StillImageConfig}
-                    loading="lazy"
-                    slug={review.slug}
-                  />
-                </div>
-                <div
-                  class={`
+                  decoding="async"
+                  imageConfig={StillImageConfig}
+                  loading="lazy"
+                  slug={review.slug}
+                />
+              </div>
+              <div
+                class={`
                     flex grow flex-col px-1 pb-8
                     tablet:px-[8%]
                     laptop:pr-[10%] laptop:pl-[8.5%]
                   `}
-                >
-                  <div
-                    class={`
+              >
+                <div
+                  class={`
                       mb-3 font-sans text-xs/4 font-normal tracking-wider
                       text-subtle uppercase
                       laptop:tracking-wide
                     `}
-                  >
-                    {formatDate(reviewedTitle.reviewDate)}
-                  </div>
-                  {/* prettier-ignore */}
-                  <a class={`
+                >
+                  {formatDate(reviewedTitle.reviewDate)}
+                </div>
+                {/* prettier-ignore */}
+                <a class={`
                     mb-3 block text-2.5xl/7 font-medium text-default
                     transition-all duration-500
                     after:absolute after:top-0 after:left-0 after:z-above
@@ -128,34 +130,33 @@ function formatDate(reviewDate: Date): string {
                       text-sm leading-none font-normal text-muted
                     `}>{reviewedTitle.releaseYear}</span>
                   </a>
-                  <Grade
-                    className={`
+                <Grade
+                  className={`
                       mb-5
                       tablet:mb-8
                     `}
-                    height={24}
-                    value={reviewedTitle.grade}
-                  />
-                  <RenderedMarkdown
-                    class={`
+                  height={24}
+                  value={reviewedTitle.grade}
+                />
+                <RenderedMarkdown
+                  class={`
                       leading-normal mb-6 text-lg tracking-prose text-muted
                     `}
-                    text={review.excerptHtml}
-                  />
-                  <div
-                    class={`
+                  text={review.excerptHtml}
+                />
+                <div
+                  class={`
                       mt-auto font-sans text-xs/4 tracking-wider text-subtle
                       laptop:tracking-wide
                     `}
-                  >
-                    {reviewedTitle.genres.join(", ")}
-                  </div>
+                >
+                  {reviewedTitle.genres.join(", ")}
                 </div>
-              </li>
-            );
-          }),
-        )
-      }
+              </div>
+            </li>
+          );
+        }),
+      )}
     </ul>
     <div
       class={`

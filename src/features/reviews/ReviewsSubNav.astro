@@ -27,33 +27,32 @@ const { active } = Astro.props;
       tablet:justify-center
     `}
   >
-    {
-      Object.entries(items).map(([key, value]) => {
-        return (
-          <li
-            class={`
+    {Object.entries(items).map(([key, value]) => {
+      return (
+        <li
+          class={`
               snap-start text-center whitespace-nowrap
               ${active === key ? `text-white` : `text-grey`}
             `}
-          >
-            {active === key ? (
-              <a
-                class={`block bg-default px-6 py-8 text-default`}
-                href={value.href}
-              >
-                {value.text}
-              </a>
-            ) : (
-              <a
-                class={`
+        >
+          {active === key ? (
+            <a
+              class={`block bg-default px-6 py-8 text-default`}
+              href={value.href}
+            >
+              {value.text}
+            </a>
+          ) : (
+            <a
+              class={`
                   group/item block transform-gpu px-6 pt-8 pb-7 transition-all
                   duration-500
                   hover:bg-accent hover:text-white
                 `}
-                href={value.href}
-              >
-                <span
-                  class={`
+              href={value.href}
+            >
+              <span
+                class={`
                     relative inline-block pb-1
                     after:absolute after:bottom-0 after:left-0 after:h-0.5
                     after:w-full after:origin-center after:scale-x-0
@@ -61,14 +60,13 @@ const { active } = Astro.props;
                     after:duration-500
                     group-hover/item:after:scale-x-100
                   `}
-                >
-                  {value.text}
-                </span>
-              </a>
-            )}
-          </li>
-        );
-      })
-    }
+              >
+                {value.text}
+              </span>
+            </a>
+          )}
+        </li>
+      );
+    })}
   </ul>
 </nav>

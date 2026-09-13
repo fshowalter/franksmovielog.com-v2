@@ -29,11 +29,9 @@ const { cardProps, headingProps } = Astro.props;
         laptop:flex-nowrap laptop:[--card-width:47%]
       `}
     >
-      {
-        cardProps.map((props) => {
-          return <MoreReviewsCard {...props} />;
-        })
-      }
+      {cardProps.map((props) => {
+        return <MoreReviewsCard {...props} />;
+      })}
     </ul>
   </div>
 </nav>

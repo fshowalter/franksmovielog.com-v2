@@ -66,8 +66,10 @@ const { data: review } = await getEntry(value.review);
       `}
       href={`/reviews/${review.slug}/`}
     >
-      {value.title}<span class={`text-sm leading-none font-normal text-muted`}>
-        <span class="whitespace-nowrap">&thinsp;</span>{value.releaseYear}
+      {value.title}
+      <span class={`text-sm leading-none font-normal text-muted`}>
+        <span class="whitespace-nowrap">&thinsp;</span>
+        {value.releaseYear}
       </span>
     </a>
     <Grade className="mb-4" height={18} value={value.grade} />

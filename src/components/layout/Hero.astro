@@ -82,11 +82,10 @@ const backdropImageProps = await getBackdropImageProps(
         `,
       ]}
     >
-      {
-        breadcrumb && (
-          <p class="tablet:mb-1">
-            <a
-              class={`
+      {breadcrumb && (
+        <p class="tablet:mb-1">
+          <a
+            class={`
                 relative inline-block font-sans text-sm/relaxed font-bold
                 tracking-wide text-accent uppercase transition-all duration-500
                 [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
@@ -96,22 +95,23 @@ const backdropImageProps = await getBackdropImageProps(
                 hover:text-accent
                 hover:after:scale-x-100
               `}
-              href={breadcrumb.href}
-            >
-              {breadcrumb.text}
-            </a>
-          </p>
-        )
-      }
+            href={breadcrumb.href}
+          >
+            {breadcrumb.text}
+          </a>
+        </p>
+      )}
       <h1
-        class={titleClassNames ||
+        class={
+          titleClassNames ||
           `
             ${centerText ? "text-center" : ""}
             text-[2rem]/10 font-extrabold
             [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
             tablet:text-4xl
             laptop:text-7xl
-          `}
+          `
+        }
         data-pagefind-weight="10"
       >
         {title}
