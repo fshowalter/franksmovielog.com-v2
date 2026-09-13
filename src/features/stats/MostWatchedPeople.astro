@@ -20,16 +20,16 @@ const { header, values } = Astro.props;
 {values.length > 0 && (
   <section
     class={`
-        w-full bg-default pb-8
-        tablet:px-container
-        laptop:px-12
-      `}
+      w-full bg-default pb-8
+      tablet:px-container
+      laptop:px-12
+    `}
   >
     <h2
       class={`
-          px-container py-4 text-xl font-medium
-          tablet:px-0
-        `}
+        px-container py-4 text-xl font-medium
+        tablet:px-0
+      `}
     >
       {header}
     </h2>
@@ -40,28 +40,28 @@ const { header, values } = Astro.props;
             <div class="py-3">
               <div
                 class={`
-                    flex justify-between px-container
-                    tablet:px-0
-                  `}
+                  flex justify-between px-container
+                  tablet:px-0
+                `}
               >
                 <div
                   class={`
-                      transform-gpu font-sans text-xs text-muted
-                      transition-transform
-                      tablet:text-sm
-                    `}
+                    transform-gpu font-sans text-xs text-muted
+                    transition-transform
+                    tablet:text-sm
+                  `}
                 >
                   {person.slug ? (
                     <a
                       class={`
-                          relative inline-block font-serif text-base/6
-                          font-medium text-accent
-                          after:absolute after:bottom-0 after:left-0 after:h-px
-                          after:w-full after:origin-bottom-left after:scale-x-0
-                          after:bg-(--fg-accent) after:transition-all
-                          after:duration-500
-                          hover:after:scale-x-100
-                        `}
+                        relative inline-block font-serif text-base/6 font-medium
+                        text-accent
+                        after:absolute after:bottom-0 after:left-0 after:h-px
+                        after:w-full after:origin-bottom-left after:scale-x-0
+                        after:bg-(--fg-accent) after:transition-all
+                        after:duration-500
+                        hover:after:scale-x-100
+                      `}
                       href={`/cast-and-crew/${person.slug}/`}
                     >
                       {person.name}
@@ -69,9 +69,9 @@ const { header, values } = Astro.props;
                   ) : (
                     <span
                       class={`
-                          inline-block font-serif text-base/6 font-normal
-                          text-muted
-                        `}
+                        inline-block font-serif text-base/6 font-normal
+                        text-muted
+                      `}
                     >
                       {person.name}
                     </span>
@@ -79,30 +79,30 @@ const { header, values } = Astro.props;
                 </div>
                 <div
                   class={`
-                      col-start-2 self-center pr-1 pb-1 text-right font-sans
-                      text-sm text-nowrap text-subtle tabular-nums
-                    `}
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle tabular-nums
+                  `}
                 >
                   {person.count}
                 </div>
               </div>
               <div
                 class={`
-                    col-span-2 row-start-2 px-container
-                    tablet:px-0
-                  `}
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                `}
               >
                 <details
                   class={`
-                      rounded-md bg-canvas px-2
-                      open:pb-2
-                    `}
+                    rounded-md bg-canvas px-2
+                    open:pb-2
+                  `}
                 >
                   <summary
                     class={`
-                        cursor-pointer rounded-sm py-1 font-sans text-sm
-                        font-normal tracking-prose text-subtle
-                      `}
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
+                      font-normal tracking-prose text-subtle
+                    `}
                   >
                     Details
                   </summary>
@@ -120,9 +120,9 @@ const { header, values } = Astro.props;
                           >
                             <div
                               class={`
-                                  flex grow flex-col items-start gap-y-1
-                                  tablet:mt-2 tablet:w-full tablet:px-1
-                                `}
+                                flex grow flex-col items-start gap-y-1
+                                tablet:mt-2 tablet:w-full tablet:px-1
+                              `}
                             >
                               <ListItemTitle
                                 reviewSlug={viewing.reviewSlug}
