@@ -1,12 +1,12 @@
 {
   "year": "2026",
   "newTitleCount": 88,
-  "viewingCount": 144,
-  "titleCount": 144,
+  "viewingCount": 145,
+  "titleCount": 145,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 72
+      "count": 73
     },
     {
       "name": "4k UHD Blu-ray",
@@ -82,7 +82,7 @@
     },
     {
       "name": "1990s",
-      "count": 17
+      "count": 18
     },
     {
       "name": "2000s",
@@ -1066,5 +1066,5 @@
       ]
     }
   ],
-  "reviewCount": 136
+  "reviewCount": 137
 }
