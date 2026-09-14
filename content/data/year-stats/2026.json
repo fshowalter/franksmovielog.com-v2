@@ -1,12 +1,12 @@
 {
   "year": "2026",
   "newTitleCount": 88,
-  "viewingCount": 145,
-  "titleCount": 145,
+  "viewingCount": 146,
+  "titleCount": 146,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 73
+      "count": 74
     },
     {
       "name": "4k UHD Blu-ray",
@@ -90,7 +90,7 @@
     },
     {
       "name": "2010s",
-      "count": 5
+      "count": 6
     },
     {
       "name": "2020s",
@@ -1066,5 +1066,5 @@
       ]
     }
   ],
-  "reviewCount": 137
+  "reviewCount": 138
 }
