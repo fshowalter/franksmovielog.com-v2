@@ -1,5 +1,5 @@
 {
-  "viewingCount": 3133,
+  "viewingCount": 3134,
   "statsYears": [
     "2012",
     "2013",
@@ -100,7 +100,7 @@
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 506
+      "count": 507
     },
     {
       "name": "Netflix",
@@ -220,7 +220,7 @@
     },
     {
       "name": "2010s",
-      "count": 367
+      "count": 368
     },
     {
       "name": "2020s",
@@ -254,6 +254,13 @@
       "title": "Avengers: Infinity War",
       "releaseYear": "2018",
       "reviewSlug": "avengers-infinity-war-2018",
+      "count": 6
+    },
+    {
+      "imdbId": "tt6998518",
+      "title": "Mandy",
+      "releaseYear": "2018",
+      "reviewSlug": "mandy-2018",
       "count": 6
     },
     {
@@ -296,13 +303,6 @@
       "title": "Christmas Evil",
       "releaseYear": "1980",
       "reviewSlug": "christmas-evil-1980",
-      "count": 5
-    },
-    {
-      "imdbId": "tt6998518",
-      "title": "Mandy",
-      "releaseYear": "2018",
-      "reviewSlug": "mandy-2018",
       "count": 5
     },
     {

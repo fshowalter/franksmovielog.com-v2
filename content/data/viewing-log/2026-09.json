@@ -76,5 +76,21 @@
     "sequence": "2026-09-05-01",
     "medium": "Blu-ray",
     "venue": null
+  },
+  {
+    "title": "Mandy",
+    "sortTitle": "mandy-2018",
+    "releaseYear": "2018",
+    "releaseDate": "2018-01-19",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Horror"
+    ],
+    "reviewSlug": "mandy-2018",
+    "date": "2026-09-06",
+    "sequence": "2026-09-06-01",
+    "medium": "Blu-ray",
+    "venue": null
   }
 ]
