@@ -99,14 +99,16 @@
       "title": "Nightmare Beach",
       "releaseYear": "1989",
       "reviewSlug": "nightmare-beach-1989",
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2023-10-28"
     },
     {
       "imdbId": "tt0070291",
       "title": "The Last of Sheila",
       "releaseYear": "1973",
       "reviewSlug": "the-last-of-sheila-1973",
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2023-04-27"
     }
   ],
   "mostWatchedDirectors": [

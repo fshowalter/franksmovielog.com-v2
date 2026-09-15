@@ -103,28 +103,32 @@
       "title": "Avengers: Endgame",
       "releaseYear": "2019",
       "reviewSlug": "avengers-endgame-2019",
-      "count": 3
-    },
-    {
-      "imdbId": "tt0085636",
-      "title": "Halloween III: Season of the Witch",
-      "releaseYear": "1982",
-      "reviewSlug": null,
-      "count": 2
+      "count": 3,
+      "lastViewingDate": "2019-06-03"
     },
     {
       "imdbId": "tt0211443",
       "title": "Jason X",
       "releaseYear": "2001",
       "reviewSlug": "jason-x-2001",
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2019-12-13"
+    },
+    {
+      "imdbId": "tt0085636",
+      "title": "Halloween III: Season of the Witch",
+      "releaseYear": "1982",
+      "reviewSlug": null,
+      "count": 2,
+      "lastViewingDate": "2019-10-22"
     },
     {
       "imdbId": "tt7131622",
       "title": "Once Upon a Time... in Hollywood",
       "releaseYear": "2019",
       "reviewSlug": null,
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2019-09-09"
     }
   ],
   "mostWatchedDirectors": [

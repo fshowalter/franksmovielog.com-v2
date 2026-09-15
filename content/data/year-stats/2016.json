@@ -63,18 +63,20 @@
   ],
   "mostWatchedTitles": [
     {
-      "imdbId": "tt4263482",
-      "title": "The Witch",
-      "releaseYear": "2015",
-      "reviewSlug": "the-witch-2015",
-      "count": 2
-    },
-    {
       "imdbId": "tt3498820",
       "title": "Captain America: Civil War",
       "releaseYear": "2016",
       "reviewSlug": "captain-america-civil-war-2016",
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2016-11-12"
+    },
+    {
+      "imdbId": "tt4263482",
+      "title": "The Witch",
+      "releaseYear": "2015",
+      "reviewSlug": "the-witch-2015",
+      "count": 2,
+      "lastViewingDate": "2016-09-17"
     }
   ],
   "mostWatchedDirectors": [

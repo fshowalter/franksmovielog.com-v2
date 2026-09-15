@@ -91,14 +91,16 @@
       "title": "Fright Night",
       "releaseYear": "1985",
       "reviewSlug": "fright-night-1985",
-      "count": 4
+      "count": 4,
+      "lastViewingDate": "2012-07-30"
     },
     {
       "imdbId": "tt0038355",
       "title": "The Big Sleep",
       "releaseYear": "1946",
       "reviewSlug": "the-big-sleep-1946",
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2012-04-28"
     }
   ],
   "mostWatchedDirectors": [

@@ -233,84 +233,96 @@
       "title": "Fright Night",
       "releaseYear": "1985",
       "reviewSlug": "fright-night-1985",
-      "count": 8
+      "count": 8,
+      "lastViewingDate": "2025-03-22"
     },
     {
       "imdbId": "tt0053221",
       "title": "Rio Bravo",
       "releaseYear": "1959",
       "reviewSlug": "rio-bravo-1959",
-      "count": 7
-    },
-    {
-      "imdbId": "tt1259521",
-      "title": "The Cabin in the Woods",
-      "releaseYear": "2011",
-      "reviewSlug": "the-cabin-in-the-woods-2011",
-      "count": 6
-    },
-    {
-      "imdbId": "tt4154756",
-      "title": "Avengers: Infinity War",
-      "releaseYear": "2018",
-      "reviewSlug": "avengers-infinity-war-2018",
-      "count": 6
+      "count": 7,
+      "lastViewingDate": "2025-03-22"
     },
     {
       "imdbId": "tt6998518",
       "title": "Mandy",
       "releaseYear": "2018",
       "reviewSlug": "mandy-2018",
-      "count": 6
+      "count": 6,
+      "lastViewingDate": "2026-09-06"
     },
     {
-      "imdbId": "tt0051554",
-      "title": "Horror of Dracula",
-      "releaseYear": "1958",
-      "reviewSlug": "horror-of-dracula-1958",
-      "count": 5
+      "imdbId": "tt1259521",
+      "title": "The Cabin in the Woods",
+      "releaseYear": "2011",
+      "reviewSlug": "the-cabin-in-the-woods-2011",
+      "count": 6,
+      "lastViewingDate": "2020-12-22"
     },
     {
-      "imdbId": "tt0097958",
-      "title": "National Lampoon's Christmas Vacation",
-      "releaseYear": "1989",
-      "reviewSlug": "national-lampoons-christmas-vacation-1989",
-      "count": 5
-    },
-    {
-      "imdbId": "tt0039305",
-      "title": "Dead Reckoning",
-      "releaseYear": "1946",
-      "reviewSlug": "dead-reckoning-1946",
-      "count": 5
-    },
-    {
-      "imdbId": "tt0065143",
-      "title": "The Bird with the Crystal Plumage",
-      "releaseYear": "1970",
-      "reviewSlug": "the-bird-with-the-crystal-plumage-1970",
-      "count": 5
-    },
-    {
-      "imdbId": "tt3850590",
-      "title": "Krampus",
-      "releaseYear": "2015",
-      "reviewSlug": "krampus-2015",
-      "count": 5
-    },
-    {
-      "imdbId": "tt0081793",
-      "title": "Christmas Evil",
-      "releaseYear": "1980",
-      "reviewSlug": "christmas-evil-1980",
-      "count": 5
+      "imdbId": "tt4154756",
+      "title": "Avengers: Infinity War",
+      "releaseYear": "2018",
+      "reviewSlug": "avengers-infinity-war-2018",
+      "count": 6,
+      "lastViewingDate": "2020-10-17"
     },
     {
       "imdbId": "tt0085253",
       "title": "Blood Rage",
       "releaseYear": "1987",
       "reviewSlug": "blood-rage-1987",
-      "count": 5
+      "count": 5,
+      "lastViewingDate": "2025-11-27"
+    },
+    {
+      "imdbId": "tt0081793",
+      "title": "Christmas Evil",
+      "releaseYear": "1980",
+      "reviewSlug": "christmas-evil-1980",
+      "count": 5,
+      "lastViewingDate": "2023-12-09"
+    },
+    {
+      "imdbId": "tt0039305",
+      "title": "Dead Reckoning",
+      "releaseYear": "1946",
+      "reviewSlug": "dead-reckoning-1946",
+      "count": 5,
+      "lastViewingDate": "2022-09-14"
+    },
+    {
+      "imdbId": "tt3850590",
+      "title": "Krampus",
+      "releaseYear": "2015",
+      "reviewSlug": "krampus-2015",
+      "count": 5,
+      "lastViewingDate": "2021-12-16"
+    },
+    {
+      "imdbId": "tt0065143",
+      "title": "The Bird with the Crystal Plumage",
+      "releaseYear": "1970",
+      "reviewSlug": "the-bird-with-the-crystal-plumage-1970",
+      "count": 5,
+      "lastViewingDate": "2021-01-22"
+    },
+    {
+      "imdbId": "tt0097958",
+      "title": "National Lampoon's Christmas Vacation",
+      "releaseYear": "1989",
+      "reviewSlug": "national-lampoons-christmas-vacation-1989",
+      "count": 5,
+      "lastViewingDate": "2020-12-24"
+    },
+    {
+      "imdbId": "tt0051554",
+      "title": "Horror of Dracula",
+      "releaseYear": "1958",
+      "reviewSlug": "horror-of-dracula-1958",
+      "count": 5,
+      "lastViewingDate": "2020-12-08"
     }
   ],
   "mostWatchedDirectors": [

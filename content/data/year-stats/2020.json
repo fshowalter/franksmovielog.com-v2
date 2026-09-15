@@ -103,14 +103,16 @@
       "title": "The Cabin in the Woods",
       "releaseYear": "2011",
       "reviewSlug": "the-cabin-in-the-woods-2011",
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2020-12-22"
     },
     {
       "imdbId": "tt4154756",
       "title": "Avengers: Infinity War",
       "releaseYear": "2018",
       "reviewSlug": "avengers-infinity-war-2018",
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2020-10-17"
     }
   ],
   "mostWatchedDirectors": [

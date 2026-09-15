@@ -87,25 +87,28 @@
   ],
   "mostWatchedTitles": [
     {
-      "imdbId": "tt0087798",
-      "title": "Night Train to Terror",
-      "releaseYear": "1985",
-      "reviewSlug": "night-train-to-terror-1985",
-      "count": 2
-    },
-    {
       "imdbId": "tt14966898",
       "title": "Late Night with the Devil",
       "releaseYear": "2023",
       "reviewSlug": null,
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2024-10-26"
     },
     {
       "imdbId": "tt6263850",
       "title": "Deadpool & Wolverine",
       "releaseYear": "2024",
       "reviewSlug": null,
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2024-08-26"
+    },
+    {
+      "imdbId": "tt0087798",
+      "title": "Night Train to Terror",
+      "releaseYear": "1985",
+      "reviewSlug": "night-train-to-terror-1985",
+      "count": 2,
+      "lastViewingDate": "2024-04-27"
     }
   ],
   "mostWatchedDirectors": [
