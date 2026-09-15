@@ -103,39 +103,44 @@
   ],
   "mostWatchedTitles": [
     {
-      "imdbId": "tt0098194",
-      "title": "The Return of the Musketeers",
-      "releaseYear": "1989",
-      "reviewSlug": "the-return-of-the-musketeers-1989",
-      "count": 2
-    },
-    {
-      "imdbId": "tt0844479",
-      "title": "The Collector",
-      "releaseYear": "2009",
-      "reviewSlug": "the-collector-2009",
-      "count": 2
-    },
-    {
-      "imdbId": "tt5950044",
-      "title": "Superman",
-      "releaseYear": "2025",
-      "reviewSlug": "superman-2025",
-      "count": 2
-    },
-    {
       "imdbId": "tt0098662",
       "title": "Witchtrap",
       "releaseYear": "1989",
       "reviewSlug": "witchtrap-1989",
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2025-11-08"
     },
     {
       "imdbId": "tt0086610",
       "title": "Xtro",
       "releaseYear": "1982",
       "reviewSlug": "xtro-1982",
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2025-11-08"
+    },
+    {
+      "imdbId": "tt5950044",
+      "title": "Superman",
+      "releaseYear": "2025",
+      "reviewSlug": "superman-2025",
+      "count": 2,
+      "lastViewingDate": "2025-07-20"
+    },
+    {
+      "imdbId": "tt0098194",
+      "title": "The Return of the Musketeers",
+      "releaseYear": "1989",
+      "reviewSlug": "the-return-of-the-musketeers-1989",
+      "count": 2,
+      "lastViewingDate": "2025-07-07"
+    },
+    {
+      "imdbId": "tt0844479",
+      "title": "The Collector",
+      "releaseYear": "2009",
+      "reviewSlug": "the-collector-2009",
+      "count": 2,
+      "lastViewingDate": "2025-02-06"
     }
   ],
   "mostWatchedDirectors": [

@@ -99,14 +99,16 @@
       "title": "Avengers: Infinity War",
       "releaseYear": "2018",
       "reviewSlug": "avengers-infinity-war-2018",
-      "count": 4
+      "count": 4,
+      "lastViewingDate": "2018-06-13"
     },
     {
       "imdbId": "tt6998518",
       "title": "Mandy",
       "releaseYear": "2018",
       "reviewSlug": "mandy-2018",
-      "count": 2
+      "count": 2,
+      "lastViewingDate": "2018-09-18"
     }
   ],
   "mostWatchedDirectors": [
