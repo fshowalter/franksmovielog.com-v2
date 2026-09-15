@@ -1,8 +1,8 @@
 {
   "year": "2026",
   "newTitleCount": 88,
-  "viewingCount": 146,
-  "titleCount": 146,
+  "viewingCount": 147,
+  "titleCount": 147,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
@@ -10,7 +10,7 @@
     },
     {
       "name": "4k UHD Blu-ray",
-      "count": 30
+      "count": 31
     },
     {
       "name": "iTunes",
@@ -94,7 +94,7 @@
     },
     {
       "name": "2020s",
-      "count": 10
+      "count": 11
     }
   ],
   "mostWatchedTitles": [],
@@ -1066,5 +1066,5 @@
       ]
     }
   ],
-  "reviewCount": 138
+  "reviewCount": 139
 }
